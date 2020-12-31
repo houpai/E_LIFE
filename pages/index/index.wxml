@@ -1,6 +1,79 @@
-<!--index.wxml-->
+<!--index.wxml-->  
+<!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
 <view class="index_container">
-  <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
-  index_container
+  <view class="index_banner">
+    <view class="store_message_box">
+      <view class="store_name">
+        肯德基首创店
+      </view>
+      <view class="store_logo">
+        <image class="img"  src='{{ "../../assets/img/icon_store_logo.png"}}' />
+      </view>
+    </view>
+    <view class="data_board_box">
+      <view class="data_board_title">
+        <image class="img" src='{{ "../../assets/img/icon_data.png"}}' />
+        <view class="title">数据中心</view>
+      </view>
+      <view class="data_detail_box">
+        <view class="item">
+          <view class="today_income_box item_box">
+            <view class="detail_data">2090</view>
+            <view class="detail_title">今日实收</view>
+          </view>
+        </view>
+        <view class="item">
+          <view class="this_month_income_box item_box">
+            <view class="detail_data">17.36万</view>
+            <view class="detail_title">本月实收</view>
+          </view>
+        </view>
+        <view class="item">
+          <view class="last_month_income_box item_box">
+            <view class="detail_data">16.36万</view>
+            <view class="detail_title">上月实收</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="index_data_box">
+    <view class="menu_item_box">
+      <view class="mune_item store_sys">
+        <image class="img" src='{{ "../../assets/img/icon_store_sys.png"}}'/>
+        <view class="menu_title">店铺管理</view>
+      </view>
+      <view class="mune_item customer_sys">
+        <image class="img" src='{{ "../../assets/img/icon_customer_sys.png"}}'/>
+        <view class="menu_title">顾客管理</view>
+      </view>
+    </view>
+
+    <view class="menu_item_box">
+      <view class="mune_item card_sys">
+        <image class="img" src='{{ "../../assets/img/icon_member_card_sys.png"}}'/>
+        <view class="menu_title">会员卡管理</view>
+      </view>
+      <view class="mune_item member_sys">
+        <image class="img" src='{{ "../../assets/img/icon_member.png"}}'/>
+        <view class="menu_title">会员管理</view>
+      </view>
+    </view>
+
+    <view class="menu_item_box">
+      <view class="mune_item staff_sys">
+        <image class="img" src='{{ "../../assets/img/icon_staff_sys.png"}}'/>
+        <view class="menu_title">
+          <view>员工管理</view>
+          <view class="not_open">暂未开放</view>
+        </view>
+      </view>
+      <view class="mune_item data_sys">
+        <image class="img" src='{{ "../../assets/img/icon_data_sys.png"}}'/>
+        <view class="menu_title">业绩报表管理</view>
+      </view>
+    </view>
+  </view>
 </view>
 
