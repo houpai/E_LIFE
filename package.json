@@ -1,0 +1,23 @@
+{
+  "name": "E_LIFE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houpai/E_LIFE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/houpai/E_LIFE/issues"
+  },
+  "homepage": "https://github.com/houpai/E_LIFE#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.6.4"
+  }
+}
