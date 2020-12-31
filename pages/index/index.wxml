@@ -40,7 +40,7 @@
 
   <view class="index_data_box">
     <view class="menu_item_box">
-      <view class="mune_item store_sys">
+      <view class="mune_item store_sys" data-menu="store_sys" bindtap="menuLink">
         <image class="img" src='{{ "../../assets/img/icon_store_sys.png"}}'/>
         <view class="menu_title">店铺管理</view>
       </view>
