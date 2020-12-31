@@ -1,1 +1,22 @@
-<view class="login_container">login</view>
+<view class="login_container">
+  <view class="login_banner" style='background-image:url({{loginBannerBg}})'>
+    <view class="login_title">E生活商家</view>
+  </view>
+
+  <view class="login_box">
+    <view class="input_item">
+      <view class="input_label">账号:</view>
+      <input type="text" maxlength="10" placeholder="请输入账号" class="input" />
+      <view class="btn_box">
+
+      </view>
+    </view>
+    <view class="input_item">
+      <view class="input_label">密码:</view>
+      <input password='{{passwordType}}' maxlength="10" placeholder="请输入密码" class="input"/>
+      <view class="btn_box">
+
+      </view>
+    </view>
+  </view>
+</view>
