@@ -43,10 +43,49 @@
   font-weight: bold;
   color: #333333;
   line-height: 44px;
+  flex-shrink: 0
 }
 
 .input {
-  margin-left: 20rpx;
+  margin-left: 40rpx;
   flex: 1;
   width: 0;
+}
+
+.btn_box {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80rpx;
+  height: 80rpx
+}
+
+.btn_box .img {
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+
+.login_btn_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120rpx 0 0 0;
+}
+
+.login_btn_box .login_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:32rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 44rpx;
+  width: 630rpx;
+  height: 88rpx;
+  background: #488FF1;
+  border-radius: 6rpx;
 }

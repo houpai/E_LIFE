@@ -6,17 +6,43 @@
   <view class="login_box">
     <view class="input_item">
       <view class="input_label">账号:</view>
-      <input type="text" maxlength="10" placeholder="请输入账号" class="input" />
+      <input 
+        type="text" 
+        maxlength="10" 
+        placeholder="请输入账号" 
+        class="input" 
+        bindinput="inputWatchUser"
+      />
       <view class="btn_box">
-
+        <image 
+          src='{{ "../../assets/img/icon_delete.png"}}' 
+          wx:if="{{userName.length}}"
+          bindtap="clearUserName"
+          class='img' 
+        />
       </view>
     </view>
     <view class="input_item">
       <view class="input_label">密码:</view>
-      <input password='{{passwordType}}' maxlength="10" placeholder="请输入密码" class="input"/>
+      <input 
+        password='{{passwordType}}' 
+        maxlength="10"
+        placeholder="请输入密码" 
+        bindinput="inputWatchPassword"
+        class="input"
+      />
       <view class="btn_box">
-
+        <image 
+          src='{{defaultType? "../../assets/img/icon_eye_close.png": "../../assets/img/icon_eye_open.png"}}' 
+          class='img' 
+          bindtap='eyeStatus' />
       </view>
+    </view>
+  </view>
+
+  <view class="login_btn_box">
+    <view class="login_btn">
+      登录
     </view>
   </view>
 </view>
