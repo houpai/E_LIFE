@@ -1,4 +1,3 @@
-//index.js
 const app = getApp()
 
 import {loginBg} from "../../assets/base64Img/loginBg"
