@@ -51,28 +51,31 @@
       <view class="input_label">客服电话</view>
       <view class="margin_box">
         <van-field
-          value="{{ storeName }}"
+          value="{{ telValue }}"
           class="p_0 input_value"
           placeholder="请输入客服电话"
           border="{{ false }}"
-          bind:change="storeNameChange"
+          bind:change="telValueChange"
         />
       </view>
     </view>
     <view class="item_container_box">
-      <view class="input_label">客服电话</view>
+      <view class="input_label">店铺地址</view>
       <view class="margin_box">
         <van-field
-          value="{{ storeName }}"
+          value="{{ addressValue }}"
           class="p_0 input_value"
           placeholder="请输入客服电话"
           border="{{ false }}"
-          bind:change="storeNameChange"
+          bind:change="addressValueChange"
         />
       </view>
     </view>
 
   </view>
+
+  <!-- 遮罩层 -->
+  <view class="mask" wx:if="{{isEdit === false}}"></view>
 </view>
 
 <!-- 编辑按钮 注：UI图设计是点击才可编辑信息 这里用切换遮罩显隐实现 -->

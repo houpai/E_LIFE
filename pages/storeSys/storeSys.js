@@ -6,6 +6,7 @@ Page({
   data: {
     storeName:'',
     telValue:'',
+    addressValue:'',
     fileList:[],
     fileListBg:[],
     isEdit:false
@@ -18,6 +19,11 @@ Page({
   telValueChange(e) {
     this.setData({
       telValue:e.detail
+    })
+  },
+  addressValueChange(e) {
+    this.setData({
+      addressValue:e.detail
     })
   },
   // 上传logo图片获取临时地址

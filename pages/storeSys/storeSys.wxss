@@ -1,12 +1,21 @@
 page{
-  min-height: 100%;
   background-color: #F2F2F2;
+  padding-bottom:60rpx;
 }
 
 .storeSys_container {
   padding:40rpx 30rpx;
   box-sizing: border-box;
   position: relative;
+}
+
+.storeSys_container .mask{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top:0;
+  z-index: 100;
 }
 
 .storeSys_container .name_logo_box .item_container_box, .storeSys_container .store_bg_box .item_container_box{
