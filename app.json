@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/customerList/customerList",
     "pages/customerDetail/customerDetail",
-    "pages/storeSys/storeSys"
+    "pages/storeSys/storeSys",
+    "pages/openMembership/openMembership"
   ],
   "window":{
     "backgroundTextStyle":"light",

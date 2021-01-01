@@ -138,3 +138,22 @@ page {
   color: #333333;
   line-height: 40rpx;
 }
+
+.member_tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member_tip .img {
+  display: block;
+  width:48rpx;
+  height: 48rpx;
+}
+
+.member_tip .text {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #FFCC63;
+  line-height: 34rpx;
+}

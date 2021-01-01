@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "navigationBarBackgroundColor": "#488FF1",
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "选择会员卡",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#F2F2F2"
+}

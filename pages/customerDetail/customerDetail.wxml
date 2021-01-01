@@ -11,7 +11,11 @@
         </view>
         <view class="phone">1365214899</view>
       </view>
-      <view class="open_btn">开通会员卡</view>
+      <view class="open_btn" wx:if="{{isMember === false}}">开通会员卡</view>
+      <view class="member_tip" wx:else>
+        <image class="img"  src='{{ "../../assets/img/icon_member_tip.png"}}' />
+        <text class="text">会员</text>
+      </view>
     </view>
   </view>
 
