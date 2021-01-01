@@ -43,7 +43,7 @@
         <image class="img" src='{{ "../../assets/img/icon_store_sys.png"}}'/>
         <view class="menu_title">店铺管理</view>
       </view>
-      <view class="mune_item customer_sys">
+      <view class="mune_item customer_sys" data-menu="customer_sys" bindtap="menuLink">
         <image class="img" src='{{ "../../assets/img/icon_customer_sys.png"}}'/>
         <view class="menu_title">顾客管理</view>
       </view>

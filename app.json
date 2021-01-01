@@ -1,9 +1,10 @@
 {
   "pages":[
-    "pages/customerList/customerList",
-    "pages/storeSys/storeSys",
+    "pages/customerDetail/customerDetail",
+    "pages/login/login",
     "pages/index/index",
-    "pages/login/login"
+    "pages/customerList/customerList",
+    "pages/storeSys/storeSys"
   ],
   "window":{
     "backgroundTextStyle":"light",

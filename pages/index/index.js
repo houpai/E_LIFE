@@ -49,6 +49,10 @@ Page({
       wx.navigateTo({
         url: '/pages/storeSys/storeSys'
       })
+    } else if(query === 'customer_sys') {
+      wx.navigateTo({
+        url: '/pages/customerList/customerList'
+      })
     }
   }
 })

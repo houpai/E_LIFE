@@ -38,7 +38,10 @@ Page({
     })
   },
   loginSubmitHandle() {
-    console.log('login btn submit')
+    console.log('login btn submit');
+    wx.navigateTo({
+      url: '/pages/index/index'
+    })
   },
   onLoad: function () {
 

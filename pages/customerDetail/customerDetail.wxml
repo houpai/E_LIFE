@@ -1,0 +1,38 @@
+<view class="customerDetail_container">
+  <view class="top_bg_box customer_detail_box">
+    <view class="customer_item">
+      <view class="customer_img">
+        <image class="img"  src='{{ "../../assets/img/icon_customer.png"}}' />
+      </view>
+      <view class="customer_message">
+        <view class="name">
+          严敏
+          <text class="sex_text">男</text>
+        </view>
+        <view class="phone">1365214899</view>
+      </view>
+      <view class="open_btn">开通会员卡</view>
+    </view>
+  </view>
+
+  <view class="detail_message_box">
+    <view class="h2">基本信息</view>
+    <view class="message_box">
+      <view class="message_item_box">
+        <view class="label">生　　日：</view>
+        <view class="value">1989年09月09日</view>
+      </view>
+      <view class="message_item_box marginBottom0">
+        <view class="label">详细地址：</view>
+        <view class="value">辽宁省沈阳市和平区三好街中润国辽宁省沈阳市和平区三好街中润国</view>
+      </view>
+    </view>
+    <view class="h2">其他信息</view>
+    <view class="message_box">
+      <view class="message_item_box marginBottom0">
+        <view class="label">微信昵称：</view>
+        <view class="value">气质神定一只猫</view>
+      </view>
+    </view>
+  </view>
+</view>
