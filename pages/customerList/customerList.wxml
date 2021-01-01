@@ -14,7 +14,7 @@
 
 
   <view class="customer_list_box">
-    <view class="customer_item" wx:for="{{10}}">
+    <view class="customer_item" wx:for="{{10}}" bindtap="goCustomerDetail" data-menu="1">
       <view class="customer_img">
         <image class="img"  src='{{ "../../assets/img/icon_customer.png"}}' />
       </view>

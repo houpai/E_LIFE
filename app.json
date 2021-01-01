@@ -1,9 +1,9 @@
 {
   "pages":[
-    "pages/customerDetail/customerDetail",
     "pages/login/login",
     "pages/index/index",
     "pages/customerList/customerList",
+    "pages/customerDetail/customerDetail",
     "pages/storeSys/storeSys"
   ],
   "window":{
