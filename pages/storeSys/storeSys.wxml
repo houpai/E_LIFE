@@ -1,3 +1,89 @@
-<view class="storesys_container">
-  storesys_container
+<view class="storeSys_container">
+  <view class="name_logo_box">
+    <view class="item_container_box">
+      <view class="input_label">店铺名称</view>
+      <view class="margin_box">
+        <van-field
+          value="{{ storeName }}"
+          class="p_0 input_value"
+          placeholder="请输入店铺名称"
+          border="{{ false }}"
+          bind:change="storeNameChange"
+        />
+      </view>
+    </view>
+
+    <view class="item_container_box flex_box">
+      <view class="left_box input_label">
+        <view>店铺LOGO</view>
+        <view class="desc">建议尺寸为1:1</view>
+      </view>
+      <view class="right_box">
+        <van-uploader
+          file-list="{{ fileList }}"
+          accept="image"
+          max-count="1"
+          bind:delete="deleteLogo"
+          bind:after-read="logoUpload"
+        />
+      </view>
+    </view>
+  </view>
+  <view class="store_bg_box">
+    <view class="item_container_box flex_box">
+      <view class="left_box input_label">
+        <view>店铺背景图</view>
+        <view class="desc">建议尺寸为1:1</view>
+      </view>
+      <view class="right_box">
+        <van-uploader
+          file-list="{{ fileListBg }}"
+          accept="image"
+          max-count="1"
+          bind:delete="deleteBg"
+          bind:after-read="bgUpload"
+        />
+      </view>
+    </view>
+  </view>
+  <view class="name_logo_box other_message_box">
+    <view class="item_container_box">
+      <view class="input_label">客服电话</view>
+      <view class="margin_box">
+        <van-field
+          value="{{ storeName }}"
+          class="p_0 input_value"
+          placeholder="请输入客服电话"
+          border="{{ false }}"
+          bind:change="storeNameChange"
+        />
+      </view>
+    </view>
+    <view class="item_container_box">
+      <view class="input_label">客服电话</view>
+      <view class="margin_box">
+        <van-field
+          value="{{ storeName }}"
+          class="p_0 input_value"
+          placeholder="请输入客服电话"
+          border="{{ false }}"
+          bind:change="storeNameChange"
+        />
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<!-- 编辑按钮 注：UI图设计是点击才可编辑信息 这里用切换遮罩显隐实现 -->
+<view class="edit_btn">
+  <view class='flex_btn_box' bindtap="isEditToggle" wx:if="{{isEdit===false}}">
+    <van-icon name="edit" />    
+    <text>点击编辑</text>
+  </view>
+
+  <view class='flex_btn_box' bindtap="isEditToggle" wx:else>
+    <van-icon name="success" />
+    <text>保存</text>
+  </view>
 </view>
