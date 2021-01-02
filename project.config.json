@@ -95,6 +95,12 @@
           "pathName": "pages/memberSys/memberSys",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/memberDetail/memberDetail",
+          "pathName": "pages/memberDetail/memberDetail",
+          "query": "",
+          "scene": null
         }
       ]
     }

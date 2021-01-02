@@ -8,7 +8,8 @@
     "pages/openMembership/openMembership",
     "pages/cardSys/cardSys",
     "pages/cardMaintain/cardMaintain",
-    "pages/memberSys/memberSys"
+    "pages/memberSys/memberSys",
+    "pages/memberDetail/memberDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

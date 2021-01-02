@@ -1,0 +1,61 @@
+<view class="memberDetail_container">
+  <view class="top_bg_box customer_detail_box">
+    <view class="member_number">
+      客户编号：KH1878
+    </view>
+    <view class="customer_item">
+      <view class="customer_img">
+        <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
+      </view>
+      <view class="customer_message">
+        <view class="name">
+          严敏
+          <text class="sex_text">男</text>
+        </view>
+        <view class="phone">1365214899</view>
+      </view>
+      <view class="member_tip">
+        <image class="img" src='{{ "../../assets/img/icon_member_tip.png"}}' />
+        <text class="text">会员</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="detail_message_box">
+    <view class="h2">会员卡详情</view>
+    <view class="card_box" style='background:#B70D0C'>
+      <view class="top_box">
+        <view class="card_name">2020属你最美</view>
+        <view class="card_status">正常</view>
+      </view>
+      <view class="card_number">LC088-DP001-20191231</view>
+    </view>
+    <view class="message_box">
+      <view class="flex_container_box">
+        <view class="label">充值：</view>
+        <view class="value">0</view>
+      </view>
+
+      <view class="flex_container_box">
+        <view class="label">赠送：</view>
+        <view class="value">0</view>
+      </view>
+
+      <view class="flex_container_box">
+        <view class="label">售卡方式：</view>
+        <view class="value">系统开单/股东赠卡</view>
+      </view>
+
+      <view class="flex_container_box">
+        <view class="label">售卡时间：</view>
+        <view class="value">2019-12-31 15:09:23</view>
+      </view>
+
+      <view class="flex_container_box">
+        <view class="label">过期时间</view>
+        <view class="value">2019-12-31 15:09:23</view>
+      </view>
+
+    </view>
+  </view>
+</view>
