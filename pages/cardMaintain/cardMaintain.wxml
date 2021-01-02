@@ -110,3 +110,7 @@
   </view>
 </view>
 
+<view class="delete_btn" wx:if="{{type === 'edit'}}">
+  删除
+</view>
+
