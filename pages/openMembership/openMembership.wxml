@@ -12,7 +12,7 @@
   <view class="card_list">
     <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
       <view class="card_item" wx:for="{{10}}">
-        <view class="card_item_box" style='background:rgba(166, 1, 0, 1)'>
+        <view class="card_item_box" style='background:rgba(166, 1, 0, 1)' bindtap="checkCard" data-id="1">
           <view class="left_container">
             <view class="card_message_box">
               <view class="name">红玫瑰卡</view>
@@ -32,3 +32,5 @@
     </scroll-view>
   </view>
 </view>
+
+<van-dialog id="van-dialog" />
