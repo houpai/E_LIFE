@@ -16,7 +16,7 @@ page {
 
 
 .customer_detail_box .customer_item{
-  height: 160rpx;
+  /* height: 160rpx; */
   border-radius: 6rpx;
   margin-bottom:40rpx;
   display: flex;
@@ -45,10 +45,10 @@ page {
 }
 
 .customer_detail_box .customer_item .customer_message .name {
-  font-size: 32rpx;
+  font-size: 14px;
   font-weight: 400;
   color: #fff;
-  line-height: 44rpx;
+  line-height: 22px;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -56,10 +56,10 @@ page {
 }
 
 .customer_detail_box .customer_item .customer_message .phone {
-  font-size: 28rpx;
+  font-size: 12px;
   font-weight: 400;
   color: #fff;
-  line-height: 40px;
+  line-height: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

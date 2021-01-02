@@ -146,7 +146,9 @@ page{
   line-height: 34rpx;
   background-color: #F15948;
   text-align: center;
-  border-radius: 16rpx;
-  margin-top:16rpx;
+  border-radius: 12rpx;
+  margin-top:10rpx;
+  padding:2px 4px;
+  display: inline-block;
 }
 
