@@ -1,0 +1,112 @@
+<view class="cardMaintain_container">
+  <view class="name_logo_box">
+    <view class="item_container_box">
+      <view class="input_label">会员卡名称</view>
+      <view class="margin_box">
+        <van-field
+          value="{{ cardName }}"
+          class="p_0 input_value"
+          placeholder="请输入会员卡名称"
+          border="{{ false }}"
+          bind:change="cardNameChange"
+        />
+      </view>
+    </view>
+
+    <view class="item_container_box flex_box">
+      <view class="left_box input_label">
+        <view>会员卡图片</view>
+        <view class="desc">建议尺寸为1035*381</view>
+      </view>
+      <view class="right_box">
+        <van-uploader
+          file-list="{{ fileList }}"
+          accept="image"
+          max-count="1"
+          bind:delete="deleteCardImg"
+          bind:after-read="cardImgload"
+        />
+      </view>
+    </view>
+  </view>
+
+  <view class="name_logo_box other_message_box">
+    <view class="item_container_box">
+      <view class="input_label">会员卡办卡价格</view>
+      <view class="margin_box">
+        <van-field
+          value="{{ priceValue }}"
+          class="p_0 input_value"
+          placeholder="请输入办卡价格"
+          border="{{ false }}"
+          bind:change="priceValueChange"
+        />
+      </view>
+    </view>
+    <view class="item_container_box">
+      <view class="input_label">会员卡实际价值（单位为积分）</view>
+      <view class="margin_box">
+        <van-field
+          value="{{ integralValue }}"
+          class="p_0 input_value"
+          placeholder="请输入会员卡实际价值"
+          border="{{ false }}"
+          bind:change="integralValueChange"
+        />
+      </view>
+    </view>
+
+    <view class="item_container_box">
+      <view class="input_label">分红值</view>
+      <view class="margin_box">
+        <van-field
+          value="{{ bonusValue }}"
+          class="p_0 input_value"
+          placeholder="请输入会员卡实际价值"
+          border="{{ false }}"
+          bind:change="bonusValueChange"
+        />
+      </view>
+    </view>
+
+  </view>
+
+  <view class="name_logo_box other_message_box">
+    <view class="item_container_box">
+      <view class="input_label">有效期</view>
+      <view class="margin_box">
+        <van-field
+          value="{{ validityValue }}"
+          class="p_0 input_value"
+          placeholder="请输入有效期"
+          border="{{ false }}"
+          bind:change="validityValueChange"
+        />
+      </view>
+    </view>
+  </view>
+
+  <!-- 遮罩层 -->
+  <view class="mask" wx:if="{{isEdit === false}}"></view>
+</view>
+
+<!-- 编辑按钮 注：UI图设计是点击才可编辑信息 这里用切换遮罩显隐实现 -->
+<view class="edit_btn" wx:if="{{type === 'edit'}}">
+  <view class='flex_btn_box' bindtap="isEditToggle" wx:if="{{isEdit===false}}">
+    <van-icon name="edit" />    
+    <text>点击编辑</text>
+  </view>
+
+  <view class='flex_btn_box' bindtap="isEditToggle" wx:else>
+    <van-icon name="success" />
+    <text>保存</text>
+  </view>
+</view>
+
+<view class="edit_btn" wx:if="{{type === 'add'}}">
+    <view class='flex_btn_box'>
+    <van-icon name="success" />
+    <text>提交保存</text>
+  </view>
+</view>
+

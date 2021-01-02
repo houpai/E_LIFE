@@ -3,7 +3,7 @@
     <view class="top_bg_box">
       <view class="top_bg_container">
         <view class="top_bg_title">本店会员卡</view>
-        <view class="add_card_btn">
+        <view class="add_card_btn" bindtap="addCard" data-type="add">
           <image src='{{ "../../assets/img/icon_add_btn.png"}}' class="img" />
           <text class="text">新增</text>
         </view>
@@ -35,7 +35,7 @@
           </view>
         </view>
         <view class="card_name_price">
-          <view class="card_name">
+          <view class="card_name" bindtap="addCard" data-type='edit'>
             红玫瑰卡
             <image class="edit_btn" src='{{ "../../assets/img/icon_edit_btn.png"}}' />
           </view>

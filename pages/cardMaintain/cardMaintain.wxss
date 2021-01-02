@@ -4,17 +4,24 @@ page{
 }
 
 page .van-uploader__upload {
-  background: #F2F2F2!important;
+  width: 292rpx!important;
+  height: 108rpx!important;
+  background: #F2F2F2;
   border-radius: 6rpx;
 }
 
-.storeSys_container {
+page .van-uploader__preview-image {
+  width: 292rpx!important;
+  height: 108rpx!important;
+}
+
+.cardMaintain_container {
   padding:40rpx 30rpx;
   box-sizing: border-box;
   position: relative;
 }
 
-.storeSys_container .mask{
+.cardMaintain_container .mask{
   position: absolute;
   left: 0;
   right: 0;
@@ -23,14 +30,14 @@ page .van-uploader__upload {
   z-index: 100;
 }
 
-.storeSys_container .name_logo_box .item_container_box, .storeSys_container .store_bg_box .item_container_box{
+.cardMaintain_container .name_logo_box .item_container_box, .cardMaintain_container .store_bg_box .item_container_box{
   box-sizing: border-box;
   padding:30rpx 0 16rpx 0;
   margin:0 30rpx;  
   border-radius: 6rpx;
   border-bottom:1px solid rgba(0, 0, 0, 0.1)
 }
-.storeSys_container .name_logo_box .item_container_box .margin_box {
+.cardMaintain_container .name_logo_box .item_container_box .margin_box {
   margin-top:20rpx;
 }
 
@@ -40,7 +47,7 @@ page .van-uploader__upload {
   padding-bottom:30rpx;
 }
 
-.storeSys_container .input_label {
+.cardMaintain_container .input_label {
   font-size: 32rpx;
   font-weight: bold;
   color: #333333;
@@ -61,11 +68,11 @@ page .van-uploader__upload {
   margin-top:12rpx;
 }
 
-.storeSys_container .store_bg_box{
+.cardMaintain_container .store_bg_box{
   margin-top:40rpx;
 }
 
-.storeSys_container .other_message_box {
+.cardMaintain_container .other_message_box {
   margin-top:40rpx;
 }
 

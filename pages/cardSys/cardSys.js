@@ -32,6 +32,13 @@ Page({
       // on cancel
     });
   },
+  addCard(e) {
+    let type = e.currentTarget.dataset['type']
+    let titleName = type === 'add' ? '新增会员卡':'编辑会员卡'
+    wx.navigateTo({
+      url: `/pages/cardMaintain/cardMaintain?titleName=${titleName}&type=${type}`
+    })
+  },
   onLoad: function () {
 
   },

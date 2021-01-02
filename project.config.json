@@ -81,6 +81,12 @@
         {
           "name": "pages/cardSys/cardSys",
           "pathName": "pages/cardSys/cardSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cardMaintain/cardMaintain",
+          "pathName": "pages/cardMaintain/cardMaintain",
           "scene": null
         }
       ]
