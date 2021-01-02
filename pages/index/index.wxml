@@ -50,7 +50,7 @@
     </view>
 
     <view class="menu_item_box">
-      <view class="mune_item card_sys">
+      <view class="mune_item card_sys"  data-menu="card_sys" bindtap="menuLink">
         <image class="img" src='{{ "../../assets/img/icon_member_card_sys.png"}}'/>
         <view class="menu_title">会员卡管理</view>
       </view>

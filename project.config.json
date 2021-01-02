@@ -75,6 +75,12 @@
         {
           "name": "pages/customerDetail/customerDetail",
           "pathName": "pages/customerDetail/customerDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cardSys/cardSys",
+          "pathName": "pages/cardSys/cardSys",
           "scene": null
         }
       ]
