@@ -110,7 +110,9 @@
   </view>
 </view>
 
-<view class="delete_btn" wx:if="{{type === 'edit'}}">
+<view class="delete_btn" wx:if="{{type === 'edit'}}" bindtap="deleteCard">
   删除
 </view>
+
+<van-dialog id="van-dialog" />
 

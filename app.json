@@ -7,7 +7,8 @@
     "pages/storeSys/storeSys",
     "pages/openMembership/openMembership",
     "pages/cardSys/cardSys",
-    "pages/cardMaintain/cardMaintain"
+    "pages/cardMaintain/cardMaintain",
+    "pages/memberSys/memberSys"
   ],
   "window":{
     "backgroundTextStyle":"light",

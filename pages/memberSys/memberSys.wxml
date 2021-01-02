@@ -1,0 +1,27 @@
+<view class="memberSys_container">
+  <view id="topContainer_box">
+    <view class="top_bg_box"></view>
+    <view class="search_box">
+      <van-search value="{{ searchValue }}" placeholder="名字、手机号搜索" bind:change="onChange" bind:search="onSearch"
+        use-action-slot>
+        <view slot="action" bind:tap="onSearch" class="search_btn">搜索</view>
+      </van-search>
+    </view>
+  </view>
+
+
+  <view class="customer_list_box">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+    <view class="customer_item" wx:for="{{10}}" bindtap="goCustomerDetail" data-menu="1">
+      <view class="customer_img">
+        <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
+      </view>
+      <view class="customer_message">
+        <view class="name">严敏</view>
+        <view class="phone">1365214899</view>
+      </view>
+      <van-icon name="arrow" class="right_icon" />
+    </view>
+   </scroll-view>
+  </view>
+</view>

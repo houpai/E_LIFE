@@ -54,7 +54,7 @@
         <image class="img" src='{{ "../../assets/img/icon_member_card_sys.png"}}'/>
         <view class="menu_title">会员卡管理</view>
       </view>
-      <view class="mune_item member_sys">
+      <view class="mune_item member_sys" data-menu="member_sys" bindtap="menuLink">
         <image class="img" src='{{ "../../assets/img/icon_member.png"}}'/>
         <view class="menu_title">会员管理</view>
       </view>
@@ -70,7 +70,10 @@
       </view>
       <view class="mune_item data_sys">
         <image class="img" src='{{ "../../assets/img/icon_data_sys.png"}}'/>
-        <view class="menu_title">业绩报表管理</view>
+        <view class="menu_title">
+          <view>业绩报表管理</view>
+          <view class="not_open">暂未开放</view>
+        </view>
       </view>
     </view>
   </view>

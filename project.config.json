@@ -87,6 +87,13 @@
         {
           "name": "pages/cardMaintain/cardMaintain",
           "pathName": "pages/cardMaintain/cardMaintain",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/memberSys/memberSys",
+          "pathName": "pages/memberSys/memberSys",
+          "query": "",
           "scene": null
         }
       ]
