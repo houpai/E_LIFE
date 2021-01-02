@@ -33,8 +33,9 @@ Page({
     console.log('password ===', this.data.password)
   },
   clearUserName() {
+    let userName = '';
     this.setData({
-      userName: ''
+      userName: userName
     })
   },
   loginSubmitHandle() {

@@ -11,6 +11,7 @@
         maxlength="10" 
         placeholder="请输入账号" 
         class="input" 
+        value="{{userName}}"
         bindinput="inputWatchUser"
       />
       <view class="btn_box">
