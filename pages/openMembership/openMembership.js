@@ -2,7 +2,9 @@ const app = getApp()
 
 Page({
   data: {
-    searchValue:''
+    searchValue: '',
+    height: '',
+    top: ""
   },
   onChange(e) {
     this.setData({
@@ -12,13 +14,24 @@ Page({
   onSearch() {
     console.log('search emit')
   },
-  goCustomerDetail(e) {
-    let customerId = e.currentTarget.dataset['id']
-    wx.navigateTo({
-      url: '/pages/customerDetail/customerDetail'
-    })
+  // 触底加载 分页逻辑
+  scrolltolower(e) {
+    console.log("滚动到底部", e);
   },
   onLoad: function () {
-    
-  }
+
+  },
+  onReady: function () {
+    var that = this;
+    wx.createSelectorQuery().select('#topContainer_box').boundingClientRect(function (rect) {
+      that.setData({
+        top: rect.top,
+      })
+    }).exec();
+    setTimeout(() => {
+      that.setData({
+        height: wx.getSystemInfoSync().windowHeight - that.data.top - 100
+      })
+    }, 1000)
+  },
 })

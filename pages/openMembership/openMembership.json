@@ -7,5 +7,6 @@
   "backgroundTextStyle": "light",
   "navigationBarTitleText": "选择会员卡",
   "navigationBarTextStyle": "white",
-  "backgroundColor": "#F2F2F2"
+  "backgroundColor": "#F2F2F2",
+  "disableScroll":true
 }
