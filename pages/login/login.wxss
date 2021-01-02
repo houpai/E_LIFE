@@ -50,6 +50,8 @@
   margin-left: 40rpx;
   flex: 1;
   width: 0;
+  height: 80rpx;
+  line-height: 80rpx;
 }
 
 .btn_box {

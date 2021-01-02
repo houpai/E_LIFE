@@ -11,14 +11,14 @@
         maxlength="10" 
         placeholder="请输入账号" 
         class="input" 
+        focus='{{userNameFocus}}'
         value="{{userName}}"
         bindinput="inputWatchUser"
       />
-      <view class="btn_box">
+      <view class="btn_box" bindtap="clearUserName">
         <image 
           src='{{ "../../assets/img/icon_delete.png"}}' 
-          wx:if="{{userName.length}}"
-          bindtap="clearUserName"
+          wx:if="{{userName}}"
           class='img' 
         />
       </view>
@@ -26,17 +26,30 @@
     <view class="input_item">
       <view class="input_label">密码:</view>
       <input 
-        password='{{passwordType}}' 
+        wx:if="{{passwordType}}"
+        type="password"
         maxlength="10"
         placeholder="请输入密码" 
         bindinput="inputWatchPassword"
+        focus='{{passwordFocus}}'
+        value="{{password}}"
         class="input"
       />
-      <view class="btn_box">
+      <input 
+        wx:else
+        type="text"
+        maxlength="10"
+        placeholder="请输入密码" 
+        focus='{{passwordFocus}}'
+        bindinput="inputWatchPassword"
+        value="{{password}}"
+        class="input"
+      />
+      <view class="btn_box" bindtap='eyeStatus'>
         <image 
           src='{{defaultType? "../../assets/img/icon_eye_close.png": "../../assets/img/icon_eye_open.png"}}' 
           class='img' 
-          bindtap='eyeStatus' />
+        />
       </view>
     </view>
   </view>

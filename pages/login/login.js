@@ -8,14 +8,17 @@ Page({
     passwordType:true,
     defaultType:true,
     userName:'',
-    password:''
+    password:'',
+    userNameFocus:false,
+    passwordFocus:false
   },
   eyeStatus: function () {
-    this.data.defaultType = !this.data.defaultType
-    this.data.passwordType = !this.data.passwordType
+    let defaultType = !this.data.defaultType
+    let passwordType = !this.data.passwordType
     this.setData({
-      defaultType: this.data.defaultType,
-      passwordType: this.data.passwordType
+      defaultType: defaultType,
+      passwordType: passwordType,
+      passwordFocus:true
     })
   },
   // 账号输入
@@ -35,7 +38,8 @@ Page({
   clearUserName() {
     let userName = '';
     this.setData({
-      userName: userName
+      userName: userName,
+      userNameFocus:true
     })
   },
   loginSubmitHandle() {

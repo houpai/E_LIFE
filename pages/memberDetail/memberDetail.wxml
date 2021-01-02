@@ -52,7 +52,7 @@
       </view>
 
       <view class="flex_container_box">
-        <view class="label">过期时间</view>
+        <view class="label">过期时间：</view>
         <view class="value">2019-12-31 15:09:23</view>
       </view>
 
