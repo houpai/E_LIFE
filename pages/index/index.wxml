@@ -80,7 +80,7 @@
 
 
   <view class="menu_box">
-    <view class="menu_item" data-menu="store_sys" bindtap="menuLink">
+    <view class="menu_item" data-menu="storeIndex" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/store_sys_btn.png"}}' />
       <view class="menu_title">店铺管理</view>
     </view>

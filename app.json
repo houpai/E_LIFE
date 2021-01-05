@@ -11,7 +11,8 @@
     "pages/memberSys/memberSys",
     "pages/memberDetail/memberDetail",
     "pages/setting/setting",
-    "pages/modifyPassword/modifyPassword"
+    "pages/modifyPassword/modifyPassword",
+    "pages/storeIndex/storeIndex"
   ],
   "window":{
     "backgroundTextStyle":"light",

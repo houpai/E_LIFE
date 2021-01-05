@@ -45,9 +45,9 @@ Page({
   menuLink(e) {
     let query = e.currentTarget.dataset['menu']
     console.log('query ===', query)
-    if (query === 'store_sys') {
+    if (query === 'storeIndex') {
       wx.navigateTo({
-        url: '/pages/storeSys/storeSys'
+        url: '/pages/storeIndex/storeIndex'
       })
     } else if (query === 'customer_sys') {
       wx.navigateTo({
@@ -57,7 +57,7 @@ Page({
       wx.navigateTo({
         url: '/pages/cardSys/cardSys'
       })
-    }else if(query === 'member_sys') {
+    } else if(query === 'member_sys') {
       wx.navigateTo({
         url: '/pages/memberSys/memberSys'
       })

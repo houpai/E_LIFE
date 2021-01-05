@@ -117,6 +117,18 @@
         {
           "name": "pages/modifyPassword/modifyPassword",
           "pathName": "pages/modifyPassword/modifyPassword",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/storeIndex/storeIndex",
+          "pathName": "pages/storeIndex/storeIndex",
           "scene": null
         }
       ]
