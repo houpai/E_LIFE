@@ -1,0 +1,10 @@
+<view class="setting_container">
+  <view class="modify_password" bindtap="modifyPassword">
+    <text class="text">修改密码</text>
+    <van-icon name="arrow" class="right_icon" />
+  </view>
+  <view class="logout_btn" bindtap="logout">
+    退出登录
+  </view>
+</view>
+

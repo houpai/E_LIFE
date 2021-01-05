@@ -62,5 +62,10 @@ Page({
         url: '/pages/memberSys/memberSys'
       })
     }
+  },
+  goSetting() {
+    wx.navigateTo({
+      url: '/pages/setting/setting'
+    })
   }
 })

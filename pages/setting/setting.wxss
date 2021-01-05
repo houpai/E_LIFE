@@ -1,0 +1,48 @@
+page {
+  background-color: #F2F2F2;
+  padding-bottom: 30rpx;
+}
+
+.setting_container {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+
+.modify_password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30rpx;
+  height: 104rpx;
+  background: #FFFFFF;
+  border-radius: 6rpx;
+  margin-bottom: 40rpx;
+}
+
+.modify_password .text {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333333;
+  line-height: 44rpx;
+}
+
+.logout_btn {
+  display: flex;
+  height: 104rpx;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 6rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #488FF1;
+  line-height: 44rpx;
+
+}
+
+.right_icon{
+  font-size: 40rpx;
+}

@@ -2,10 +2,10 @@
 <view class="index_container">
   <view class="index_banner">
     <view class="store_message_box">
-      <view class="store_name">
+      <view class="store_name" bindtap="goSetting">
         肯德基首创店
       </view>
-      <view class="store_logo">
+      <view class="store_logo" bindtap="goSetting">
         <image class="img"  src='{{ "../../assets/img/icon_store_logo.png"}}' />
       </view>
     </view>
