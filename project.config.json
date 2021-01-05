@@ -101,6 +101,11 @@
           "pathName": "pages/memberDetail/memberDetail",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "scene": null
         }
       ]
     }
