@@ -111,6 +111,12 @@
         {
           "name": "pages/setting/setting",
           "pathName": "pages/setting/setting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/modifyPassword/modifyPassword",
+          "pathName": "pages/modifyPassword/modifyPassword",
           "scene": null
         }
       ]

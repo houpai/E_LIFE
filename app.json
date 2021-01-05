@@ -10,7 +10,8 @@
     "pages/cardMaintain/cardMaintain",
     "pages/memberSys/memberSys",
     "pages/memberDetail/memberDetail",
-    "pages/setting/setting"
+    "pages/setting/setting",
+    "pages/modifyPassword/modifyPassword"
   ],
   "window":{
     "backgroundTextStyle":"light",
