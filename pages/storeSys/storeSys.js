@@ -9,7 +9,17 @@ Page({
     addressValue:'',
     fileList:[],
     fileListBg:[],
-    isEdit:false
+    isEdit:false,
+    storeType:'',
+    show: false,
+    actions: [
+      {
+        name: '选项1',
+      },
+      {
+        name: '选项2',
+      },
+    ],
   },
   storeNameChange(e) {
     this.setData({
@@ -55,6 +65,16 @@ Page({
     this.setData({
       isEdit:isEdit
     })
+  },
+  openStoreTypeSelectDialog() {
+    this.setData({ show: true });
+  },
+  onClose() {
+    this.setData({ show: false });
+  },
+
+  onSelect(event) {
+    console.log('storeType === ', event.detail);
   },
   onLoad: function () {
 

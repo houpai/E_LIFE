@@ -32,6 +32,7 @@ page .van-uploader__upload {
 }
 .storeSys_container .name_logo_box .item_container_box .margin_box {
   margin-top:20rpx;
+  color: rgba(51, 51, 51, 1);
 }
 
  .name_logo_box, .store_bg_box, .item_container_box {
@@ -91,15 +92,39 @@ page .van-uploader__upload {
 }
 
 .edit_btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:30rpx;
-  height: 88rpx;
+  /* height: 200rpx; */
   background: #FFFFFF;
   border-radius: 6rpx;
   font-size: 28rpx;
   font-weight: 400;
   color: #488FF1;
   line-height: 40rpx;
+  box-sizing:border-box ;
+  padding:30rpx;
+}
+
+.edit_btn .flex_btn_box {
+  width: 100%;
+  background: #488FF1;
+  border-radius: 6rpx;
+  height: 88rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 44px;
+}
+
+.right_icon {
+  font-size:36rpx;
+}
+
+page .van-field__input--disabled {
+  color: rgba(51, 51, 51, 1);
 }

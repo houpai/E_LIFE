@@ -129,6 +129,12 @@
         {
           "name": "pages/storeIndex/storeIndex",
           "pathName": "pages/storeIndex/storeIndex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/storeSys/storeSys",
+          "pathName": "pages/storeSys/storeSys",
           "scene": null
         }
       ]
