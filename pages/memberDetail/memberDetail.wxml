@@ -26,7 +26,10 @@
     <view class="card_box" style='background:#B70D0C'>
       <view class="top_box">
         <view class="card_name">2020属你最美</view>
-        <view class="card_status">正常</view>
+        <view class="card_status">
+          正常
+          <text class="integral">230积分</text>
+        </view>
       </view>
       <view class="card_number">LC088-DP001-20191231</view>
     </view>
@@ -55,7 +58,9 @@
         <view class="label">过期时间：</view>
         <view class="value">2019-12-31 15:09:23</view>
       </view>
-
     </view>
+
+
+    <view class="renew_btn">会员卡续费</view>
   </view>
 </view>
