@@ -17,10 +17,14 @@
         <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
       </view>
       <view class="customer_message">
-        <view class="name">严敏</view>
-        <view class="phone">1365214899</view>
+        <view class="nameAndPhone">严敏-1365214899</view>
+        <view class="card_message">
+          <text class="card_type">玫瑰红卡</text>
+          <text class="card_state_normal">正常</text>
+        </view>
+        <view class="card_number">卡号：LC088-DP001-20191</view>
+        <view class="balance">余额：198</view>
       </view>
-      <van-icon name="arrow" class="right_icon" />
     </view>
    </scroll-view>
   </view>

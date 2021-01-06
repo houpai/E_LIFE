@@ -57,12 +57,12 @@
     </view>
 
     <view class="item_container_box">
-      <view class="input_label">分红值</view>
+      <view class="input_label">毛利率（单位为“%”）</view>
       <view class="margin_box">
         <van-field
           value="{{ bonusValue }}"
           class="p_0 input_value"
-          placeholder="请输入会员卡实际价值"
+          placeholder="请设置分红值"
           border="{{ false }}"
           bind:change="bonusValueChange"
         />
@@ -73,41 +73,22 @@
 
   <view class="name_logo_box other_message_box">
     <view class="item_container_box">
-      <view class="input_label">有效期</view>
+      <view class="input_label">有效期（单位为“月”）</view>
       <view class="margin_box">
         <van-field
           value="{{ validityValue }}"
           class="p_0 input_value"
-          placeholder="请输入有效期"
+          placeholder="请设置有效期"
           border="{{ false }}"
           bind:change="validityValueChange"
         />
       </view>
     </view>
   </view>
-
-  <!-- 遮罩层 -->
-  <view class="mask" wx:if="{{isEdit === false}}"></view>
 </view>
 
-<!-- 编辑按钮 注：UI图设计是点击才可编辑信息 这里用切换遮罩显隐实现 -->
-<view class="edit_btn" wx:if="{{type === 'edit'}}">
-  <view class='flex_btn_box' bindtap="isEditToggle" wx:if="{{isEdit===false}}">
-    <van-icon name="edit" />    
-    <text>点击编辑</text>
-  </view>
-
-  <view class='flex_btn_box' bindtap="isEditToggle" wx:else>
-    <van-icon name="success" />
-    <text>保存</text>
-  </view>
-</view>
-
-<view class="edit_btn" wx:if="{{type === 'add'}}">
-    <view class='flex_btn_box'>
-    <van-icon name="success" />
-    <text>提交保存</text>
-  </view>
+<view class="edit_btn">
+  保存
 </view>
 
 <view class="delete_btn" wx:if="{{type === 'edit'}}" bindtap="deleteCard">

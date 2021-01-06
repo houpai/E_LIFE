@@ -11,7 +11,6 @@ Page({
     fileList: [], // 会员卡图片
     bonusValue: '', // 分红值
     validityValue: '', // 有效期
-    isEdit: false,
     type: 'add' // 新增/编辑
   },
   cardNameChange(e) {
