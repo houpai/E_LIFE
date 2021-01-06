@@ -14,7 +14,9 @@
     "pages/modifyPassword/modifyPassword",
     "pages/storeIndex/storeIndex",
     "pages/staffSys/staffSys",
-    "pages/staffDetail/staffDetail"
+    "pages/staffDetail/staffDetail",
+    "pages/shareholderSys/shareholderSys",
+    "pages/shareholderDetail/shareholderDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -65,6 +65,10 @@ Page({
       wx.navigateTo({
         url: '/pages/staffSys/staffSys'
       })
+    }else if(query === 'shareholder_sys') {
+      wx.navigateTo({
+        url: '/pages/shareholderSys/shareholderSys'
+      })
     }
   },
   goSetting() {

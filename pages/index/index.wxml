@@ -114,7 +114,7 @@
       <image class="img" src='{{ "../../assets/img/staff_sys_btn.png"}}' data-menu="staff_sys" bindtap="menuLink" />
       <view class="menu_title">员工管理</view>
     </view>
-    <view class="menu_item">
+    <view class="menu_item" data-menu="shareholder_sys" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/shareholder_sys_btn.png"}}' />
       <view class="menu_title">股东管理</view>
     </view>
