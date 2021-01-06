@@ -11,21 +11,49 @@ Page({
     fileListBg:[],
     isEdit:false,
     storeType:'',
-    show: false,
+    show: true,
     actions: [
       {
-        name: '类型1',
-        id:1
+        name: '美容美化',
+        id:1,
+        children:[
+          {
+            name: '美容',
+            id:1,
+          },
+          {
+            name: '美化',
+            id:1,
+          },
+          {
+            name: '面部护理',
+            id:1,
+          }
+        ]
       },
       {
-        name: '类型2',
-        id:2
-      },
-      {
-        name: '类型3',
-        id:3
-      },
+        name: '餐饮',
+        id:2,
+        children:[
+          {
+            name: '自助餐',
+            id:1,
+          },
+          {
+            name: '火锅',
+            id:1,
+          },
+          {
+            name: '烧烤',
+            id:1,
+          }
+        ]
+      }
     ],
+    firstType:'',
+    secondType:"",
+    firstShow:true,
+    subActions:[]
   },
   storeNameChange(e) {
     this.setData({
@@ -78,16 +106,32 @@ Page({
   onClose() {
     this.setData({ show: false });
   },
-
-  onSelect(event) {
-    console.log('storeType === ', event.detail);
-    this.setData({
-      storeType:event.detail.name
-    })
-  },
-  setStoreType() {
+  setStoreTypeDialogShow() {
     this.setData({
       show:true
+    })
+  },
+  selectType(e) {
+    let chooseItem = e.currentTarget.dataset.item;
+    this.setData({
+      firstType:chooseItem.name,
+      subActions:chooseItem.children,
+      firstShow:false
+    })
+  },
+  selectSecondType(e) {
+    let chooseItem = e.currentTarget.dataset.item;
+    this.setData({
+      secondType:chooseItem.name,
+      firstShow:true,
+      show:false,
+      storeType:this.data.firstType + '-' + chooseItem.name
+    })
+  },
+
+  selectFirstTypeShow() {
+    this.setData({
+      firstShow:true
     })
   },
   onLoad: function () {
