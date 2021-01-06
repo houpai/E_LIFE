@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-dialog": "@vant/weapp/dialog/index"
+  },
+  "navigationBarBackgroundColor": "#488FF1",
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "员工详情",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#F2F2F2"
+}

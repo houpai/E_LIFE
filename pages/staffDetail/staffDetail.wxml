@@ -1,0 +1,90 @@
+<view class="customerDetail_container">
+  <view class="top_bg_box customer_detail_box">
+    <view class="customer_item">
+      <view class="customer_img">
+        <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
+      </view>
+      <view class="customer_message">
+        <view class="name">
+          严敏
+          <text class="sex_text">男</text>
+        </view>
+        <view class="phone">1365214899</view>
+      </view>
+      <view class="open_btn" wx:if="{{isMember === false}}" bindtap="stopUseUse">停用</view>
+      <view class="member_tip" wx:else>
+        <image class="img" src='{{ "../../assets/img/icon_member_tip.png"}}' />
+        <text class="text">会员</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="detail_message_box">
+    <view class="h2">基本信息</view>
+    <view class="message_box">
+      <view class="message_item_box">
+        <view class="label">工　　种：</view>
+        <view class="value">前台</view>
+      </view>
+      <view class="message_item_box marginBottom0">
+        <view class="label">添加时间：</view>
+        <view class="value">2020-09-09 09:00:00</view>
+      </view>
+    </view>
+    <view class="h2">办卡信息</view>
+    <view class="message_box">
+      <view class="message_item_box">
+        <view class="label">办卡数量：</view>
+        <view class="value blue">199</view>
+      </view>
+      <view class="message_item_box marginBottom0">
+        <view class="label">办卡金额：</view>
+        <view class="value red">199</view>
+      </view>
+    </view>
+
+    <view class="h2 flex_h2">
+      分红信息
+      <view class="edit_text" bindtap="settBonus">
+        <van-icon name="edit" class="edit_icon" />
+        编辑
+      </view>
+    </view>
+    <view class="message_box">
+      <view class="message_item_box">
+        <view class="label">分红级别：</view>
+        <view class="value">一级</view>
+      </view>
+      <view class="message_item_box marginBottom0 flex_item_box">
+        <view class="flex_item_box">
+          <view class="label">分红数值：</view>
+          <view class="value">1039</view>
+        </view>
+        <view class="detail_btn">
+          查看详情
+          <van-icon name="arrow" class="right_icon"/>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<van-action-sheet show="{{ show }}" title="分红设置" bind:close="onClose">
+  <view class="actions_box">
+    <view class="actions_item" wx:for="{{actions}}" wx:for-item="item" wx:for-index="id" data-item="{{item}}"
+      bindtap="selectBonus">
+      {{item.name}} <text class="text">{{item.per}}</text>
+    </view>
+  </view>
+</van-action-sheet>
+
+
+<van-dialog use-slot show="{{ dialogShow }}" showConfirmButton="{{false}}" bind:close="onClose">
+  <view class="dialog_box">
+    <view class="dialog_title">您确定要停用该员工的权限吗？</view>
+    <view class="dialog_btn_box">
+      <view class="cancel_btn" bindtap="closeDialog">取消</view>
+      <view class="submit_btn">停用</view>
+    </view>
+  </view>
+</van-dialog>

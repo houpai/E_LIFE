@@ -13,7 +13,8 @@
     "pages/setting/setting",
     "pages/modifyPassword/modifyPassword",
     "pages/storeIndex/storeIndex",
-    "pages/staffSys/staffSys"
+    "pages/staffSys/staffSys",
+    "pages/staffDetail/staffDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

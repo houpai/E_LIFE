@@ -15,9 +15,9 @@ Page({
     console.log('search emit')
   },
   goCustomerDetail(e) {
-    let customerId = e.currentTarget.dataset['id']
+    let staffId = e.currentTarget.dataset['id']
     wx.navigateTo({
-      url: '/pages/memberDetail/memberDetail'
+      url: '/pages/staffDetail/staffDetail'
     })
   },
   onLoad: function () {

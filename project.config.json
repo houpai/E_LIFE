@@ -141,6 +141,12 @@
         {
           "name": "pages/staffSys/staffSys",
           "pathName": "pages/staffSys/staffSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/staffDetail/staffDetail",
+          "pathName": "pages/staffDetail/staffDetail",
           "scene": null
         }
       ]
