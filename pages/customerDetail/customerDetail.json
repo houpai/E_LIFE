@@ -1,7 +1,9 @@
 {
   "usingComponents": {
     "van-search": "@vant/weapp/search/index",
-    "van-icon": "@vant/weapp/icon/index"
+    "van-icon": "@vant/weapp/icon/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
   },
   "navigationBarBackgroundColor": "#488FF1",
   "backgroundTextStyle": "light",

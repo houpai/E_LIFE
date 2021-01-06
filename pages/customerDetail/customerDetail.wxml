@@ -2,7 +2,7 @@
   <view class="top_bg_box customer_detail_box">
     <view class="customer_item">
       <view class="customer_img">
-        <image class="img"  src='{{ "../../assets/img/icon_customer.png"}}' />
+        <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
       </view>
       <view class="customer_message">
         <view class="name">
@@ -13,7 +13,7 @@
       </view>
       <view class="open_btn" wx:if="{{isMember === false}}" bindtap="openMembership">开通会员卡</view>
       <view class="member_tip" wx:else>
-        <image class="img"  src='{{ "../../assets/img/icon_member_tip.png"}}' />
+        <image class="img" src='{{ "../../assets/img/icon_member_tip.png"}}' />
         <text class="text">会员</text>
       </view>
     </view>
@@ -39,4 +39,35 @@
       </view>
     </view>
   </view>
+
+
+  <view class="setting_box">
+    <view class="setting_item">
+      <view class="setting_label">设为股东</view>
+      <van-switch checked="{{ is_shareholder }}" size="24px" bind:change="isShareholderChange" />
+    </view>
+
+    <view class="setting_item marginBottom0">
+      <view class="setting_label">设为员工</view>
+      <van-switch checked="{{ is_member }}" size="24px" bind:change="isMemberChange" />
+    </view>
+  </view>
+
 </view>
+
+
+
+<van-action-sheet show="{{ show }}" title="分红设置" bind:close="onClose">
+  <view class="actions_box">
+    <view 
+      class="actions_item" 
+      wx:for="{{actions}}" 
+      wx:for-item="item" 
+      wx:for-index="id" 
+      data-item="{{item}}"
+      bindtap="selectBonus"
+    >
+     {{item.name}} <text class="text">{{item.per}}</text>
+    </view>
+  </view>
+</van-action-sheet>
