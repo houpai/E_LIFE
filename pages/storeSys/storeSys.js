@@ -14,10 +14,16 @@ Page({
     show: false,
     actions: [
       {
-        name: '选项1',
+        name: '类型1',
+        id:1
       },
       {
-        name: '选项2',
+        name: '类型2',
+        id:2
+      },
+      {
+        name: '类型3',
+        id:3
       },
     ],
   },
@@ -75,6 +81,14 @@ Page({
 
   onSelect(event) {
     console.log('storeType === ', event.detail);
+    this.setData({
+      storeType:event.detail.name
+    })
+  },
+  setStoreType() {
+    this.setData({
+      show:true
+    })
   },
   onLoad: function () {
 

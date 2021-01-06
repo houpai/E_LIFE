@@ -34,7 +34,7 @@
   <view class="name_logo_box other_message_box">
     <view class="item_container_box">
       <view class="input_label">店铺类型</view>
-      <view class="margin_box">
+      <view class="margin_box" bindtap="setStoreType">
         <van-field value="{{ storeType }}" disabled class="p_0 input_value" placeholder="请选择店铺类型" border="{{ false }}"
           bind:change="telValueChange">
           <view slot="button">
@@ -53,7 +53,7 @@
     <view class="item_container_box">
       <view class="input_label">店铺地址</view>
       <view class="margin_box">
-        <van-field value="{{ addressValue }}" class="p_0 input_value" placeholder="请输入客服电话" border="{{ false }}"
+        <van-field value="{{ addressValue }}" class="p_0 input_value" placeholder="请输入店铺地址" border="{{ false }}"
           bind:change="addressValueChange" />
       </view>
     </view>
