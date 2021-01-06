@@ -11,7 +11,7 @@ Page({
     fileListBg:[],
     isEdit:false,
     storeType:'',
-    show: true,
+    show: false,
     actions: [
       {
         name: '美容美化',

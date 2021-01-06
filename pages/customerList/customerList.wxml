@@ -15,12 +15,15 @@
     <view class="customer_item" wx:for="{{10}}" bindtap="goCustomerDetail" data-menu="1">
       <view class="customer_img">
         <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
+        <image class="is_member_tip" src='{{ "../../assets/img/is_member.png"}}' />
       </view>
       <view class="customer_message">
-        <view class="name">严敏</view>
-        <view class="phone">1365214899</view>
+        <view class="nameAndPhone">严敏-1365214899</view>
+        <view class="source_message_box">
+          <text class="source">门店二维码</text>
+          <text class="time">2020-09-09</text>
+        </view>
       </view>
-      <van-icon name="arrow" class="right_icon" />
     </view>
    </scroll-view>
   </view>

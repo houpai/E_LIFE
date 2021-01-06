@@ -72,11 +72,23 @@ page {
 
 .customer_list_box .customer_item .customer_img {
   flex-shrink: 0;
+  position: relative;
+}
+
+.customer_list_box .customer_item .customer_img .is_member_tip {
+  position: absolute;
+  top:-25rpx;
+  right: 0;
+  z-index: 1;
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
 }
 
 .customer_list_box .customer_item .customer_img .img {
   width: 96rpx;
   height: 96rpx;
+  border-radius: 50%;
 }
 
 .customer_list_box .customer_item .customer_message {
@@ -89,7 +101,7 @@ page {
   margin-left: 30rpx;
 }
 
-.customer_list_box .customer_item .customer_message .name {
+.customer_list_box .customer_item .customer_message .nameAndPhone {
   font-size: 32rpx;
   font-weight: 400;
   color: #333333;
@@ -100,14 +112,14 @@ page {
   text-overflow: ellipsis;
 }
 
-.customer_list_box .customer_item .customer_message .phone {
+.customer_list_box .customer_item .customer_message .source_message_box {
   font-size: 24rpx;
   font-weight: 400;
   color: #999999;
   line-height: 40rpx;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .right_icon{
