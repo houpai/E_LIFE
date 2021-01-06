@@ -57,9 +57,13 @@ Page({
       wx.navigateTo({
         url: '/pages/cardSys/cardSys'
       })
-    } else if(query === 'member_sys') {
+    } else if (query === 'member_sys') {
       wx.navigateTo({
         url: '/pages/memberSys/memberSys'
+      })
+    } else if (query === 'staff_sys') {
+      wx.navigateTo({
+        url: '/pages/staffSys/staffSys'
       })
     }
   },

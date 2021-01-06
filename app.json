@@ -12,7 +12,8 @@
     "pages/memberDetail/memberDetail",
     "pages/setting/setting",
     "pages/modifyPassword/modifyPassword",
-    "pages/storeIndex/storeIndex"
+    "pages/storeIndex/storeIndex",
+    "pages/staffSys/staffSys"
   ],
   "window":{
     "backgroundTextStyle":"light",

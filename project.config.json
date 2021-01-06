@@ -135,6 +135,12 @@
         {
           "name": "pages/storeSys/storeSys",
           "pathName": "pages/storeSys/storeSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/staffSys/staffSys",
+          "pathName": "pages/staffSys/staffSys",
           "scene": null
         }
       ]
