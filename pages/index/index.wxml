@@ -84,11 +84,11 @@
       <image class="img" src='{{ "../../assets/img/store_sys_btn.png"}}' />
       <view class="menu_title">店铺管理</view>
     </view>
-    <view class="menu_item">
+    <view class="menu_item" data-menu="coupon" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/scan_code_btn.png"}}' />
       <view class="menu_title">扫码消券</view>
     </view>
-    <view class="menu_item">
+    <view class="menu_item" data-menu="wallet" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/wallet_btn.png"}}' />
       <view class="menu_title">工券钱包</view>
     </view>

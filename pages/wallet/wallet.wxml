@@ -1,0 +1,22 @@
+<view class="wallet_container">
+  <view class="wallet_banner">
+    <view class="details_btn" bindtap="goCashOutDetail">交易明细</view>
+  </view>
+
+  <view class="wallet_box">
+    <view class="wallet_title">我的余额</view>
+    <view class="wallet_detail_box">
+      <view class="surplus">938</view>
+      <view class="unit">工券</view>
+    </view>
+    <view class="wallet_tip">1.兑换比例：1工券=1元</view>
+    <view class="wallet_tip">2.每天提现限额为5000工券</view>
+  </view>
+
+
+  <view class="btn cash_out_btn">提现</view>
+  <view class="btn recharge_btn">充值</view>
+
+
+</view>
+

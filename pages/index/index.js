@@ -65,9 +65,17 @@ Page({
       wx.navigateTo({
         url: '/pages/staffSys/staffSys'
       })
-    }else if(query === 'shareholder_sys') {
+    } else if (query === 'shareholder_sys') {
       wx.navigateTo({
         url: '/pages/shareholderSys/shareholderSys'
+      })
+    } else if(query === 'coupon') {
+      wx.navigateTo({
+        url: '/pages/coupon/coupon'
+      })
+    }else if(query === 'wallet') {
+      wx.navigateTo({
+        url: '/pages/wallet/wallet'
       })
     }
   },

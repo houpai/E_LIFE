@@ -1,0 +1,19 @@
+<view class="recharge_container">
+  <view class="recharge_box">
+    <view class="recharge_title">充值金额</view>
+    <view class="value_box">
+      <view class="money_icon">¥</view>
+      <van-field 
+        value="{{ value }}"  
+        type="number" 
+        placeholder="请输入金额" 
+        border="{{ false }}" 
+        bind:change="onChange"
+        class="input" 
+      />
+    </view>
+    <view class="charge_tip">1元等于1工券</view>
+
+    <view class="submit_btn">提现</view>
+  </view>
+</view>

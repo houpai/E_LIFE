@@ -1,0 +1,14 @@
+<view class="cashOutDetail_container">
+  <scroll-view scroll-y='true' style="height:{{height - 40}}px;" bindscrolltolower='lower' class="scroll_box">
+    <view wx:for="{{lists}}" wx:key="index" class="list_item">
+      <view class="left">
+        <view class="action_name">{{index % 2 === 0 ? '充值' : '体现'}}</view>
+        <view class="action_date">2020.19.19 10:10:10</view>
+      </view>
+      <view class="detail {{index % 2 ? 'blue' : 'red' }}">
+        {{index % 2 === 0 ? '+923工券' : '-923工券'}}
+      </view>
+    </view>
+    <view class="noResult_tip" wx:if="{{isFinish}}">没有更多了</view>
+  </scroll-view>
+</view>

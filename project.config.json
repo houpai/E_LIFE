@@ -165,6 +165,24 @@
         {
           "name": "pages/coupon/coupon",
           "pathName": "pages/coupon/coupon",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wallet/wallet",
+          "pathName": "pages/wallet/wallet",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cashOutDetail/cashOutDetail",
+          "pathName": "pages/cashOutDetail/cashOutDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/recharge/recharge",
+          "pathName": "pages/recharge/recharge",
           "scene": null
         }
       ]
