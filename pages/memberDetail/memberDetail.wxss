@@ -235,7 +235,7 @@ page {
 }
 
 page .renew_input .van-field__input{
-  min-height: var(--cell-line-height,72rpx);
+  min-height: 72rpx;
   background:rgba(242, 242, 242, 1);
   padding:0 24rpx;
   border-radius: 6px;

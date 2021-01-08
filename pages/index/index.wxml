@@ -110,8 +110,8 @@
       <image class="img" src='{{ "../../assets/img/goods_sys_btn.png"}}' />
       <view class="menu_title">商品管理</view>
     </view>
-    <view class="menu_item">
-      <image class="img" src='{{ "../../assets/img/staff_sys_btn.png"}}' data-menu="staff_sys" bindtap="menuLink" />
+    <view class="menu_item" data-menu="staff_sys" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/staff_sys_btn.png"}}' />
       <view class="menu_title">员工管理</view>
     </view>
     <view class="menu_item" data-menu="shareholder_sys" bindtap="menuLink">
