@@ -17,7 +17,8 @@
     "pages/staffDetail/staffDetail",
     "pages/shareholderSys/shareholderSys",
     "pages/shareholderDetail/shareholderDetail",
-    "pages/store/store"
+    "pages/store/store",
+    "pages/coupon/coupon"
   ],
   "window":{
     "backgroundTextStyle":"light",

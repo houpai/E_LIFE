@@ -1,0 +1,177 @@
+.coupon_container {
+  font-size: 24rpx;
+  margin: 40rpx 30rpx;
+}
+
+.coupon_container .coupon_list .coupon_item_box {
+  min-height: 240rpx;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30rpx;
+}
+
+.coupon_container .coupon_list .coupon_item_box .detail_message_box {
+  display: flex;
+  padding:30rpx;
+  width: 100%;
+}
+
+.coupon_container .coupon_list .coupon_item_box .detail_message_box .price {
+  flex-shrink: 0;
+  padding:0 60rpx 30rpx 60rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120rpx;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.coupon_container .coupon_list .coupon_item_box .detail_message_box .original_price {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999999;
+  line-height: 40rpx;
+  text-decoration: line-through;
+
+}
+
+.coupon_container .coupon_list .coupon_item_box .detail_message_box .price .per {
+  font-size: 40rpx;
+  font-weight: 500;
+  color: #FC302C;
+  line-height: 56rpx;
+}
+
+.coupon_container .coupon_list .coupon_item_box .detail_message_box .price .company {
+  font-size: 24rpx;
+  font-weight: 500;
+  line-height: 40rpx;
+}
+
+.coupon_container .coupon_list .detail_message_box .name_box {
+  flex: 1;
+  width: 0;
+  flex-shrink: 0;
+  padding:0 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:0 30rpx 30rpx 30rpx;
+  height: 180rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.coupon_container .coupon_list .detail_message_box .name_box .img {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 116rpx;
+  height: 152rpx;
+}
+
+.coupon_container .coupon_list .detail_message_box .name_box .name {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+  line-height: 40rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.coupon_container .coupon_list .detail_message_box .name_box .date {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #999999;
+  line-height: 34rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .coupon_container .coupon_list .coupon_item_box .detail_desc_box {
+  
+} */
+
+
+.submit_btn_box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding:30rpx 30rpx 60rpx 30rpx;
+  box-sizing: border-box;
+  background:#fff;
+  z-index: 2;
+}
+
+.submit_btn_box .submit_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  height: 88rpx;
+  background: #488FF1;
+  border-radius: 6rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+page  .van-collapse-item__title .item-index--van-cell {
+  background-color:rgba(244, 244, 244, 1);
+  color: rgba(153, 153, 153, 1);
+}
+
+
+.dialog_btn_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:20rpx 0 0 0;
+}
+
+.dialog_btn_box .cancel_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 172rpx;
+  height: 56rpx;
+  border-radius: 6rpx;
+  border: 1px solid #488FF1;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #488FF1;
+  margin-right: 15rpx;
+}
+
+.dialog_btn_box .submit_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 172rpx;
+  height: 56rpx;
+  border-radius: 6rpx;
+  background:rgba(72, 143, 241, 1);
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #fff;
+  margin-left: 15rpx;
+}
+
+.dialog_title  {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333333;
+  line-height: 44rpx;
+  text-align: center;
+  padding:40rpx 0;
+}
+
+.dialog_box {
+  padding:40rpx;
+}

@@ -1,0 +1,47 @@
+<view class="coupon_container">
+  <view class="coupon_list">
+    <view class="coupon_item_box">
+      <view class="detail_message_box">
+        <view class="price">
+          <view class="per">
+            <text>30</text>
+            <text class="company">积分</text>
+          </view>
+          <view class="original_price">
+            ¥100元
+          </view>
+        </view>
+        <view class="name_box">
+          <view class="name">名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称名称</view>
+          <view class="date">有效期：2020.09.09-2020.10.10</view>
+          <image class="img" src='{{ "../../assets/img/bg_hand.png"}}' />
+        </view>
+      </view>
+      <view class="detail_desc_box">
+        <van-collapse value="{{ activeNames }}" bind:change="onChange">
+          <van-collapse-item title="使用说明：巴拉巴拉巴拉" name="1">
+            巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
+          </van-collapse-item>
+        </van-collapse>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="submit_btn_box">
+  <view class="submit_btn" bindtap="submitHandle">
+    消券
+  </view>
+</view>
+
+
+<van-dialog use-slot show="{{ dialogShow }}" showConfirmButton="{{false}}" bind:close="onClose">
+  <view class="dialog_box">
+    <view class="dialog_title">您确定要消费该优惠券吗？</view>
+    <view class="dialog_btn_box">
+      <view class="cancel_btn" bindtap="closeDialog">取消</view>
+      <view class="submit_btn">消券</view>
+    </view>
+  </view>
+</van-dialog>

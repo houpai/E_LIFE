@@ -159,6 +159,12 @@
         {
           "name": "pages/store/store",
           "pathName": "pages/store/store",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/coupon/coupon",
+          "pathName": "pages/coupon/coupon",
           "scene": null
         }
       ]
