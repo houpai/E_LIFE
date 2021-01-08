@@ -91,3 +91,33 @@
   background: #488FF1;
   border-radius: 6rpx;
 }
+
+
+.loginType_btn_box {
+  text-align: center;
+}
+
+.loginType_change_btn {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #488FF1;
+  line-height: 44rpx;
+}
+
+.sendCode_btn {
+  width: 180rpx;
+  height: 56rpx;
+  border-radius: 6rpx;
+  border: 1px solid #488FF1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #488FF1;
+}
+
+.disabled_send_btn {
+  color: #CCCCCC!important;
+  border: 1px solid #CCCCCC!important;
+}

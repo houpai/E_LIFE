@@ -10,7 +10,10 @@ Page({
     userName:'',
     password:'',
     userNameFocus:false,
-    passwordFocus:false
+    passwordFocus:false, // 是否是账号密码登录
+    passwordLogin:true,
+    count:0,
+    codeTimer:null
   },
   eyeStatus: function () {
     let defaultType = !this.data.defaultType
@@ -47,6 +50,32 @@ Page({
     wx.navigateTo({
       url: '/pages/index/index'
     })
+  },
+
+  loginTypeChange() {
+    let passwordLogin = !this.data.passwordLogin;
+    let loginBannerBg = passwordLogin ? loginBg.loginBg : loginBg.loginBg2
+    this.setData({
+      passwordLogin:passwordLogin,
+      loginBannerBg:loginBannerBg
+    })
+  },
+  sendCode() {
+    if(this.data.count >=  1) return false;
+    clearInterval(this.data.codeTimer);
+    this.setData({
+      count:60
+    })
+    this.codeTimer = setInterval(()=> {
+      let count = this.data.count;
+      count--;
+      this.setData({
+        count: count
+      })
+      if( count <= 1) {
+        clearInterval(this.data.codeTimer)
+      }
+    },1000)
   },
   onLoad: function () {
 
