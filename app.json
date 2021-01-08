@@ -16,7 +16,8 @@
     "pages/staffSys/staffSys",
     "pages/staffDetail/staffDetail",
     "pages/shareholderSys/shareholderSys",
-    "pages/shareholderDetail/shareholderDetail"
+    "pages/shareholderDetail/shareholderDetail",
+    "pages/store/store"
   ],
   "window":{
     "backgroundTextStyle":"light",

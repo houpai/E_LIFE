@@ -1,0 +1,27 @@
+<view class="storeIndex_container">
+  <navBar titleText="{{'选择会员卡'}}"></navBar>
+  <view class="store_bg">
+    <image src="{{'https://houpai-1259269309.cos.ap-beijing.myqcloud.com/kfc2.jfif'}}" />
+  </view>
+
+
+  <view class="store_message_box">
+    <view class="name_logo">
+      <view class="left"><image class="img" src='{{ "../../assets/img/icon_store_logo.png"}}' /></view>
+      <view class="right">
+        <view class="store_name">肯德基首创店</view>
+        <view class="phone">客服电话：18240490876</view>
+        <view class="store_address">
+          <view class="address_label">商家地址：</view>
+          <view class="address_detail">
+            沈阳市和平区三好街中润国际大厦某某好
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="open_card">
+  开通会员卡
+</view>

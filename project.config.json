@@ -153,6 +153,12 @@
         {
           "name": "pages/shareholderSys/shareholderSys",
           "pathName": "pages/shareholderSys/shareholderSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/store/store",
+          "pathName": "pages/store/store",
           "scene": null
         }
       ]
