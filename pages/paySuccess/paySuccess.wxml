@@ -1,0 +1,10 @@
+<view class="paySuccess_container">
+  <image 
+    src='{{ "../../assets/img/pay_success.png"}}' 
+    class='img' 
+  />
+  <view class="tip">充值成功</view>
+  <view class="value">¥930.00</view>
+
+  <view class="back_btn" bindtap="back">返回</view>
+</view>

@@ -7,9 +7,9 @@ Page({
       value:event.detail
     })
   },
-  pay() {
-    wx.navigateTo({
-      url: '/pages/paySuccess/paySuccess'
+  back() {
+    wx.navigateBack({
+      delta: 2
     })
   },
   onLoad: function (options) {

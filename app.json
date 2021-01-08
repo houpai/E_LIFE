@@ -18,7 +18,11 @@
     "pages/shareholderSys/shareholderSys",
     "pages/shareholderDetail/shareholderDetail",
     "pages/store/store",
-    "pages/coupon/coupon"
+    "pages/coupon/coupon",
+    "pages/wallet/wallet",
+    "pages/cashOutDetail/cashOutDetail",
+    "pages/recharge/recharge",
+    "pages/paySuccess/paySuccess"
   ],
   "window":{
     "backgroundTextStyle":"light",
