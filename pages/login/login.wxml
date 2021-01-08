@@ -62,14 +62,14 @@
         maxlength="10" 
         placeholder="请输入手机号" 
         class="input" 
-        focus='{{userNameFocus}}'
-        value="{{userName}}"
-        bindinput="inputWatchUser"
+        focus='{{phoneFocus}}'
+        value="{{phone}}"
+        bindinput="inputWatchPhone"
       />
-      <view class="btn_box" bindtap="clearUserName">
+      <view class="btn_box" bindtap="clearPhone">
         <image 
           src='{{ "../../assets/img/icon_delete.png"}}' 
-          wx:if="{{userName}}"
+          wx:if="{{phone}}"
           class='img' 
         />
       </view>
@@ -77,23 +77,11 @@
     <view class="input_item"  wx:if="{{!passwordLogin}}">
       <view class="input_label">验证码:</view>
       <input 
-        wx:if="{{passwordType}}"
-        type="password"
-        maxlength="10"
+        maxlength="6"
         placeholder="请输入验证码" 
-        bindinput="inputWatchPassword"
-        focus='{{passwordFocus}}'
-        value="{{password}}"
-        class="input"
-      />
-      <input 
-        wx:else
-        type="text"
-        maxlength="10"
-        placeholder="请输入密码" 
-        focus='{{passwordFocus}}'
-        bindinput="inputWatchPassword"
-        value="{{password}}"
+        bindinput="inputWatchCode"
+        focus='{{codeFocus}}'
+        value="{{code}}"
         class="input"
       />
       <view class="sendCode_btn {{count >= 1 ? 'disabled_send_btn': '' }}" bindtap='sendCode'>

@@ -10,10 +10,14 @@ Page({
     userName:'',
     password:'',
     userNameFocus:false,
+    phoneFocus:false,
+    codeFocus:false,
     passwordFocus:false, // 是否是账号密码登录
     passwordLogin:true,
     count:0,
-    codeTimer:null
+    codeTimer:null,
+    phone:"",
+    code:''
   },
   eyeStatus: function () {
     let defaultType = !this.data.defaultType
@@ -38,11 +42,32 @@ Page({
     })
     console.log('password ===', this.data.password)
   },
+    // 手机号输入
+    inputWatchPhone(e) {
+      this.setData({
+        phone: e.detail.value
+      })
+      console.log('userName ===', this.data.userName)
+    },
+    // 验证码输入
+    inputWatchCode(e) {
+      this.setData({
+        code: e.detail.value
+      })
+      console.log('password ===', this.data.password)
+    },
   clearUserName() {
     let userName = '';
     this.setData({
       userName: userName,
       userNameFocus:true
+    })
+  },
+  clearPhone() {
+    let phone = '';
+    this.setData({
+      phone: '',
+      phoneFocus:true
     })
   },
   loginSubmitHandle() {
@@ -76,6 +101,9 @@ Page({
         clearInterval(this.data.codeTimer)
       }
     },1000)
+    this.setData({
+      codeFocus:true
+    })
   },
   onLoad: function () {
 
