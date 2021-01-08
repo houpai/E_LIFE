@@ -189,6 +189,12 @@
         {
           "name": "pages/paySuccess/paySuccess",
           "pathName": "pages/paySuccess/paySuccess",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cashOut/cashOut",
+          "pathName": "pages/cashOut/cashOut",
           "scene": null
         }
       ]

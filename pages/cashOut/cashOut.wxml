@@ -1,0 +1,28 @@
+<view class="cashOut_container">
+  <view class="cashOut_box">
+    <view class="cashOut_title">提现金额</view>
+    <view class="cashOut_title_sub">每日提现上线5000</view>
+    <view class="value_box">
+      <view class="money_icon">¥</view>
+      <van-field 
+        value="{{ value }}"  
+        type="number" 
+        placeholder="请输入提现金额" 
+        border="{{ false }}" 
+        bind:change="onChange"
+        class="input" 
+      />
+    </view>
+    <view class="charge_tip">
+      收取0.1%的服务费
+      <view class="sanjiao"></view>
+    </view>
+
+    <view class="all_cashOut_box">
+      当前余额为789工券等于789元,
+      <view class="all_cashOut_btn">全部提现</view>
+    </view>
+
+    <view class="submit_btn" bindtap="cashOut">提现</view>
+  </view>
+</view>

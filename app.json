@@ -22,7 +22,8 @@
     "pages/wallet/wallet",
     "pages/cashOutDetail/cashOutDetail",
     "pages/recharge/recharge",
-    "pages/paySuccess/paySuccess"
+    "pages/paySuccess/paySuccess",
+    "pages/cashOut/cashOut"
   ],
   "window":{
     "backgroundTextStyle":"light",

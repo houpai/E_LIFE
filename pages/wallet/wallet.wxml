@@ -14,8 +14,8 @@
   </view>
 
 
-  <view class="btn cash_out_btn">提现</view>
-  <view class="btn recharge_btn">充值</view>
+  <view class="btn cash_out_btn" bindtap="cashOut">提现</view>
+  <view class="btn recharge_btn" bindtap="recharge">充值</view>
 
 
 </view>
