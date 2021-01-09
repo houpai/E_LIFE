@@ -37,48 +37,6 @@
     </view>
   </view>
 
-  <!-- <view class="index_data_box">
-    <view class="menu_item_box">
-      <view class="mune_item store_sys" data-menu="store_sys" bindtap="menuLink">
-        <image class="img" src='{{ "../../assets/img/icon_store_sys.png"}}'/>
-        <view class="menu_title">店铺管理</view>
-      </view>
-      <view class="mune_item customer_sys" data-menu="customer_sys" bindtap="menuLink">
-        <image class="img" src='{{ "../../assets/img/icon_customer_sys.png"}}'/>
-        <view class="menu_title">顾客管理</view>
-      </view>
-    </view>
-
-    <view class="menu_item_box">
-      <view class="mune_item card_sys"  data-menu="card_sys" bindtap="menuLink">
-        <image class="img" src='{{ "../../assets/img/icon_member_card_sys.png"}}'/>
-        <view class="menu_title">会员卡管理</view>
-      </view>
-      <view class="mune_item member_sys" data-menu="member_sys" bindtap="menuLink">
-        <image class="img" src='{{ "../../assets/img/icon_member.png"}}'/>
-        <view class="menu_title">会员管理</view>
-      </view>
-    </view>
-
-    <view class="menu_item_box">
-      <view class="mune_item staff_sys">
-        <image class="img" src='{{ "../../assets/img/icon_staff_sys.png"}}'/>
-        <view class="menu_title">
-          <view>员工管理</view>
-          <view class="not_open">暂未开放</view>
-        </view>
-      </view>
-      <view class="mune_item data_sys">
-        <image class="img" src='{{ "../../assets/img/icon_data_sys.png"}}'/>
-        <view class="menu_title">
-          <view>业绩报表管理</view>
-          <view class="not_open">暂未开放</view>
-        </view>
-      </view>
-    </view>
-  </view> -->
-
-
   <view class="menu_box">
     <view class="menu_item" data-menu="storeIndex" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/store_sys_btn.png"}}' />
@@ -92,7 +50,6 @@
       <image class="img" src='{{ "../../assets/img/wallet_btn.png"}}' />
       <view class="menu_title">工券钱包</view>
     </view>
-
     <view class="menu_item" data-menu="customer_sys" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/customer_sys_btn.png"}}' />
       <view class="menu_title">顾客管理</view>
@@ -105,7 +62,6 @@
       <image class="img" src='{{ "../../assets/img/member_sys_btn.png"}}' />
       <view class="menu_title">会员管理</view>
     </view>
-
     <view class="menu_item" data-menu="goods_sys" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/goods_sys_btn.png"}}' />
       <view class="menu_title">商品管理</view>
@@ -118,7 +74,6 @@
       <image class="img" src='{{ "../../assets/img/shareholder_sys_btn.png"}}' />
       <view class="menu_title">股东管理</view>
     </view>
-
     <view class="menu_item">
       <image class="img" src='{{ "../../assets/img/data_sys_btn.png"}}' />
       <view class="menu_title">业绩报表</view>
@@ -127,19 +82,10 @@
       <image class="img" src='{{ "../../assets/img/bonus_sys_btn.png"}}' />
       <view class="menu_title">分红设置</view>
     </view>
-    <view class="menu_item">
+    <view class="menu_item" data-menu="shareBusiness" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/shareBusiness_sys_btn.png"}}' />
       <view class="menu_title">共享商圈</view>
     </view>
-
   </view>
-
-
-
-
-
-
-
-
 </view>
 

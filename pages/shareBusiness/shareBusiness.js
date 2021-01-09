@@ -4,25 +4,40 @@ Page({
   data: {
     height: '',
     top: "",
-    isSearch:false, // 搜索
+    isSearch: false, // 搜索
     active: 0,
-    searchValue:'',
-    cancelSharedialog:false
+    searchValue: '',
+    cancelSharedialog: false,
+    shareDialog: true,
+    costValue:'',
+    shareNumValue:''
+  },
+  costValueChange(e) {
+
+  },
+  shareNumValueChange(e) {
+
   },
   cancelSharedialogClose() {
     this.setData({
-      cancelSharedialog:false
+      cancelSharedialog: false,
+      sharedialog: false
     })
   },
   cancelShare() {
     this.setData({
-      cancelSharedialog:true
+      cancelSharedialog: true
+    })
+  },
+  share() {
+    this.setData({
+      sharedialog: true
     })
   },
   searchTypeChange() {
     let searchType = !this.data.isSearch;
     this.setData({
-      isSearch:searchType
+      isSearch: searchType
     })
   },
   onSearch() {
@@ -45,7 +60,7 @@ Page({
 
   },
   onLoad: function () {
-    
+
   },
   onReady: function () {
     var that = this;
