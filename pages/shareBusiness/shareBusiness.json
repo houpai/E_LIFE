@@ -3,7 +3,8 @@
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index",
     "van-search": "@vant/weapp/search/index",
-    "van-icon": "@vant/weapp/icon/index"
+    "van-icon": "@vant/weapp/icon/index",
+    "van-dialog": "@vant/weapp/dialog/index"
   },
   "backgroundColor": "#F2F2F2",
   "disableScroll":true

@@ -7,6 +7,17 @@ Page({
     isSearch:false, // 搜索
     active: 0,
     searchValue:'',
+    cancelSharedialog:false
+  },
+  cancelSharedialogClose() {
+    this.setData({
+      cancelSharedialog:false
+    })
+  },
+  cancelShare() {
+    this.setData({
+      cancelSharedialog:true
+    })
   },
   searchTypeChange() {
     let searchType = !this.data.isSearch;

@@ -222,13 +222,13 @@ page {
   margin-top: 40rpx;
 }
 
-.dialog_title  {
-  font-size: 32rpx;
-  font-weight: 400;
-  color: #333333;
-  line-height: 44rpx;
-  text-align: center;
-}
+  /*.dialog_title  {*/
+  /*  font-size: 32rpx;*/
+  /*  font-weight: 400;*/
+  /*  color: #333333;*/
+  /*  line-height: 44rpx;*/
+  /*  text-align: center;*/
+  /*}*/
 
 .dialog_box {
   padding:40rpx;

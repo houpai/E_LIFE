@@ -27,7 +27,14 @@
   <view class="list_box">
     <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
       <view class="goods_item" wx:for="{{4}}">
-        <view class="goods_name">名称名称名称名称名称名称</view>
+        <view class="goods_name">
+          <view class="share_icon">
+            共享
+          </view>
+          <view class="goods_name_text">
+            名称名称名称名称名称名称
+          </view>
+        </view>
         <van-row class="goods_detail">
           <van-col span="8">
             <text class="text">库存：19</text>
@@ -51,10 +58,21 @@
 
 
         <view class="btn_box">
-          <view class="cancel_share_btn btn">取消分享</view>
+          <view class="cancel_share_btn btn" bindtap="cancelShare">取消分享</view>
           <view class="share_btn btn">设为分享</view>
         </view>
       </view>
     </scroll-view>
   </view>
 </view>
+
+
+<van-dialog use-slot show="{{ cancelSharedialog }}" showConfirmButton="{{false}}" bind:close="cancelSharedialogClose">
+  <view class="dialog_box">
+    <view class="dialog_title">您确定要取消商品共享吗？</view>
+    <view class="dialog_btn_box">
+      <view class="cancel_btn" bindtap="cancelSharedialogClose">取消</view>
+      <view class="submit_btn">确定</view>
+    </view>
+  </view>
+</van-dialog>

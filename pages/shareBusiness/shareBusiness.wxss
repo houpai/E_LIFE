@@ -132,14 +132,29 @@ page .van-tabs__line {
 }
 
 .list_box .goods_item .goods_name {
+  margin-bottom: 16rpx;
+  display: flex;
+  align-items: center;
+}
+
+.list_box .goods_item .goods_name .share_icon {
   font-size: 30rpx;
   font-weight: 700;
   color: #333333;
   line-height: 40rpx;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-bottom: 16rpx;
+  color: #FFFFFF;
+  background:rgba(241, 89, 72, 1);
+  border-radius: 6rpx;
+  padding:2rpx 16rpx;
+  margin-right: 12rpx;
+}
+
+.list_box .goods_item .goods_name .goods_name_text {
+  flex:1;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #333333;
+  line-height: 40rpx;
 }
 
 

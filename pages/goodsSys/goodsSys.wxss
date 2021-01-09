@@ -125,7 +125,6 @@ page {
   width: 136rpx;
   height: 56rpx;
   border-radius: 6rpx;
-  border: 1px solid #999999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,4 +141,5 @@ page {
 .goods_item .btn_box .put_btn {
   background: #488FF1;
   color: #fff;
+  border: 1px solid #488FF1;
 }
