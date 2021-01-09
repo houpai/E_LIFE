@@ -26,7 +26,8 @@
     "pages/cashOut/cashOut",
     "pages/goodsSys/goodsSys",
     "pages/goodsMaintain/goodsMaintain",
-    "pages/bonusSys/bonusSys"
+    "pages/bonusSys/bonusSys",
+    "pages/bonusMaintain/bonusMaintain"
   ],
   "window":{
     "backgroundTextStyle":"light",

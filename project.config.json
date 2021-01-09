@@ -213,6 +213,12 @@
         {
           "name": "pages/bonusSys/bonusSys",
           "pathName": "pages/bonusSys/bonusSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bonusMaintain/bonusMaintain",
+          "pathName": "pages/bonusMaintain/bonusMaintain",
           "scene": null
         }
       ]

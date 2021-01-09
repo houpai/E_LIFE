@@ -123,7 +123,7 @@
       <image class="img" src='{{ "../../assets/img/data_sys_btn.png"}}' />
       <view class="menu_title">业绩报表</view>
     </view>
-    <view class="menu_item">
+    <view class="menu_item" data-menu="bonus_sys" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/bonus_sys_btn.png"}}' />
       <view class="menu_title">分红设置</view>
     </view>

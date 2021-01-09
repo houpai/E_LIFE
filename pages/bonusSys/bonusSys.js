@@ -13,7 +13,7 @@ Page({
     let type = e.currentTarget.dataset['type']
     let titleName = type === 'add' ? '新增分红方案':'编辑分红方案'
     wx.navigateTo({
-      url: `/pages/goodsMaintain/bonusMaintain?titleName=${titleName}&type=${type}`
+      url: `/pages/bonusMaintain/bonusMaintain?titleName=${titleName}&type=${type}`
     })
   },
   onLoad: function () {

@@ -1,0 +1,29 @@
+<view class="bonusMaintain_container">
+  <view class="input_box">
+    <view class="item_container_box">
+      <view class="input_label">分红方案名称</view>
+      <view class="margin_box">
+        <van-field value="{{ bonusName }}" class="p_0 input_value" placeholder="请输入分红方案名称" border="{{ false }}"
+          bind:change="bonusNameChange" />
+      </view>
+    </view>
+
+    <view class="item_container_box">
+      <view class="input_label">毛利分红比例（单位为“%”）</view>
+      <view class="margin_box">
+        <van-field value="{{ bonusValue }}" class="p_0 input_value" placeholder="请输入商品价格" border="{{ false }}"
+          bind:change="bonusValueChange" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="edit_btn">
+  <view class='flex_btn_box'>
+    保存
+  </view>
+</view>
+
+<view class="text_btn_box">
+  <text class="text_btn">停用分红方案</text>
+</view>
