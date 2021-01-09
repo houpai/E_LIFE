@@ -28,7 +28,8 @@
     "pages/goodsMaintain/goodsMaintain",
     "pages/bonusSys/bonusSys",
     "pages/bonusMaintain/bonusMaintain",
-    "pages/shareBusiness/shareBusiness"
+    "pages/shareBusiness/shareBusiness",
+    "pages/dataSys/dataSys"
   ],
   "window":{
     "backgroundTextStyle":"light",

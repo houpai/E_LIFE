@@ -89,6 +89,10 @@ Page({
       wx.navigateTo({
         url: '/pages/shareBusiness/shareBusiness'
       })
+    } else if(query === 'dataSys') {
+      wx.navigateTo({
+        url: '/pages/dataSys/dataSys'
+      })
     }
   },
   goSetting() {

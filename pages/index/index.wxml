@@ -74,7 +74,7 @@
       <image class="img" src='{{ "../../assets/img/shareholder_sys_btn.png"}}' />
       <view class="menu_title">股东管理</view>
     </view>
-    <view class="menu_item">
+    <view class="menu_item" data-menu="dataSys" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/data_sys_btn.png"}}' />
       <view class="menu_title">业绩报表</view>
     </view>

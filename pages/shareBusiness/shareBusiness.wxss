@@ -7,6 +7,10 @@ page .van-tab--active .van-ellipsis {
   color: #333333;
 }
 
+page .van-tabs__scroll {
+  background-color: #fff!important;
+}
+
 page .van-ellipsis {
   font-size: 32rpx;
   font-weight: 400;

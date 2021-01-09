@@ -225,6 +225,18 @@
         {
           "name": "pages/shareBusiness/shareBusiness",
           "pathName": "pages/shareBusiness/shareBusiness",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/dataSys/dataSys",
+          "pathName": "pages/dataSys/dataSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/shareholderDetail/shareholderDetail",
+          "pathName": "pages/shareholderDetail/shareholderDetail",
           "scene": null
         }
       ]
