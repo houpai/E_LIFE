@@ -23,7 +23,10 @@
     "pages/cashOutDetail/cashOutDetail",
     "pages/recharge/recharge",
     "pages/paySuccess/paySuccess",
-    "pages/cashOut/cashOut"
+    "pages/cashOut/cashOut",
+    "pages/goodsSys/goodsSys",
+    "pages/goodsMaintain/goodsMaintain",
+    "pages/bonusSys/bonusSys"
   ],
   "window":{
     "backgroundTextStyle":"light",

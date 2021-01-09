@@ -207,6 +207,12 @@
         {
           "name": "pages/goodsMaintain/goodsMaintain",
           "pathName": "pages/goodsMaintain/goodsMaintain",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bonusSys/bonusSys",
+          "pathName": "pages/bonusSys/bonusSys",
           "scene": null
         }
       ]
