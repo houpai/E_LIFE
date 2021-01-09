@@ -62,7 +62,7 @@
       </view>
 
       <view class="detaile_btn_box">
-        <view class="detaile_btn">查看详情</view>
+        <view class="detaile_btn" bindtap="seeDetail">查看详情</view>
       </view>
 
       <view class="echart_title">业绩走势</view>

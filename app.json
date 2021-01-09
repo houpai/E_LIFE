@@ -29,7 +29,8 @@
     "pages/bonusSys/bonusSys",
     "pages/bonusMaintain/bonusMaintain",
     "pages/shareBusiness/shareBusiness",
-    "pages/dataSys/dataSys"
+    "pages/dataSys/dataSys",
+    "pages/dataDetail/dataDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

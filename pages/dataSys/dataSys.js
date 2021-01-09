@@ -86,8 +86,15 @@ Page({
     achievement: 0,
     canvasHeight: 300,
     ec: {
-      onInit: initChart
+      onInit: initChart,
     }
+  },
+  // 查看详情 传入页面时间参数
+  seeDetail() {
+    let timeText = '2020.09.09-2020.10.01'
+    wx.navigateTo({
+      url: `/pages/dataDetail/dataDetail?timeText=${timeText}`
+    })
   },
   // 切换类型
   onChange(event) {
@@ -96,7 +103,7 @@ Page({
       icon: 'none',
     });
   },
-  achievementChange() {
+  achievementChange(event) {
     wx.showToast({
       title: `切换类型 ${event.detail.name}`,
       icon: 'none',
@@ -106,8 +113,10 @@ Page({
   scrolltolower(e) {
     console.log("滚动到底部", e);
   },
-  onLoad: function () {
+  init:function() {
 
+  },
+  onLoad: function () {
   },
   onReady: function () {
     var that = this;

@@ -237,6 +237,12 @@
         {
           "name": "pages/shareholderDetail/shareholderDetail",
           "pathName": "pages/shareholderDetail/shareholderDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/dataDetail/dataDetail",
+          "pathName": "pages/dataDetail/dataDetail",
           "scene": null
         }
       ]
