@@ -219,6 +219,12 @@
         {
           "name": "pages/bonusMaintain/bonusMaintain",
           "pathName": "pages/bonusMaintain/bonusMaintain",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/shareBusiness/shareBusiness",
+          "pathName": "pages/shareBusiness/shareBusiness",
           "scene": null
         }
       ]

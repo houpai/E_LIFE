@@ -1,0 +1,213 @@
+page {
+  background: #F2F2F2;
+}
+
+page .van-tab--active .van-ellipsis {
+  font-weight: 700 !important;
+  color: #333333;
+}
+
+page .van-ellipsis {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #999999;
+}
+
+page .van-tabs__line {
+  background-color: rgba(72, 143, 241, 1);
+}
+
+
+.shareBusiness_container .search_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+.shareBusiness_container .search_box .back_text {
+  margin-right: 30rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #488FF1;
+  line-height: 44rpx;
+}
+
+.shareBusiness_container .search_box .van-search__content {
+  background: #F2F2F2;
+  padding: 0;
+  border-right: 1px solid rgba(0, 0, 0, .1)
+}
+
+.shareBusiness_container .search_box .van-search {
+  width: 100%;
+  padding: 0 20rpx;
+  border-radius: 60rpx;
+  overflow: hidden;
+  height: 80rpx;
+  background: #F2F2F2!important;
+}
+
+
+.shareBusiness_container .search_box .van-field__input {
+  min-height: 66rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  line-height: 40rpx;
+}
+
+.shareBusiness_container .search_box .van-cell__left-icon-wrap,
+.shareBusiness_container .search_box .van-cell__right-icon-wrap {
+  height: var(--cell-line-height, px);
+  color: #CCCCCC;
+  font-size: 40rpx;
+}
+
+.shareBusiness_container .search_box .search_btn {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #488FF1;
+  line-height: 44rpx;
+  height: 100%;
+  padding: 0 20rpx;
+}
+
+
+.shareBusiness_container {
+  font-size: 20rpx;
+}
+
+.shareBusiness_container .top_bg_box {
+  width: 100%;
+  height: 132rpx;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0;
+  display: flex;
+}
+
+.shareBusiness_container .top_bg_box .type_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.shareBusiness_container .top_bg_box .search_btn .img {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.shareBusiness_container .top_bg_box .type_container {
+  width: 66%;
+}
+
+
+.list_box {
+  margin-top: 30rpx;
+}
+
+.list_box .list_item {
+  height: 190rpx;
+  background: #FFFFFF;
+  border-radius: 6rpx;
+  margin: 0 30rpx 30rpx 30rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+
+.list_box .goods_item {
+  height: 328rpx;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6rpx;
+  margin: 0 30rpx 30rpx 30rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+.list_box .goods_item .goods_name {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #333333;
+  line-height: 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 16rpx;
+}
+
+
+.list_box .goods_item .text {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999999;
+  line-height: 40rpx;
+}
+
+.goods_item .goods_price {
+  display: flex;
+  align-items: center;
+  margin: 30rpx 0;
+  height: 56rpx;
+}
+
+.goods_item .goods_price .current_price {
+  font-size: 40rpx;
+  font-weight: 500;
+  color: #FC302C;
+  line-height: 56rpx;
+}
+
+.goods_item .goods_price .current_price .unit {
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.goods_item .goods_price .price {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999999;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  margin-left: 30rpx;
+}
+
+.goods_item .goods_price .price .text {
+  text-decoration: line-through;
+}
+
+.goods_item .btn_box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.goods_item .btn_box .btn {
+  width: 136rpx;
+  height: 56rpx;
+  border-radius: 6rpx;
+  border: 1px solid #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 400;
+}
+
+.goods_item .btn_box .cancel_share_btn {
+  color: rgba(72, 143, 241, 1);
+  border: 1px solid rgba(72, 143, 241, 1);
+  margin-right: 30rpx;
+}
+
+.goods_item .btn_box .share_btn {
+  background: #488FF1;
+  color: #fff;
+  border: 1px solid #488FF1;
+}

@@ -1,0 +1,60 @@
+<view class="shareBusiness_container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="type_box" wx:if="{{!isSearch}}">
+        <view class="type_container">
+          <van-tabs active="{{ active }}" bind:change="onChange">
+            <van-tab title="我的共享"></van-tab>
+            <van-tab title="商家共享"></van-tab>
+          </van-tabs>
+        </view>
+
+        <view class="search_btn" bindtap="searchTypeChange">
+          <image class="img" src='{{ "../../assets/img/icon_search.png"}}' />
+        </view>
+      </view>
+
+      <view class="search_box" wx:else>
+        <text class="back_text" bindtap="searchTypeChange">返回</text>
+        <van-search value="{{ searchValue }}" placeholder="请输入名称搜索" bind:change="searchValueChange"
+          bind:search="onSearch" use-action-slot>
+          <view slot="action" bind:tap="onSearch" class="search_btn">搜索</view>
+        </van-search>
+      </view>
+    </view>
+  </view>
+
+  <view class="list_box">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="goods_item" wx:for="{{4}}">
+        <view class="goods_name">名称名称名称名称名称名称</view>
+        <van-row class="goods_detail">
+          <van-col span="8">
+            <text class="text">库存：19</text>
+          </van-col>
+          <van-col span="8">
+            <text class="text">销量：19</text>
+          </van-col>
+          <van-col span="8">
+            <text class="text">分红值：19</text>
+          </van-col>
+        </van-row>
+        <view class="goods_price">
+          <view class="current_price">
+            30
+            <text class="unit">积分</text>
+          </view>
+          <view class="price">
+            <text class="text">¥100元</text>
+          </view>
+        </view>
+
+
+        <view class="btn_box">
+          <view class="cancel_share_btn btn">取消分享</view>
+          <view class="share_btn btn">设为分享</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
