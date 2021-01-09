@@ -106,7 +106,7 @@
       <view class="menu_title">会员管理</view>
     </view>
 
-    <view class="menu_item">
+    <view class="menu_item" data-menu="goods_sys" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/goods_sys_btn.png"}}' />
       <view class="menu_title">商品管理</view>
     </view>

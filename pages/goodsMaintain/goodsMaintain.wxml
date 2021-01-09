@@ -1,0 +1,91 @@
+<view class="goodsMaintain_container {{show ? 'containerLock':''}}">
+  <view class="input_box">
+    <view class="item_container_box">
+      <view class="input_label">商品标题</view>
+      <view class="margin_box">
+        <van-field value="{{ goodsTitle }}" class="p_0 input_value" placeholder="请输入商品标题" border="{{ false }}"
+          bind:change="goodsTitleChange" />
+      </view>
+    </view>
+
+    <view class="item_container_box">
+      <view class="input_label">商品价格</view>
+      <view class="margin_box">
+        <van-field value="{{ goodsPrice }}" class="p_0 input_value" placeholder="请输入商品价格" border="{{ false }}"
+          bind:change="goodsPriceChange" />
+      </view>
+    </view>
+
+    <view class="item_container_box">
+      <view class="input_label">市场价</view>
+      <view class="margin_box">
+        <van-field value="{{ price }}" class="p_0 input_value" placeholder="请输入市场价" border="{{ false }}"
+          bind:change="priceChange" />
+      </view>
+    </view>
+
+
+    <view class="item_container_box">
+      <view class="input_label">库存</view>
+      <view class="margin_box">
+        <van-field value="{{ goodsStock }}" class="p_0 input_value" placeholder="请输入商品库存" border="{{ false }}"
+          bind:change="goodsStockChange" />
+      </view>
+    </view>
+
+  </view>
+
+  <view class="input_box withMarginTop">
+    <view class="item_container_box">
+      <view class="input_label">有效期</view>
+      <view class="margin_box">
+        <van-field value="{{ dateValue }}" class="p_0 input_value" placeholder="请输入有效期" border="{{ false }}"
+          bind:change="dateValueChange" />
+      </view>
+    </view>
+
+    <view class="item_container_box">
+      <view class="input_label">请输入商品使用说明</view>
+      <view class="margin_box">
+        <van-field value="{{ instructions }}" type="textarea" maxlength="50" rows="2" autosize class="p_0 input_value"
+          placeholder="请输入商品使用说明" border="{{ false }}" bind:change="instructionsChange" />
+      </view>
+    </view>
+  </view>
+
+  <view class="input_box withMarginTop">
+    <view class="item_container_box">
+      <view class="input_label">分红值</view>
+      <view class="margin_box" bindtap="setBonusValueShow">
+        <van-field value="{{ bonusValue }}" disabled class="p_0 input_value" placeholder="请选择分红值" border="{{ false }}"
+          bind:change="bonusValueChange">
+          <view slot="button">
+            <van-icon name="arrow" class="right_icon" />
+          </view>>
+        </van-field>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="push_swich_box input_box withMarginTop">
+    <view class="input_label">是否上架</view>
+    <van-switch checked="{{ is_put }}" size="24px" bind:change="isPutChange" />
+  </view>
+</view>
+
+<view class="edit_btn" wx:if="{{!show}}">
+  <view class='flex_btn_box'>
+    保存
+  </view>
+</view>
+
+
+<van-action-sheet show="{{ show }}" title="分红设置" bind:close="onClose">
+  <view class="actions_box">
+    <view class="actions_item" wx:for="{{actions}}" wx:for-item="item" wx:for-index="id" data-item="{{item}}"
+      bindtap="selectBonus">
+      {{item.name}} <text class="text">{{item.per}}</text>
+    </view>
+  </view>
+</van-action-sheet>

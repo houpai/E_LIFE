@@ -1,0 +1,47 @@
+<view class="goodsSys_container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="add_box">
+        <view class="goods_title">全部商品</view>
+        <view class="add_btn" bindtap="addGoods" data-type="add">
+          <image src='{{ "../../assets/img/icon_add_btn.png"}}' class="img" />
+          <text class="text">新增</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="list_box">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="goods_item" wx:for="{{4}}">
+        <view class="goods_name">名称名称名称名称名称名称</view>
+        <van-row class="goods_detail">
+          <van-col span="8">
+            <text class="text">库存：19</text>
+          </van-col>
+          <van-col span="8">
+            <text class="text">销量：19</text>
+          </van-col>
+          <van-col span="8">
+            <text class="text">分红值：19</text>
+          </van-col>
+        </van-row>
+        <view class="goods_price">
+          <view class="current_price">
+            30
+            <text class="unit">积分</text>
+          </view>
+          <view class="price">
+            <text class="text">¥100元</text>
+          </view>
+        </view>
+
+
+        <view class="btn_box">
+          <view class="edit_btn btn" bindtap="addGoods" data-type="edit">编辑</view>
+          <view class="put_btn btn">上架</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

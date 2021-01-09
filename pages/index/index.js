@@ -77,6 +77,10 @@ Page({
       wx.navigateTo({
         url: '/pages/wallet/wallet'
       })
+    } else if(query === 'goods_sys') {
+      wx.navigateTo({
+        url: '/pages/goodsSys/goodsSys'
+      })
     }
   },
   goSetting() {

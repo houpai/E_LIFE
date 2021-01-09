@@ -195,6 +195,18 @@
         {
           "name": "pages/cashOut/cashOut",
           "pathName": "pages/cashOut/cashOut",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goodsSys/goodsSys",
+          "pathName": "pages/goodsSys/goodsSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goodsMaintain/goodsMaintain",
+          "pathName": "pages/goodsMaintain/goodsMaintain",
           "scene": null
         }
       ]

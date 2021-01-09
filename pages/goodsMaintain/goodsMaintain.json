@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
+  },
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTitleText": "新增商品",
+  "navigationBarTextStyle": "black"
+}

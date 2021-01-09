@@ -1,0 +1,218 @@
+page{
+  background-color: #F2F2F2;
+  padding-bottom:60rpx;
+}
+
+
+.goodsMaintain_container {
+  padding:40rpx 30rpx 100px 30rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.goodsMaintain_container .input_box .item_container_box{
+  box-sizing: border-box;
+  padding:30rpx 0 16rpx 0;
+  margin:0 30rpx;  
+  border-radius: 6rpx;
+  border-bottom:1px solid rgba(0, 0, 0, 0.1)
+}
+
+.goodsMaintain_container .item_container_box .margin_box {
+  margin-top:20rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.input_box, .item_container_box {
+  background: #FFFFFF;
+  border-radius: 6rpx;
+  padding-bottom:30rpx;
+}
+
+.goodsMaintain_container .input_label {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  line-height: 44rpx;
+}
+
+.flex_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex_box .left_box .desc {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #999999;
+  line-height: 34rpx;
+  margin-top:12rpx;
+}
+
+.goodsMaintain_container .withMarginTop {
+  margin-top:40rpx;
+}
+
+.edit_btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.edit_btn .flex_btn_box {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #488FF1;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.edit_btn .van-icon {
+  font-size:44rpx;
+  margin-right: 8rpx;
+}
+
+.edit_btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 200rpx; */
+  background: #FFFFFF;
+  border-radius: 6rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #488FF1;
+  line-height: 40rpx;
+  box-sizing:border-box ;
+  padding:30rpx;
+  z-index: 10;
+}
+
+.edit_btn .flex_btn_box {
+  width: 100%;
+  background: #488FF1;
+  border-radius: 6rpx;
+  height: 88rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 44px;
+}
+
+.right_icon {
+  font-size:36rpx;
+}
+
+page .van-field__input--disabled {
+  color: rgba(51, 51, 51, 1);
+}
+
+.storeType_box {
+  box-sizing: border-box;
+  padding:30rpx;
+  height: 600rpx;
+  overflow-y: scroll;
+}
+
+.storeType_box .tip_text {
+  display: inline-block;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #999999;
+}
+
+page .van-action-sheet__header{
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.storeType_box .primary_type_item {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333333;
+  line-height: 40px;
+  border-bottom:1px solid rgba(0, 0, 0, 0.1);
+  padding:15rpx 0;
+}
+
+.storeType_box .choosed_box {
+  margin-bottom:15rpx;
+}
+
+.choosed_box {
+  display: flex;
+  align-items: center;
+}
+
+.choosed_box .choosed_type_tip {
+  display: flex;
+  align-items: center;
+  margin-right: 30rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #488FF1;
+  line-height: 44rpx;
+}
+
+
+.push_swich_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding:30rpx;
+}
+
+
+page .van-action-sheet__header {
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.actions_box {
+  box-sizing: border-box;
+  padding:30rpx;
+  min-height: 600rpx;
+}
+.actions_box .actions_item {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333333;
+  line-height: 40rpx;
+  padding:30rpx 0;
+  border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+
+.actions_box .actions_item .text {
+  color: RGBA(107, 165, 244, 1);
+}
+
+
+/* 注：此处小程序遮罩层有穿透滑动的bug 用以下样式解决 */
+.containerLock{
+  top:0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 0;
+}
