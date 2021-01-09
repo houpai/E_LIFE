@@ -1,4 +1,7 @@
 import * as echarts from '../../components/ec-canvas/echarts';
+import {
+  getCurrentMonthTime
+} from '../../utils/util'
 
 const app = getApp()
 
@@ -16,7 +19,7 @@ function initChart(canvas, width, height, dpr) {
       containLabel: true,
       left: '20px',
       right: '40px',
-      top:"12px"
+      top: "12px"
     },
     tooltip: {
       show: true,
@@ -87,7 +90,10 @@ Page({
     canvasHeight: 300,
     ec: {
       onInit: initChart,
-    }
+    },
+    startTime: '',
+    endTime: '',
+    timeText: ""
   },
   // 查看详情 传入页面时间参数
   seeDetail() {
@@ -113,10 +119,13 @@ Page({
   scrolltolower(e) {
     console.log("滚动到底部", e);
   },
-  init:function() {
-
-  },
   onLoad: function () {
+    let timeObj = getCurrentMonthTime()
+    this.setData({
+      timeText: timeObj.currentMonthTimeText,
+      startTime: timeObj.timeStar,
+      endTime: timeObj.timeEnd
+    })
   },
   onReady: function () {
     var that = this;

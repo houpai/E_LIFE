@@ -11,7 +11,7 @@
 
       <view class="time_box">
         <view class="time_check_box">
-          2020.09.09-2020.10.01
+          {{timeText}}
         </view>
       </view>
     </view>
