@@ -19,6 +19,10 @@
 
 /*弹窗公共样式*/
 
+.moni_dialog {
+  background:#fff;
+}
+
 .renew_btn {
   height: 72rpx;
   border-radius: 6rpx;
@@ -35,6 +39,7 @@
 
 .renew_input .van-field__input{
   min-height: 72rpx;
+  height: 72rpx;
   background:rgba(242, 242, 242, 1);
   padding:0 24rpx;
   border-radius: 6px;
@@ -82,10 +87,31 @@
   font-weight: 400;
   color: #333333;
   line-height: 44rpx;
-  text-align: center;
+  text-align: left;
   padding:20rpx 0;
 }
 
 .dialog_box {
   padding:40rpx;
+  background:#fff;
+}
+
+.moni_dialog .dialog_box {
+  width: 66%;
+  height: 300rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  margin:auto;
+  border-radius: 6rpx;
+}
+
+.moni_dialog .dialog_box_high {
+  height:480rpx!important;
+}
+
+.moni_dialog  .field-index--van-field {
+  padding:10px 0!important;
 }

@@ -65,7 +65,7 @@
   </view>
 </view>
 
-<van-dialog use-slot show="{{ dialogShow }}" showConfirmButton="{{false}}" bind:close="onClose">
+<!-- <van-dialog use-slot show="{{ dialogShow }}" showConfirmButton="{{false}}" bind:close="onClose">
   <view class="dialog_box">
     <view class="dialog_title">续费金额</view>
     <view>
@@ -83,4 +83,25 @@
     <view class="submit_btn">立即续费</view>
   </view>
   </view>
-</van-dialog>
+</van-dialog> -->
+
+
+<van-overlay show="{{ dialogShow }}" class="moni_dialog">
+  <view class="dialog_box">
+    <view class="dialog_title">续费金额</view>
+    <view>
+      <van-field 
+        value="{{ renewValue }}" 
+        placeholder="请输入续费金额" 
+        border="{{ false }}" 
+        bind:change="renewValueChange"
+        class="renew_input" 
+      />
+    </view>
+
+    <view class="dialog_btn_box">
+    <view class="cancel_btn" bindtap="closeDialog">取消续费</view>
+    <view class="submit_btn">立即续费</view>
+  </view>
+  </view>
+</van-overlay>

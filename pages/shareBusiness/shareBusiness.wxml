@@ -79,33 +79,45 @@
 
 
 
-<van-dialog use-slot show="{{ sharedialog }}" showConfirmButton="{{false}}" bind:close="cancelSharedialogClose">
+<!-- <van-dialog use-slot show="{{ sharedialog }}" showConfirmButton="{{false}}" bind:close="cancelSharedialogClose">
   <view class="dialog_box">
     <view class="dialog_title">成本价（单位为“工券”）</view>
     <view>
-      <van-field 
-        value="{{ costValue }}" 
-        placeholder="请输入商品成本价" 
-        border="{{ false }}" 
-        bind:change="costValueChange"
-        class="renew_input" 
-      />
+      <van-field value="{{ costValue }}" placeholder="请输入商品成本价" border="{{ false }}" bind:change="costValueChange"
+        class="renew_input" />
     </view>
 
     <view class="dialog_title">共享数量</view>
     <view>
-      <van-field 
-        value="{{ shareNumValue }}" 
-        placeholder="请输入共享数量" 
-        border="{{ false }}" 
-        bind:change="shareNumValueChange"
-        class="renew_input" 
-      />
+      <van-field value="{{ shareNumValue }}" placeholder="请输入共享数量" border="{{ false }}"
+        bind:change="shareNumValueChange" class="renew_input" />
     </view>
 
     <view class="dialog_btn_box">
-    <view class="cancel_btn" bindtap="cancelSharedialogClose">取消共享</view>
-    <view class="submit_btn">立即共享</view>
+      <view class="cancel_btn" bindtap="cancelSharedialogClose">取消共享</view>
+      <view class="submit_btn">立即共享</view>
+    </view>
   </view>
+</van-dialog> -->
+
+
+<van-overlay show="{{ sharedialog }}" class="moni_dialog">
+  <view class="dialog_box dialog_box_high">
+    <view class="dialog_title">成本价（单位为“工券”）</view>
+    <view>
+      <van-field value="{{ costValue }}" placeholder="请输入商品成本价" border="{{ false }}" bind:change="costValueChange"
+        class="renew_input" />
+    </view>
+
+    <view class="dialog_title">共享数量</view>
+    <view>
+      <van-field value="{{ shareNumValue }}" placeholder="请输入共享数量" border="{{ false }}"
+        bind:change="shareNumValueChange" class="renew_input" />
+    </view>
+
+    <view class="dialog_btn_box">
+      <view class="cancel_btn" bindtap="cancelSharedialogClose">取消共享</view>
+      <view class="submit_btn">立即共享</view>
+    </view>
   </view>
-</van-dialog>
+</van-overlay>
