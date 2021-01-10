@@ -38,6 +38,7 @@
   background:rgba(242, 242, 242, 1);
   padding:0 24rpx;
   border-radius: 6px;
+  transform: translateZ(0);
 }
 
 .dialog_btn_box {

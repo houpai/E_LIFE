@@ -6,78 +6,80 @@ import {
 } from '../../utils/util'
 
 const app = getApp()
+let chart = null;
+let oneComponent = null;
+var option = {
+  color: ["#FFBF1E"],
+  grid: {
+    containLabel: true,
+    left: '20px',
+    right: '40px',
+    top: "12px"
+  },
+  tooltip: {
+    show: true,
+    trigger: 'axis'
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+    axisTick: {
+      show: false
+    },
+    axisLine: {
+      show: false
+    },
+  },
+  yAxis: {
+    x: 'center',
+    type: 'value',
+    axisTick: {
+      show: false
+    },
+    splitLine: {
+      lineStyle: {
+        type: 'solid'
+      }
+    },
+    axisLine: {
+      show: false
+    },
+  },
+  series: [{
+    name: 'A',
+    type: 'line',
+    smooth: true,
+    data: [18, 36, 65, 30, 78, 40, 33],
+    areaStyle: {
+      normal: {
+        //前四个参数代表位置 左下右上，如下表示从上往下渐变色 紫色到暗蓝色，
+        color: new echarts.graphic.LinearGradient(
+          0, 0, 0, 1,
+          [{
+              offset: 0,
+              color: '#FFBF1E'
+            },
+            {
+              offset: 1,
+              color: '#FFFFFF'
+            }
+          ]
+        )
+      }
+    },
 
-function initChart(canvas, width, height, dpr) {
-  const chart = echarts.init(canvas, null, {
-    width: width,
-    height: height,
-    devicePixelRatio: dpr // new
-  });
-  canvas.setChart(chart);
+  }]
+};
 
-  var option = {
-    color: ["#FFBF1E"],
-    grid: {
-      containLabel: true,
-      left: '20px',
-      right: '40px',
-      top: "12px"
-    },
-    tooltip: {
-      show: true,
-      trigger: 'axis'
-    },
-    xAxis: {
-      type: 'category',
-      boundaryGap: false,
-      data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
-      axisTick: {
-        show: false
-      },
-      axisLine: {
-        show: false
-      },
-    },
-    yAxis: {
-      x: 'center',
-      type: 'value',
-      axisTick: {
-        show: false
-      },
-      splitLine: {
-        lineStyle: {
-          type: 'solid'
-        }
-      },
-      axisLine: {
-        show: false
-      },
-    },
-    series: [{
-      name: 'A',
-      type: 'line',
-      smooth: true,
-      data: [18, 36, 65, 30, 78, 40, 33],
-      areaStyle: {
-        normal: {
-          //前四个参数代表位置 左下右上，如下表示从上往下渐变色 紫色到暗蓝色，
-          color: new echarts.graphic.LinearGradient(
-            0, 0, 0, 1,
-            [{
-                offset: 0,
-                color: '#FFBF1E'
-              },
-              {
-                offset: 1,
-                color: '#FFFFFF'
-              }
-            ]
-          )
-        }
-      },
+function initChart(chart) {
+  // chart = echarts.init(canvas, null, {
+  //   width: width,
+  //   height: height,
+  //   devicePixelRatio: dpr // new
+  // });
+  // canvas.setChart(chart);
 
-    }]
-  };
   chart.setOption(option);
   return chart;
 }
@@ -91,7 +93,8 @@ Page({
     achievement: 0,
     canvasHeight: 300,
     ec: {
-      onInit: initChart,
+      // onInit: initChart,
+      lazyLoad: true
     },
     startTime: '', // 开始时间
     endTime: '', // 结束时间
@@ -115,7 +118,7 @@ Page({
   // 切换时间类型 默认为索引为type 0 本月 1 本年 2 自定义
   onChange(event) {
     this.setData({
-      active:event.detail.name
+      active: event.detail.name
     })
     if (event.detail.name === 0) {
       let timeObj = getCurrentMonthTime()
@@ -171,20 +174,37 @@ Page({
         timeText: timeStarText + ' - ' + timeEndText
       },
     });
-    console.log('customObj= ===', this.data.customObj)
+    this.initCanvas()
   },
   timeSelectClose() {
     this.setData({
       calendarShow: false
     })
+    this.initCanvas()
+  },
+  initCanvas: function () {
+    oneComponent = this.selectComponent('#mychart-dom-line');
+    oneComponent.init((canvas, width, height) => {
+      console.log('canvas ===', canvas)
+      const chartObj = echarts.init(canvas, null, {
+        width: width,
+        height: height
+      });
+      initChart(chartObj)
+      chart = chartObj;
+      return chartObj;
+    });
   },
   onLoad: function () {
     let timeObj = getCurrentMonthTime()
     this.setData({
       timeText: timeObj.currentMonthTimeText,
       startTime: timeObj.timeStar,
-      endTime: timeObj.timeEnd
+      endTime: timeObj.timeEnd,
+      calendarShow: false
     })
+    oneComponent = this.selectComponent('#mychart-dom-line');
+    this.initCanvas()
   },
   onReady: function () {
     var that = this;
