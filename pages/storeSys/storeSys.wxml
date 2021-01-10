@@ -38,7 +38,7 @@
         <van-field value="{{ storeType }}" disabled class="p_0 input_value" placeholder="请选择店铺类型" border="{{ false }}"
           bind:change="telValueChange">
           <view slot="button">
-            <van-icon name="arrow" class="right_icon"/>
+            <van-icon name="arrow" class="right_icon" />
           </view>>
         </van-field>
       </view>
@@ -54,7 +54,19 @@
       <view class="input_label">店铺地址</view>
       <view class="margin_box">
         <van-field value="{{ addressValue }}" class="p_0 input_value" placeholder="请输入店铺地址" border="{{ false }}"
-          bind:change="addressValueChange" />
+          bind:change="addressValueChange">
+          <view slot="button">
+            <view class="point_btn" bindtap="setStoreAddress">
+              <image class="img" src="{{'../../assets/img/icon_point.png'}}"></image>
+              <view class="point_text">编辑定位</view>
+            </view>
+          </view>>
+        </van-field>
+      </view>
+
+      <view class="map_box">
+        <map class="map" markers="{{markers}}" latitude="{{location.latitude}}" longitude="{{location.longitude}}"
+          scale="{{scale}}" />
       </view>
     </view>
 
@@ -79,28 +91,40 @@
       </view>
     </view>
     <view class="primary_type_list" wx:if="{{firstShow}}">
-      <view 
-        wx:for="{{actions}}" 
-        wx:for-item="item" 
-        wx:for-index="id" 
-        class="primary_type_item"
-        data-item="{{item}}"
-        bindtap="selectType"
-      >
+      <view wx:for="{{actions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectType">
         {{item.name}}
       </view>
     </view>
     <view class="primary_type_list" wx:else>
-      <view 
-        wx:for="{{subActions}}" 
-        wx:for-item="item" 
-        wx:for-index="id" 
-        class="primary_type_item"
-        data-item="{{item}}"
-        bindtap="selectSecondType"
-      >
+      <view wx:for="{{subActions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectSecondType">
         {{item.name}}
       </view>
     </view>
   </view>
 </van-action-sheet>
+
+
+
+<view class="edit_address_box" wx:if="{{editAddressShow}}">
+  <view class="introduce">
+    请在地图上标记您的店铺的所在位置。
+  </view>
+
+  <view class="edit_map_box">
+    <map class="map" id="map" latitude="{{location.latitude}}" longitude="{{location.longitude}}" markers="{{markers}}"
+      scale="16" bindregionchange="onChangeRegion" bindtap="onTapMap" />
+  </view>
+
+  <view class="feature-content  border-bottom">
+    <text class="feature-label">标记点坐标</text>
+    <text class="feature-txt">{{mapCallbackTxt}}</text>
+  </view>
+
+  <view class="btn_box">
+    <view class="btn cancel_btn" bindtap="cancelSetAddress">取消标记</view>
+    <view class="btn submit_btn" bindtap="cancelSetAddress">确认标记</view>
+  </view>
+
+</view>
