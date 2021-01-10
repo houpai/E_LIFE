@@ -10,7 +10,10 @@
       </view>
 
       <view class="time_box">
-        <view class="time_check_box">
+        <view class="time_check_box" wx:if="{{active === 2}}" bindtap="customTimeSelect">
+          {{customObj.timeText ? customObj.timeText : '请选择时间区间'}}
+        </view>
+        <view class="time_check_box" wx:else>
           {{timeText}}
         </view>
       </view>
@@ -66,10 +69,18 @@
       </view>
 
       <view class="echart_title">业绩走势</view>
-      <view class="echart_box" style="height:{{canvasHeight}}px">
+      <view class="echart_box" style="height:{{canvasHeight}}px" wx:if="{{!calendarShow}}">
         <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" force-use-old-canvas="true"></ec-canvas>
       </view>
-
     </scroll-view>
   </view>
 </view>
+
+<van-calendar 
+  show="{{ calendarShow }}" 
+  bind:close="timeSelectClose" 
+  type="range" 
+  min-date="{{minDate}}"
+  bind:confirm="timeSelectConfirm"  
+  color="#488FF1"
+/>
