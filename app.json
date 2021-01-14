@@ -30,7 +30,8 @@
     "pages/bonusMaintain/bonusMaintain",
     "pages/shareBusiness/shareBusiness",
     "pages/dataSys/dataSys",
-    "pages/dataDetail/dataDetail"
+    "pages/dataDetail/dataDetail",
+    "pages/mIndex/mIndex"
   ],
   "window":{
     "backgroundTextStyle":"light",

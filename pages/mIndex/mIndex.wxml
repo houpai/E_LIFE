@@ -1,0 +1,68 @@
+<!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+<view class="index_container">
+  <view class="index_banner">
+    <view class="store_message_box">
+      <view class="store_name" bindtap="goSetting">
+        <view>肯德基首创店</view>
+        <view class="m_name">张丽莉</view>
+      </view>
+      <view class="store_logo" bindtap="goSetting">
+        <image class="img"  src='{{ "../../assets/img/icon_store_logo.png"}}' />
+      </view>
+    </view>
+    <view class="data_board_box">
+      <view class="data_board_title">
+        <image class="img" src='{{ "../../assets/img/icon_data.png"}}' />
+        <view class="title">数据中心</view>
+      </view>
+      <view class="data_detail_box">
+        <view class="item">
+          <view class="today_income_box item_box">
+            <view class="detail_data">2090</view>
+            <view class="detail_title">今日业绩</view>
+          </view>
+        </view>
+        <view class="item">
+          <view class="this_month_income_box item_box">
+            <view class="detail_data">17.36万</view>
+            <view class="detail_title">本月业绩</view>
+          </view>
+        </view>
+        <view class="item">
+          <view class="last_month_income_box item_box">
+            <view class="detail_data">16.36万</view>
+            <view class="detail_title">上月业绩</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="menu_box">
+    <view class="menu_item" data-menu="storeIndex" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/m_achievement.png"}}' />
+      <view class="menu_title">我的业绩</view>
+    </view>
+    <view class="menu_item" data-menu="coupon" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/m_paiming.png"}}' />
+      <view class="menu_title">业绩排名</view>
+    </view>
+    <view class="menu_item" data-menu="wallet" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/m_wallet.png"}}' />
+      <view class="menu_title">工券钱包</view>
+    </view>
+    <view class="menu_item" data-menu="customer_sys" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/m_customer.png"}}' />
+      <view class="menu_title">我的客户</view>
+    </view>
+    <view class="menu_item" data-menu="customer_sys" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/m_tuiguang.png"}}' />
+      <view class="menu_title">推广码</view>
+    </view>
+    <view class="menu_item" data-menu="customer_sys" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/m_xiaoquan.png"}}' />
+      <view class="menu_title">扫码消券</view>
+    </view>
+  </view>
+</view>
+

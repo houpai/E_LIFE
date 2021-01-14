@@ -249,6 +249,12 @@
         {
           "name": "pages/shareBusiness/shareBusiness",
           "pathName": "pages/shareBusiness/shareBusiness",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mIndex/mIndex",
+          "pathName": "pages/mIndex/mIndex",
           "scene": null
         }
       ]
