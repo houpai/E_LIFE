@@ -255,6 +255,12 @@
         {
           "name": "pages/mIndex/mIndex",
           "pathName": "pages/mIndex/mIndex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mSetting/mSetting",
+          "pathName": "pages/mSetting/mSetting",
           "scene": null
         }
       ]

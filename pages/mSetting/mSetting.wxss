@@ -1,0 +1,127 @@
+page {
+  background: #FFFFFF;
+}
+
+.mSetting_container {
+  font-size: 20rpx;
+}
+
+.mSetting_container .top_bg_box {
+  width: 100%;
+  height: 500rpx;
+  background: linear-gradient(180deg, #488FF1 0%, #7EC2F9 100%);
+  border-radius: 0px 0px 60rpx 60rpx;
+  display: flex;
+  justify-content: center;
+}
+
+
+.mSetting_container .top_bg_box .info_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60rpx;
+}
+
+.mSetting_container .top_bg_box .info_box .img {
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.mSetting_container .top_bg_box .info_box .name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 44rpx;
+  margin-top: 30rpx;
+}
+
+
+
+
+.list_box {
+  margin: -160rpx 30rpx 60rpx 30rpx;
+  border-radius: 6rpx;
+}
+
+.list_box .title_box {
+  box-sizing: border-box;
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.list_box .title_box .img {
+  display: block;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.list_box .title_box .title_text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  line-height: 44rpx;
+  margin-left: 10rpx;
+}
+
+.list_item {
+  margin: 0 30rpx 30rpx 30rpx;
+  height: 104rpx;
+  background: #F2F2F2;
+  border-radius: 6rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.list_item .icon_box {
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_item .icon_box .van-icon {
+  color: rgba(72, 143, 241, 1);
+  font-size: 40rpx;
+}
+
+.list_item .store_name {
+  flex: 1;
+  flex-shrink: 0;
+  width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333333;
+  line-height: 44rpx;
+}
+
+.logout_btn {
+  height: 88rpx;
+  background: #F2F2F2;
+  border-radius: 6rpx;
+  margin:60rpx 0 30rpx 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #488FF1;
+
+}
+
+.store_box {
+  background: #FFFFFF;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1) inset;
+  padding-bottom: 30rpx;
+}

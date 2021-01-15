@@ -12,11 +12,11 @@ Page({
   },
   menuLink(e) {
     let query = e.currentTarget.dataset['menu']
-    if (query === 'storeIndex') {
-      wx.navigateTo({
-        url: '/pages/storeIndex/storeIndex'
-      })
-    }
+    // if (query === 'storeIndex') {
+    //   wx.navigateTo({
+    //     url: '/pages/storeIndex/storeIndex'
+    //   })
+    // }
   },
   goSetting() {
     // wx.navigateTo({

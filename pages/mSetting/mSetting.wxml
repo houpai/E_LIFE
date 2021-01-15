@@ -1,0 +1,36 @@
+<view class="mSetting_container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="info_box">
+        <image src="{{'../../assets/img/m_member.png'}}" class="img"></image>
+        <view class="name">张丽莉</view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="list_box">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+
+
+      <view class="store_box">
+        <view class="title_box">
+          <image class="img" src="{{'../../assets/img/store_sys_btn.png'}}"></image>
+          <view class="title_text">切换门店</view>
+        </view>
+        <view class="list_item" wx:for="{{4}}" data-index="{{index}}" bindtap="storeSelect">
+          <view class="store_name">
+            肯德基首创光合城店
+          </view>
+          <view class="icon_box">
+            <van-icon name="passed" wx:if="{{index === selectId}}" />
+          </view>
+        </view>
+      </view>
+
+      <view class="logout_btn">
+        退出登录
+      </view>
+    </scroll-view>
+  </view>
+</view>

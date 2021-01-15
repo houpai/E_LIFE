@@ -39,11 +39,11 @@
   </view>
 
   <view class="menu_box">
-    <view class="menu_item" data-menu="storeIndex" bindtap="menuLink">
+    <view class="menu_item" data-menu="mData" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/m_achievement.png"}}' />
       <view class="menu_title">我的业绩</view>
     </view>
-    <view class="menu_item" data-menu="coupon" bindtap="menuLink">
+    <view class="menu_item" data-menu="mRanking" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/m_paiming.png"}}' />
       <view class="menu_title">业绩排名</view>
     </view>
@@ -51,15 +51,15 @@
       <image class="img" src='{{ "../../assets/img/m_wallet.png"}}' />
       <view class="menu_title">工券钱包</view>
     </view>
-    <view class="menu_item" data-menu="customer_sys" bindtap="menuLink">
+    <view class="menu_item" data-menu="mCustomer" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/m_customer.png"}}' />
       <view class="menu_title">我的客户</view>
     </view>
-    <view class="menu_item" data-menu="customer_sys" bindtap="menuLink">
+    <view class="menu_item" data-menu="mExtension" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/m_tuiguang.png"}}' />
       <view class="menu_title">推广码</view>
     </view>
-    <view class="menu_item" data-menu="customer_sys" bindtap="menuLink">
+    <view class="menu_item" data-menu="" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/m_xiaoquan.png"}}' />
       <view class="menu_title">扫码消券</view>
     </view>
