@@ -31,7 +31,10 @@
     "pages/shareBusiness/shareBusiness",
     "pages/dataSys/dataSys",
     "pages/dataDetail/dataDetail",
-    "pages/mIndex/mIndex"
+    "pages/mIndex/mIndex",
+    "pages/mSetting/mSetting",
+    "pages/mDataSys/mDataSys",
+    "pages/mCardData/mCardData"
   ],
   "window":{
     "backgroundTextStyle":"light",

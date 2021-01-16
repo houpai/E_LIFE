@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "ec-canvas": "../../components/ec-canvas/ec-canvas",
+    "van-calendar": "@vant/weapp/calendar/index"
+  },
+  "navigationBarBackgroundColor": "#488FF1",
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "我的业绩",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#F2F2F2",
+  "disableScroll":true
+}

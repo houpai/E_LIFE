@@ -1,0 +1,65 @@
+<view class="dataSys-container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="type_container">
+        <van-tabs active="{{ active }}" bind:change="onChange">
+          <van-tab title="本月"></van-tab>
+          <van-tab title="本年"></van-tab>
+          <van-tab title="自定义"></van-tab>
+        </van-tabs>
+      </view>
+
+      <view class="time_box">
+        <view class="time_check_box" wx:if="{{active === 2}}" bindtap="customTimeSelect">
+          {{customObj.timeText ? customObj.timeText : '请选择时间区间'}}
+        </view>
+        <view class="time_check_box" wx:else>
+          {{timeText}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="scroll-list" wx:if="{{!calendarShow}}">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="chart_box">
+        <view class="chart_container" style='background-image:url({{chartImg}})'>
+          <view class="chart_title">会员卡业绩</view>
+          <view class="chart_value">¥18384.00</view>
+          <view class="chart_tip">会员卡金额</view>
+        </view>
+      </view>
+
+      <view class="line_box">
+        <view class="line_title">会员卡业绩详情</view>
+        <view class="line_item">
+          <view class="line_message">
+              <view class="card_name">玫瑰红卡</view>
+              <view class="detail_value">¥14000.00</view>
+          </view>
+          <van-progress pivot-text="" color="#F76161" percentage="25" />
+        </view>
+
+        <view class="line_item">
+          <view class="line_message">
+              <view class="card_name">肯德基蓝卡</view>
+              <view class="detail_value">¥14000.00</view>
+          </view>
+          <van-progress pivot-text="" color="#F76161" percentage="50" />
+        </view>
+
+        <view class="line_item">
+          <view class="line_message">
+              <view class="card_name">玫瑰红卡</view>
+              <view class="detail_value">¥14000.00</view>
+          </view>
+          <van-progress pivot-text="" color="#F76161"  percentage="75"/>
+        </view>
+        
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<van-calendar show="{{ calendarShow }}" position="{{'top'}}" bind:close="timeSelectClose" type="range"
+  min-date="{{minDate}}" bind:confirm="timeSelectConfirm" color="#488FF1" />

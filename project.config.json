@@ -261,6 +261,19 @@
         {
           "name": "pages/mSetting/mSetting",
           "pathName": "pages/mSetting/mSetting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mDataSys/mDataSys",
+          "pathName": "pages/mDataSys/mDataSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mCardData/mCardData",
+          "pathName": "pages/mCardData/mCardData",
+          "query": "",
           "scene": null
         }
       ]
