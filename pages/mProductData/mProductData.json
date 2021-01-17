@@ -4,6 +4,6 @@
     "van-tabs": "@vant/weapp/tabs/index",
     "van-calendar": "@vant/weapp/calendar/index"
   },
-  "navigationBarTitleText": "会员卡业绩",
+  "navigationBarTitleText": "商品业绩",
   "disableScroll":true
 }

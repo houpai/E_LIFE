@@ -1,0 +1,72 @@
+<view class="mProductDataSearch_container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="search_box">
+        <van-search value="{{ searchValue }}" placeholder="请输入名称搜索" bind:change="searchValueChange"
+          bind:search="onSearch" use-action-slot style="width:100%">
+          <view slot="action" bind:tap="onSearch" class="search_btn">搜索</view>
+        </van-search>
+      </view>
+    </view>
+  </view>
+
+  <view class="list_box">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="table_box">
+        <view class="achievement_type_box">
+          <view class="achievement_type">
+          <van-tabs active="{{ achievement }}" bind:change="achievementChange">
+            <van-tab title="商品明细"></van-tab>
+            <van-tab title="消费明细"></van-tab>
+          </van-tabs>
+        </view>
+
+        </view>
+
+        <view class="scroll_table">
+          <view class="table_flex_item table_title">
+            <view class="flex_value wd10">排名</view>
+            <view class="flex_value">商品名称</view>
+            <view class="flex_value">今日业绩</view>
+            <view class="flex_value">本月业绩</view>
+            <view class="flex_value">业绩占比</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">1</view>
+            <view class="flex_value type_value">商品1</view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+            <view class="flex_value">5%</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">2</view>
+            <view class="flex_value wd15 type_value" bindtap="goCardDetail">商品2</view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+            <view class="flex_value">5%</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">3</view>
+            <view class="flex_value type_value">商品3</view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+            <view class="flex_value">5%</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">4</view>
+            <view class="flex_value type_value">商品4</view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+            <view class="flex_value">5%</view>
+          </view>
+        </view>
+
+      </view>
+
+    </scroll-view>
+  </view>
+</view>
+
+
+
+

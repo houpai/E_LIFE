@@ -275,6 +275,17 @@
           "pathName": "pages/mCardData/mCardData",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/mProductData/mProductData",
+          "pathName": "pages/mProductData/mProductData",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mProductDataSearch/mProductDataSearch",
+          "pathName": "pages/mProductDataSearch/mProductDataSearch",
+          "scene": null
         }
       ]
     }

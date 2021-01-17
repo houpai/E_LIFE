@@ -57,7 +57,7 @@
         </view>
         <view class="table_flex_item">
           <view class="flex_value wd10">1</view>
-          <view class="flex_value wd15 type_value">商品</view>
+          <view class="flex_value wd15 type_value" bindtap="goProductDetail">商品</view>
           <view class="flex_value">1982.00</view>
           <view class="flex_value">190082.00</view>
           <view class="flex_value">190082.00</view>

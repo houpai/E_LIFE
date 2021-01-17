@@ -34,7 +34,9 @@
     "pages/mIndex/mIndex",
     "pages/mSetting/mSetting",
     "pages/mDataSys/mDataSys",
-    "pages/mCardData/mCardData"
+    "pages/mCardData/mCardData",
+    "pages/mProductData/mProductData",
+    "pages/mProductDataSearch/mProductDataSearch"
   ],
   "window":{
     "backgroundTextStyle":"light",
