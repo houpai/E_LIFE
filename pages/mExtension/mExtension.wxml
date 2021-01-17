@@ -16,29 +16,12 @@
       </view>
     </view>
     <view class="message_item">
-      <view class="message_label with_margin">客服电话</view>
-      <view class="message_value">{{storePhone}}</view>
-
-      <view class="message_label with_margin">店铺地址</view>
-      <view class="message_value">{{storeAddress}}</view>
-
-      <view class="message_label with_margin">店铺二维码</view>
-      <view class="codeImg_value">
-        <view class="img_box" bindlongpress="saveCodeImg"
-          data-src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.dh3344.com%2Fapi%2Fqrcode.png.php%3Fauth%3Dhttp%3A%2F%2Fwww.dh3344.com%2Fnews%2Fshow-84460.html&refer=http%3A%2F%2Fwww.dh3344.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612452649&t=3901249aa0fa017550fd50ab26237ce7">
-          <image
-            src="{{'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.dh3344.com%2Fapi%2Fqrcode.png.php%3Fauth%3Dhttp%3A%2F%2Fwww.dh3344.com%2Fnews%2Fshow-84460.html&refer=http%3A%2F%2Fwww.dh3344.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612452649&t=3901249aa0fa017550fd50ab26237ce7'}}" />
-        </view>
-        <view class="tip_box">
-          <text class="tip_text">长按保存二维码</text>
-        </view>
-      </view>
+      <image
+        bindlongpress="saveCodeImg"
+        data-src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.dh3344.com%2Fapi%2Fqrcode.png.php%3Fauth%3Dhttp%3A%2F%2Fwww.dh3344.com%2Fnews%2Fshow-84460.html&refer=http%3A%2F%2Fwww.dh3344.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612452649&t=3901249aa0fa017550fd50ab26237ce7"
+        src="{{'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.dh3344.com%2Fapi%2Fqrcode.png.php%3Fauth%3Dhttp%3A%2F%2Fwww.dh3344.com%2Fnews%2Fshow-84460.html&refer=http%3A%2F%2Fwww.dh3344.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612452649&t=3901249aa0fa017550fd50ab26237ce7'}}" />
+        <view class="tip">此二维码30天有效</view>
+        <view class="tip">长按保存二维码</view>
     </view>
-  </view>
-
-
-  <view class='edit_btn_box' bindtap="editStoreMessage">
-    <van-icon name="edit" />    
-    <text>点击编辑</text>
   </view>
 </view>
