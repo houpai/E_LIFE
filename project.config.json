@@ -291,6 +291,12 @@
         {
           "name": "pages/mRanking/mRanking",
           "pathName": "pages/mRanking/mRanking",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mExtension/mExtension",
+          "pathName": "pages/mExtension/mExtension",
           "scene": null
         }
       ]

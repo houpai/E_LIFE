@@ -184,3 +184,16 @@ page .achievement_type .van-tabs__line {
 .table_box .table_flex_item .wd10 {
   width: 10%!important;
 }
+
+.type_value  {
+  width: 30%!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type_value image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 10rpx;
+}
