@@ -303,6 +303,12 @@
         {
           "name": "pages/mCustomerList/mCustomerList",
           "pathName": "pages/mCustomerList/mCustomerList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mCustomerDetail/mCustomerDetail",
+          "pathName": "pages/mCustomerDetail/mCustomerDetail",
           "scene": null
         }
       ]

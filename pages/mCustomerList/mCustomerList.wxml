@@ -26,7 +26,7 @@
             <view class="flex_value">消费总额</view>
             <view class="flex_value">持卡数量</view>
           </view>
-          <view class="table_flex_item">
+          <view class="table_flex_item" bindtap="goCustomerDetail">
             <view class="flex_value wd10">1</view>
             <view class="flex_value type_value">
               <image src="{{'../../assets/img/m_member.png'}}"></image>
@@ -35,7 +35,7 @@
             <view class="flex_value">1982.00</view>
             <view class="flex_value">190082.00</view>
           </view>
-          <view class="table_flex_item">
+          <view class="table_flex_item" bindtap="goCustomerDetail">
             <view class="flex_value wd10">2</view>
             <view class="flex_value type_value">
               <image src="{{'../../assets/img/m_member.png'}}"></image>
@@ -44,7 +44,7 @@
             <view class="flex_value">1982.00</view>
             <view class="flex_value">190082.00</view>
           </view>
-          <view class="table_flex_item">
+          <view class="table_flex_item" bindtap="goCustomerDetail">
             <view class="flex_value wd10">3</view>
             <view class="flex_value type_value">
               <image src="{{'../../assets/img/m_member.png'}}"></image>
@@ -53,7 +53,7 @@
             <view class="flex_value">1982.00</view>
             <view class="flex_value">190082.00</view>
           </view>
-          <view class="table_flex_item">
+          <view class="table_flex_item" bindtap="goCustomerDetail">
             <view class="flex_value wd10">4</view>
             <view class="flex_value type_value">
               <image src="{{'../../assets/img/m_member.png'}}"></image>

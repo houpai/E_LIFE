@@ -1,0 +1,65 @@
+<view class="customerList_container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="mCustomer_message">
+        <view class="img_box">
+          <image class="img" src="{{'../../assets/img/icon_customer.png'}}"></image>
+        </view>
+        <view class="message_box">
+          <view class="name_box">
+            <view class="name">张三</view>
+            <view class="tip">27天未到店消费</view>
+          </view>
+          <view class="phone">
+            19389898989
+          </view>
+        </view>
+      </view>
+      <view class="tab_box">
+        <van-tabs active="{{ achievement }}" bind:change="achievementChange">
+          <van-tab title="持卡情况"></van-tab>
+          <van-tab title="消费记录"></van-tab>
+        </van-tabs>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="customer_list_box">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="card_item" wx:for="{{10}}" wx:if="{{achievement == 0}}">
+        <view class="top_box">
+          <view class="card"></view>
+          <view class="card_message">
+            <view class="card_name">肯德基红玫瑰卡</view>
+            <view class="card_date">到期日：2030.10.10</view>
+          </view>
+        </view>
+        <view class="bottom_box">
+          <view class="yue_box">
+            <view class="label">实储余额</view>
+            <view class="value">2938</view>
+          </view>
+          <view class="yue_box">
+            <view class="label">卡内余额</view>
+            <view class="value">2938</view>
+          </view>
+        </view>
+      </view>
+
+
+      <view class="consumption_item" wx:if="{{achievement == 1}}" wx:for="{{10}}">
+        <view class="consumption_name">
+          美甲和大家说的话今生今世都精神抖擞
+        </view>
+        <view class="consumption_message">
+          <view class="consumption_value">
+            <text class="money_value">¥88</text>
+            <text class="type">现金</text>
+          </view>
+          <view class="consumption_date">2020.10.10 10:10</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

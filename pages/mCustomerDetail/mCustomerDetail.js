@@ -2,18 +2,20 @@ const app = getApp()
 
 Page({
   data: {
-    searchValue:'',
+    searchValue: '',
     height: '',
-    top: ""
+    top: "",
+    achievement:0
   },
-  goCustomerDetail(e) {
-    let customerId = e.currentTarget.dataset['id']
-    wx.navigateTo({
-      url: '/pages/mCustomerDetail/mCustomerDetail'
+  // 切换类型
+  achievementChange(event) {
+    console.log('event ===',event.detail.name )
+    this.setData({
+      achievement:event.detail.name
     })
   },
   onLoad: function () {
-    
+
   },
   onReady: function () {
     var that = this;

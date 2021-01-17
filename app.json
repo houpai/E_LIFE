@@ -39,7 +39,8 @@
     "pages/mProductDataSearch/mProductDataSearch",
     "pages/mRanking/mRanking",
     "pages/mExtension/mExtension",
-    "pages/mCustomerList/mCustomerList"
+    "pages/mCustomerList/mCustomerList",
+    "pages/mCustomerDetail/mCustomerDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
