@@ -9,7 +9,7 @@ const app = getApp()
 let chart = null;
 let oneComponent = null;
 var option = {
-  color: ["#FFBF1E"],
+  color: ["#B761F7"],
   grid: {
     containLabel: true,
     left: '20px',
@@ -58,7 +58,7 @@ var option = {
           0, 0, 0, 1,
           [{
               offset: 0,
-              color: '#FFBF1E'
+              color: '#B761F7'
             },
             {
               offset: 1,
@@ -90,6 +90,7 @@ Page({
     height: '',
     top: "",
     active: 0,
+    achievement: 0,
     canvasHeight: 300,
     ec: {
       // onInit: initChart,
@@ -190,7 +191,7 @@ Page({
   initCanvas: function () {
     oneComponent = this.selectComponent('#mychart-dom-line');
     oneComponent.init((canvas, width, height) => {
-      console.log('canvas ===', canvas)
+      console.log('canvas ===', canvas, width, height)
       const chartObj = echarts.init(canvas, null, {
         width: width,
         height: height

@@ -1,0 +1,81 @@
+<view class="dataSys-container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="type_container">
+        <van-tabs active="{{ active }}" bind:change="onChange">
+          <van-tab title="本月"></van-tab>
+          <van-tab title="本年"></van-tab>
+          <van-tab title="自定义"></van-tab>
+        </van-tabs>
+      </view>
+
+      <view class="time_box">
+        <view class="time_check_box" wx:if="{{active === 2}}" bindtap="customTimeSelect">
+          {{customObj.timeText ? customObj.timeText : '请选择时间区间'}}
+        </view>
+        <view class="time_check_box" wx:else>
+          {{timeText}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="scroll-list" wx:if="{{!calendarShow}}">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="chart_box">
+        <view class="chart_title">排名走势</view>
+        <view class="chart_container" style="height:400rpx;width:100%">
+          <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" force-use-old-canvas="true"></ec-canvas>
+        </view>
+      </view>
+
+
+
+      <view class="ranking_box">
+        <view class="ranking_title">业绩排名</view>
+        <view class="table_box">
+          <view class="scroll_table">
+          <view class="table_flex_item table_title">
+            <view class="flex_value wd10">排名</view>
+            <view class="flex_value">员工姓名</view>
+            <view class="flex_value">今日业绩</view>
+            <view class="flex_value">本月业绩</view>
+            <view class="flex_value">上月业绩</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">1</view>
+            <view class="flex_value type_value">李娜</view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+            <view class="flex_value">5%</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">2</view>
+            <view class="flex_value wd15 type_value" bindtap="goCardDetail">李娜</view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+            <view class="flex_value">5%</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">3</view>
+            <view class="flex_value type_value">李娜</view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+            <view class="flex_value">5%</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">4</view>
+            <view class="flex_value type_value">李娜</view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+            <view class="flex_value">5%</view>
+          </view>
+        </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<van-calendar show="{{ calendarShow }}" position="{{'top'}}" bind:close="timeSelectClose" type="range"
+  min-date="{{minDate}}" bind:confirm="timeSelectConfirm" color="#488FF1" />

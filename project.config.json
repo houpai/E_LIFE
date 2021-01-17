@@ -285,6 +285,12 @@
         {
           "name": "pages/mProductDataSearch/mProductDataSearch",
           "pathName": "pages/mProductDataSearch/mProductDataSearch",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mRanking/mRanking",
+          "pathName": "pages/mRanking/mRanking",
           "scene": null
         }
       ]

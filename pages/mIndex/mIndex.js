@@ -12,11 +12,15 @@ Page({
   },
   menuLink(e) {
     let query = e.currentTarget.dataset['menu']
-    // if (query === 'storeIndex') {
-    //   wx.navigateTo({
-    //     url: '/pages/storeIndex/storeIndex'
-    //   })
-    // }
+    if (query === 'mRanking') {
+      wx.navigateTo({
+        url: '/pages/mRanking/mRanking'
+      })
+    }else if(query === 'mDataSys') {
+      wx.navigateTo({
+        url: '/pages/mDataSys/mDataSys'
+      })
+    }
   },
   goSetting() {
     // wx.navigateTo({

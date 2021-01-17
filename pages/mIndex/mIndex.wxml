@@ -39,7 +39,7 @@
   </view>
 
   <view class="menu_box">
-    <view class="menu_item" data-menu="mData" bindtap="menuLink">
+    <view class="menu_item" data-menu="mDataSys" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/m_achievement.png"}}' />
       <view class="menu_title">我的业绩</view>
     </view>

@@ -36,7 +36,8 @@
     "pages/mDataSys/mDataSys",
     "pages/mCardData/mCardData",
     "pages/mProductData/mProductData",
-    "pages/mProductDataSearch/mProductDataSearch"
+    "pages/mProductDataSearch/mProductDataSearch",
+    "pages/mRanking/mRanking"
   ],
   "window":{
     "backgroundTextStyle":"light",
