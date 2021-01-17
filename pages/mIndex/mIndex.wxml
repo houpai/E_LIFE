@@ -51,7 +51,7 @@
       <image class="img" src='{{ "../../assets/img/m_wallet.png"}}' />
       <view class="menu_title">工券钱包</view>
     </view>
-    <view class="menu_item" data-menu="mCustomer" bindtap="menuLink">
+    <view class="menu_item" data-menu="mCustomerList" bindtap="menuLink">
       <image class="img" src='{{ "../../assets/img/m_customer.png"}}' />
       <view class="menu_title">我的客户</view>
     </view>

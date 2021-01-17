@@ -7,7 +7,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   onLoad: function () {
-    
+
 
   },
   menuLink(e) {
@@ -16,9 +16,17 @@ Page({
       wx.navigateTo({
         url: '/pages/mRanking/mRanking'
       })
-    }else if(query === 'mDataSys') {
+    } else if (query === 'mDataSys') {
       wx.navigateTo({
         url: '/pages/mDataSys/mDataSys'
+      })
+    } else if (query === 'mExtension') {
+      wx.navigateTo({
+        url: '/pages/mExtension/mExtension'
+      })
+    } else if( query === 'mCustomerList') {
+      wx.navigateTo({
+        url: '/pages/mCustomerList/mCustomerList'
       })
     }
   },

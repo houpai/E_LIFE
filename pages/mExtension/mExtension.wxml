@@ -1,5 +1,5 @@
 <view class="storeIndex_container">
-  <navBar titleText="{{'店铺管理'}}"></navBar>
+  <navBar titleText="{{'推广码'}}"></navBar>
   <view class="store_bg">
     <image src="{{'https://houpai-1259269309.cos.ap-beijing.myqcloud.com/kfc2.jfif'}}" />
   </view>

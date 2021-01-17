@@ -1,0 +1,70 @@
+<view class="customerList_container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="pannel" style="margin-right:15rpx">
+        <image class="img" src="{{'../../assets/img/pannel_bg_left.png'}}"></image>
+        <view class="value">545</view>
+        <view class="label">客户总数</view>
+      </view>
+      <view class="pannel" style="margin-left:15rpx">
+        <image class="img" src="{{'../../assets/img/pannel_bg_right.png'}}"></image>
+        <view class="value">545.00万</view>
+        <view class="label">消费总额</view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="customer_list_box">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="ranking_box">
+        <view class="table_box">
+          <view class="scroll_table">
+          <view class="table_flex_item table_title">
+            <view class="flex_value wd10">排名</view>
+            <view class="flex_value type_value">客户姓名</view>
+            <view class="flex_value">消费总额</view>
+            <view class="flex_value">持卡数量</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">1</view>
+            <view class="flex_value type_value">
+              <image src="{{'../../assets/img/m_member.png'}}"></image>
+              <text>李娜</text>
+            </view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">2</view>
+            <view class="flex_value type_value">
+              <image src="{{'../../assets/img/m_member.png'}}"></image>
+              <text>李娜</text>
+            </view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">3</view>
+            <view class="flex_value type_value">
+              <image src="{{'../../assets/img/m_member.png'}}"></image>
+              <text>李娜</text>
+            </view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+          </view>
+          <view class="table_flex_item">
+            <view class="flex_value wd10">4</view>
+            <view class="flex_value type_value">
+              <image src="{{'../../assets/img/m_member.png'}}"></image>
+              <text>李娜</text>
+            </view>
+            <view class="flex_value">1982.00</view>
+            <view class="flex_value">190082.00</view>
+          </view>
+        </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
