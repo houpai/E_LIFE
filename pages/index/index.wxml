@@ -86,6 +86,11 @@
       <image class="img" src='{{ "../../assets/img/shareBusiness_sys_btn.png"}}' />
       <view class="menu_title">共享商圈</view>
     </view>
+
+    <view class="menu_item" data-menu="mIndex" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/shareBusiness_sys_btn.png"}}' />
+      <view class="menu_title">员工端首页</view>
+    </view>
   </view>
 </view>
 

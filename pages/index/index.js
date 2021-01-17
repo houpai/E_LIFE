@@ -93,6 +93,10 @@ Page({
       wx.navigateTo({
         url: '/pages/dataSys/dataSys'
       })
+    } else if( query === 'mIndex') {
+      wx.navigateTo({
+        url: '/pages/mIndex/mIndex',
+      })
     }
   },
   goSetting() {

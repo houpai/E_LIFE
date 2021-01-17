@@ -31,8 +31,8 @@ Page({
     }
   },
   goSetting() {
-    // wx.navigateTo({
-    //   url: '/pages/setting/setting'
-    // })
+    wx.navigateTo({
+      url: '/pages/mSetting/mSetting'
+    })
   }
 })

@@ -109,7 +109,7 @@ page {
   height: 88rpx;
   background: #F2F2F2;
   border-radius: 6rpx;
-  margin:60rpx 0 30rpx 30rpx;
+  margin:60rpx 30rpx 30rpx 30rpx;
   display: flex;
   justify-content: center;
   align-items: center;
