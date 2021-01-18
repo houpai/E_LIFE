@@ -14,7 +14,8 @@ var option = {
     containLabel: true,
     left: '20px',
     right: '40px',
-    top: "12px"
+    top: "12px",
+    bottom:"12px"
   },
   tooltip: {
     show: true,
