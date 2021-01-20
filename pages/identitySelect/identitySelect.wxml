@@ -1,0 +1,52 @@
+<view class="identitySelect_container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="title">请选择您的身份</view>
+      <view class="tip">我们对每种身份设定合理的权限</view>
+    </view>
+  </view>
+
+
+  <view class="identity_list_box">
+
+    <view class="identity_item" data-identity='boss' bindtap="identitySelect">
+      <view class="left_box">
+        <view class="identity">老板端</view>
+        <view class="identity_tip">店铺所有者</view>
+      </view>
+      <view class="identity_img">
+        <image src="{{'../../assets/img/identity_boss.png'}}"></image>
+      </view>
+    </view>
+
+    <view class="identity_item" data-identity='staff' bindtap="identitySelect">
+      <view class="left_box">
+        <view class="identity">员工端</view>
+        <view class="identity_tip">工作的主要实施者</view>
+      </view>
+      <view class="identity_img">
+        <image src="{{'../../assets/img/identity_staff.png'}}"></image>
+      </view>
+    </view>
+
+    <view class="identity_item" data-identity='shareholder'  bindtap="identitySelect">
+      <view class="left_box">
+        <view class="identity">股东端</view>
+        <view class="identity_tip">店铺出资人或投资人</view>
+      </view>
+      <view class="identity_img">
+        <image src="{{'../../assets/img/identity_shareholder.png'}}"></image>
+      </view>
+    </view>
+
+    <view class="identity_item" data-identity='business'  bindtap="identitySelect">
+      <view class="left_box">
+        <view class="identity">业务员端</view>
+        <view class="identity_tip">市场推广，引导商家入驻</view>
+      </view>
+      <view class="identity_img">
+        <image src="{{'../../assets/img/identity_business.png'}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

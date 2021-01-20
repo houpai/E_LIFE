@@ -1,23 +1,27 @@
 const app = getApp()
 
-import {loginBg} from "../../assets/base64Img/loginBg"
+import {
+  loginBg
+} from "../../assets/base64Img/loginBg"
 
 Page({
   data: {
-    loginBannerBg:loginBg.loginBg,
-    passwordType:true,
-    defaultType:true,
-    userName:'',
-    password:'',
-    userNameFocus:false,
-    phoneFocus:false,
-    codeFocus:false,
-    passwordFocus:false, // 是否是账号密码登录
-    passwordLogin:true,
-    count:0,
-    codeTimer:null,
-    phone:"",
-    code:''
+    loginBannerBg: loginBg.loginBg,
+    passwordType: true,
+    defaultType: true,
+    userName: '',
+    password: '',
+    userNameFocus: false,
+    phoneFocus: false,
+    codeFocus: false,
+    passwordFocus: false, // 是否是账号密码登录
+    passwordLogin: true,
+    count: 0,
+    codeTimer: null,
+    phone: "",
+    code: '',
+    identity: '',
+    loginTitle: '欢迎来到老板端'
   },
   eyeStatus: function () {
     let defaultType = !this.data.defaultType
@@ -25,7 +29,7 @@ Page({
     this.setData({
       defaultType: defaultType,
       passwordType: passwordType,
-      passwordFocus:true
+      passwordFocus: true
     })
   },
   // 账号输入
@@ -42,32 +46,32 @@ Page({
     })
     console.log('password ===', this.data.password)
   },
-    // 手机号输入
-    inputWatchPhone(e) {
-      this.setData({
-        phone: e.detail.value
-      })
-      console.log('userName ===', this.data.userName)
-    },
-    // 验证码输入
-    inputWatchCode(e) {
-      this.setData({
-        code: e.detail.value
-      })
-      console.log('password ===', this.data.password)
-    },
+  // 手机号输入
+  inputWatchPhone(e) {
+    this.setData({
+      phone: e.detail.value
+    })
+    console.log('userName ===', this.data.userName)
+  },
+  // 验证码输入
+  inputWatchCode(e) {
+    this.setData({
+      code: e.detail.value
+    })
+    console.log('password ===', this.data.password)
+  },
   clearUserName() {
     let userName = '';
     this.setData({
       userName: userName,
-      userNameFocus:true
+      userNameFocus: true
     })
   },
   clearPhone() {
     let phone = '';
     this.setData({
       phone: '',
-      phoneFocus:true
+      phoneFocus: true
     })
   },
   loginSubmitHandle() {
@@ -81,31 +85,51 @@ Page({
     let passwordLogin = !this.data.passwordLogin;
     let loginBannerBg = passwordLogin ? loginBg.loginBg : loginBg.loginBg2
     this.setData({
-      passwordLogin:passwordLogin,
-      loginBannerBg:loginBannerBg
+      passwordLogin: passwordLogin,
+      loginBannerBg: loginBannerBg
     })
   },
   sendCode() {
-    if(this.data.count >=  1) return false;
+    if (this.data.count >= 1) return false;
     clearInterval(this.data.codeTimer);
     this.setData({
-      count:60
+      count: 60
     })
-    this.codeTimer = setInterval(()=> {
+    this.codeTimer = setInterval(() => {
       let count = this.data.count;
       count--;
       this.setData({
         count: count
       })
-      if( count <= 1) {
+      if (count <= 1) {
         clearInterval(this.data.codeTimer)
       }
-    },1000)
+    }, 1000)
     this.setData({
-      codeFocus:true
+      codeFocus: true
     })
   },
-  onLoad: function () {
+  onLoad: function (options) {
+    this.setData({
+      identity: options.identity
+    })
 
+    if (this.data.identity === 'boss') {
+      this.setData({
+        loginTitle: '欢迎来到老板端'
+      })
+    } else if (this.data.identity === 'staff') {
+      this.setData({
+        loginTitle: '欢迎来到员工端'
+      })
+    } else if (this.data.identity === 'shareholder') {
+      this.setData({
+        loginTitle: '欢迎来到股东端'
+      })
+    } else if (this.data.identity === 'business') {
+      this.setData({
+        loginTitle: '欢迎来到业务员端'
+      })
+    }
   }
 })
