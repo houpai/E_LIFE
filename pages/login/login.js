@@ -1,12 +1,7 @@
 const app = getApp()
 
-import {
-  loginBg
-} from "../../assets/base64Img/loginBg"
-
 Page({
   data: {
-    loginBannerBg: loginBg.loginBg,
     passwordType: true,
     defaultType: true,
     userName: '',
@@ -83,10 +78,8 @@ Page({
 
   loginTypeChange() {
     let passwordLogin = !this.data.passwordLogin;
-    let loginBannerBg = passwordLogin ? loginBg.loginBg : loginBg.loginBg2
     this.setData({
       passwordLogin: passwordLogin,
-      loginBannerBg: loginBannerBg
     })
   },
   sendCode() {

@@ -1,6 +1,10 @@
 <view class="login_container">
   <view class="login_banner" style='background-image:url({{loginBannerBg}})'>
-    <view class="login_title">E生活商家</view>
+    <image src="{{'../../assets/img/eLifeBg.png'}}" class="img"></image>
+  </view>
+
+  <view class="login_title">
+    {{loginTitle}}
   </view>
 
   <view class="login_box">
@@ -97,9 +101,12 @@
   </view>
 
   <view class="loginType_btn_box">
-    <text class="loginType_change_btn" bindtap="loginTypeChange">
-      {{passwordLogin ? '使用手机验证码登录' : '使用账号密码登录'}}
-    </text>
+    <view class="loginType_change_btn" bindtap="loginTypeChange">
+      <text>{{passwordLogin ? '手机验证码登录' : '账号密码登录'}}</text>
+      <text class="line">一一</text>
+      <image src="{{'../../assets/img/phone_login.png'}}" wx:if="{{passwordLogin}}" class="img"></image>
+      <image src="{{'../../assets/img/password_login.png'}}" wx:if="{{!passwordLogin}}"  class="img"></image>
+    </view>
   </view>
 
 </view>
