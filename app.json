@@ -42,7 +42,8 @@
     "pages/mExtension/mExtension",
     "pages/mCustomerList/mCustomerList",
     "pages/mCustomerDetail/mCustomerDetail",
-    "pages/waitingPage/waitingPage"
+    "pages/waitingPage/waitingPage",
+    "pages/cardOpenSuccess/cardOpenSuccess"
   ],
   "window":{
     "backgroundTextStyle":"light",

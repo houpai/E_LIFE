@@ -1,0 +1,89 @@
+page {
+  background-color: #fff;
+}
+
+.waiting_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80rpx;
+  border-bottom:30rpx solid #F2F2F2;
+}
+
+.waiting_box .waiting_img {
+  display: block;
+  width: 156rpx;
+  height: 156rpx;
+  margin:60rpx 0 40rpx 0;
+}
+
+.waiting_box .waiting_title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  line-height: 44rpx;
+  margin:0 0 60rpx 0;
+
+}
+
+.waiting_box .use_btn {
+  width: 310rpx;
+  height: 72rpx;
+  border-radius: 6rpx;
+  border: 1px solid #488FF1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #488FF1;
+  line-height: 44rpx;
+
+}
+
+
+.step_box {
+  padding:56rpx 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.step_box .step_title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  line-height: 44rpx;
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.step_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step_list .step_item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 54rpx;
+}
+
+.step_list .step_item .step_img {
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+  margin-bottom: 24rpx;
+}
+
+.step_list .step_item .step_desc {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333333;
+  line-height: 40rpx;
+  width: 228rpx;
+  text-align: center;
+
+}

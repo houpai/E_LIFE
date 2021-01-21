@@ -315,6 +315,12 @@
         {
           "name": "pages/waitingPage/waitingPage",
           "pathName": "pages/waitingPage/waitingPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cardOpenSuccess/cardOpenSuccess",
+          "pathName": "pages/cardOpenSuccess/cardOpenSuccess",
           "scene": null
         }
       ]
