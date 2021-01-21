@@ -1,0 +1,50 @@
+<view class="waitingPage_container">
+  <view class="waiting_box">
+    <image src="{{'../../assets/img/waiting.png'}}" class="waiting_img"></image>
+    <view class="waiting_title">
+      喝杯咖啡稍等一下
+    </view>
+    <view class="waiting_sub_title">
+      会员卡申请以为您提交，会员卡开通后我们会马不停蹄的通知您
+    </view>
+  </view>
+
+
+
+  <view class="step_box">
+    <view class="step_title">
+      开通成功后，在哪里查看使用会员卡呢？
+    </view>
+
+
+    <view class="step_list">
+      <view class="step_item">
+        <image class="step_img" src="{{'../../assets/img/step1.png'}}"></image>
+        <view class="step_desc">
+          点击公众号消息
+        </view>
+      </view>
+
+      <view class="step_item">
+        <image class="step_img" src="{{'../../assets/img/step2.png'}}"></image>
+        <view class="step_desc">
+          进入E生活小程序
+        </view>
+      </view>
+
+      <view class="step_item">
+        <image class="step_img" src="{{'../../assets/img/step3.png'}}"></image>
+        <view class="step_desc">
+          滑动E生活小程序找到本地专属
+        </view>
+      </view>
+
+      <view class="step_item">
+        <image class="step_img" src="{{'../../assets/img/step4.png'}}"></image>
+        <view class="step_desc">
+          点击本地专属模块内的e生活合伙人
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

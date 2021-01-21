@@ -309,6 +309,12 @@
         {
           "name": "pages/mCustomerDetail/mCustomerDetail",
           "pathName": "pages/mCustomerDetail/mCustomerDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/waitingPage/waitingPage",
+          "pathName": "pages/waitingPage/waitingPage",
           "scene": null
         }
       ]

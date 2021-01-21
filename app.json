@@ -41,7 +41,8 @@
     "pages/mRanking/mRanking",
     "pages/mExtension/mExtension",
     "pages/mCustomerList/mCustomerList",
-    "pages/mCustomerDetail/mCustomerDetail"
+    "pages/mCustomerDetail/mCustomerDetail",
+    "pages/waitingPage/waitingPage"
   ],
   "window":{
     "backgroundTextStyle":"light",
