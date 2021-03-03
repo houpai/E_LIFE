@@ -1,0 +1,11 @@
+var isChecked = function (id,arr) {
+  var isChecked = false;
+  if(arr.indexOf(id) > -1) {
+    isChecked = true
+  }
+  return isChecked;
+}
+
+module.exports = {
+  isChecked:isChecked
+}

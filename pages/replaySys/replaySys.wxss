@@ -1,0 +1,155 @@
+page {
+    height: 100%;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+
+.replay-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.replay-container .top_bg_box {
+    width: 100%;
+    height: 240 rpx;
+    background: rgba(72, 143, 241, 1);
+    box-sizing: border-box;
+    padding-top: 20 rpx;
+}
+
+
+.replay-container .top_bg_box .message_box {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30rpx;
+}
+
+.replay-container .top_bg_box .message_box .name_box{
+    flex: 1;
+    width: 0;
+    font-size: 32rpx;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 44rpx;
+    margin-left: 24rpx;
+
+}
+
+.replay-container .top_bg_box .message_box .name_box view{
+   width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.replay-container .top_bg_box .message_box .photo image{
+    width: 96rpx;
+    height: 96rpx;
+
+}
+
+.replay-container .top_bg_box .message_box .btn_box {
+    width: 200rpx;
+    height: 60rpx;
+    background: #FFFFFF;
+    border-radius: 6rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #488FF1;
+
+}
+
+
+.replay-container .scroll-list {
+    box-sizing: border-box;
+    padding: 40rpx 0;
+    margin-bottom: 40rpx;
+}
+
+.replay-container .scroll-list .list_item{
+
+    background: #FFFFFF;
+    border-radius: 6rpx;
+    padding: 30rpx;
+    margin: 0 20rpx 30rpx 20rpx;
+
+}
+
+.replay-container .scroll-list .list_item .top{
+
+    display: flex;
+
+
+
+}
+
+.replay-container .scroll-list .list_item .top .replay_btn{
+    width: 152rpx;
+    height: 56rpx;
+    background: #488FF1;
+    border-radius: 6rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.replay-container .scroll-list .list_item .top .replay_name{
+    flex: 1;
+    width: 0;
+    font-size: 32rpx;
+    font-weight: 400;
+    color: #333333;
+    line-height: 44rpx;
+
+}
+
+
+.replay-container .scroll-list .list_item .bottom{
+    display: flex;
+    margin-top: 30rpx;
+}
+
+
+.replay-container .scroll-list .list_item .bottom .date{
+    display: flex;
+    align-items: center;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #999999;
+    line-height: 34rpx;
+}
+
+
+
+.replay-container .scroll-list .list_item .bottom .replay_detail{
+    flex: 1;
+    width: 0;
+    display: flex;
+    align-items: center;
+}
+
+.replay-container .scroll-list .list_item .bottom .replay_detail .detail{
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #FC302C;
+    line-height: 44rpx;
+    margin-right: 60rpx;
+
+}
+.replay-container .scroll-list .list_item .bottom .replay_detail .name{
+    font-size: 28rpx;
+    font-weight: 400;
+    color: #666666;
+    line-height: 40rpx;
+
+}
+

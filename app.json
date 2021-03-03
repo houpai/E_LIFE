@@ -43,7 +43,11 @@
     "pages/mCustomerList/mCustomerList",
     "pages/mCustomerDetail/mCustomerDetail",
     "pages/waitingPage/waitingPage",
-    "pages/cardOpenSuccess/cardOpenSuccess"
+    "pages/cardOpenSuccess/cardOpenSuccess",
+    "pages/replay/replay",
+    "pages/replaySys/replaySys",
+    "pages/allReplay/allReplay",
+    "pages/collection/collection"
   ],
   "window":{
     "backgroundTextStyle":"light",

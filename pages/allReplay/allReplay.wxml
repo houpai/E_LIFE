@@ -1,0 +1,39 @@
+<view class="replay-container">
+  <view class="scroll-list">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="list_item" wx:for="{{10}}" wx:key="index">
+        <view class="check_img">
+          <wxs module="module" src="../../utils/methods.wxs"></wxs>
+          <image class="img" src='{{ "../../assets/img/checked.png"}}' wx:if="{{module.isChecked(index,checkedAry)}}" />
+          <image class="img" src='{{ "../../assets/img/disChecked.png"}}' wx:else />
+        </view>
+        <view class="list_item_container">
+          <view class="top">
+            <view class="replay_name">
+              开通某某某会员卡（893积分）
+            </view>
+            <view class="replay_btn" bindtap="isCheckedChange" data-index="{{ index }}">
+              平账
+            </view>
+          </view>
+          <view class="bottom">
+            <view class="replay_detail">
+              <view class="detail">¥829.00</view>
+              <view class="name">邹超</view>
+            </view>
+
+            <view class="date">
+              2020.09.09 09:09:09
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+
+  <view class="allCheck_box" id="allCheck_box">
+    <view class="all_btn" bindtap='allCheck'>{{checkedAry.length && checkedAry.length == allCheckedAry.length ? '全部取消' : '全部选择'}}</view>
+    <view class="submit_btn">确认平账</view>
+  </view>
+</view>

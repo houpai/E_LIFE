@@ -1,0 +1,48 @@
+<view class="recharge_container">
+  <view class="top_bg"></view>
+
+  <view class="recharge_box">
+    <view class="recharge_title">付款人：</view>
+
+    <view class="card_container">
+      <view class="left">
+        <view class="balance_box">
+          <!-- 当前余额：<span class="balance">8</span>积分 -->
+          <image class='photo' src="{{'../../assets/img/icon_customer.png'}}"></image>
+          <text class="name">小丽丽</text>
+        </view>
+
+        <view class="card_type_box">
+          <view class="card_name">
+            玫瑰红卡
+          </view>
+          <view class="card_num">NO.02399484875</view>
+        </view>
+      </view>
+
+      <view class="right">
+        <view class="title">店铺余额</view>
+        <view class="yue">988积分</view>
+      </view>
+
+
+
+    </view>
+
+    <view class="recharge_input_box">
+      <view class="recharge_input_title">
+        金额
+      </view>
+
+      <view class="input_box">
+        <span>¥</span>
+        <input type="number" class="recharge_input" placeholder="请输入金额" />
+      </view>
+
+
+      <view class="submit_btn">确认</view>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,55 @@
+<view class="replay-container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="message_box">
+        <view class="photo">
+          <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
+        </view>
+        <view class="name_box">
+          <view>陈强</view>
+          <view class="detail_view">待对账：¥7283</view>
+        </view>
+        <view class="btn_box">
+          <view class="one_btn">一键平账</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="scroll-list" >
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="list_item" wx:for="{{10}}">
+        <view class="top">
+          <view class="replay_name">
+            开通某某某会员卡（893积分）
+          </view>
+          <view class="replay_btn"  bindtap="replayClick">
+            平账
+          </view>
+        </view>
+        <view class="bottom">
+          <view class="replay_detail">
+            <view class="detail">¥829.00</view>
+            <view class="name">邹超</view>
+          </view>
+
+          <view class="date">
+            2020.09.09  09:09:09
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+
+<van-dialog use-slot show="{{ dialogShow }}" showConfirmButton="{{false}}" bind:close="onClose">
+<view class="dialog_box">
+  <view class="dialog_title">确定要对该账目进行平账吗？</view>
+  <view class="dialog_btn_box">
+    <view class="cancel_btn" bindtap="closeDialog">取消</view>
+    <view class="submit_btn">平账</view>
+  </view>
+</view>
+</van-dialog>
+
