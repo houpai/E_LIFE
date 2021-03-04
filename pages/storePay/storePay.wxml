@@ -1,0 +1,36 @@
+<view class="storeIndex_container">
+  <navBar titleText="{{'店铺管理'}}"></navBar>
+  <view class="store_bg">
+    <image src="{{'https://houpai-1259269309.cos.ap-beijing.myqcloud.com/kfc2.jfif'}}" />
+  </view>
+
+
+  <view class="store_message_box">
+    <view class="name_logo">
+      <view class="right">
+        <image class="img" src='{{ "../../assets/img/icon_store_logo.png"}}' />
+      </view>
+      <view class="left">
+        <view class="store_name message_label">{{storeName}}</view>
+        <view class="store_name sub_label">类型：{{storeType}}</view>
+      </view>
+    </view>
+    <view class="message_item">
+     
+      <view class="card_box">
+        <view class="jifen">230积分</view>
+        <view class="card">玫瑰红卡</view>
+      </view>
+
+      <view class="pay_box">
+        <view class="pay_tip">需支付</view>
+        <view class="pay_value">¥930.00</view>
+        <view class="pay_btn">
+          支付
+        </view>
+      </view>
+    
+    </view>
+  </view>
+
+</view>

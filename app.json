@@ -47,7 +47,8 @@
     "pages/replay/replay",
     "pages/replaySys/replaySys",
     "pages/allReplay/allReplay",
-    "pages/collection/collection"
+    "pages/collection/collection",
+    "pages/storePay/storePay"
   ],
   "window":{
     "backgroundTextStyle":"light",
