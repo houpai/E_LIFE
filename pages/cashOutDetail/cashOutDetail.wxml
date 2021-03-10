@@ -1,4 +1,21 @@
 <view class="cashOutDetail_container">
+
+
+  <view id="topContainer_box" class="topContainer_box">
+    <view class="time_check_btn" bindtap="openTimeCheck">2021年<text class="month">3</text>月
+      <van-icon name="arrow-down" />
+    </view>
+    <view class="btn_box">
+      <view class="btn {{isActive == 1 ? 'active_btn': '' }}" data-type="1" bindtap="typeChange">全部</view>
+      <view class="btn {{isActive == 2 ? 'active_btn': '' }}" data-type="2" bindtap="typeChange">收入</view>
+      <view class="btn {{isActive == 3 ? 'active_btn': '' }}" data-type="3" bindtap="typeChange">支出</view>
+    </view>
+
+    <image src="{{'../../assets/img/cashOutDetail_top_bg.png'}}" class="bg_img"></image>
+  </view>
+
+
+
   <scroll-view scroll-y='true' style="height:{{height - 40}}px;" bindscrolltolower='lower' class="scroll_box">
     <view wx:for="{{lists}}" wx:key="index" class="list_item">
       <view class="left">
@@ -12,3 +29,9 @@
     <view class="noResult_tip" wx:if="{{isFinish}}">没有更多了</view>
   </scroll-view>
 </view>
+
+
+<van-popup show="{{ timeCheckShow }}" position="bottom">
+  <van-datetime-picker type="year-month" value="{{ currentDate }}" min-date="{{ minDate }}" bind:confirm="submitCheck"
+    bind:input="onInput" bind:cancel="closeTimeCheck"/>
+</van-popup>
