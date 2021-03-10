@@ -12,7 +12,7 @@ Page({
     instructions: '',
     bonusValue: "",
     is_put: false,
-    show: true,
+    show: false,
     actions: [{
         name: '一级',
         per: "(10%)",
@@ -38,7 +38,20 @@ Page({
         per: "(50%)",
         id: 5
       }
-    ]
+    ],
+
+    // 3.10新增
+    typeValue:'',
+    typeShow:false,
+    actionsGoodsType: [{
+      name: '母婴用品',
+      id: 1
+    },
+    {
+      name: '生活用品',
+      id: 2
+    }
+  ],
 
   },
   goodsTitleChange(e) {
@@ -81,6 +94,27 @@ Page({
     this.setData({
       bonusValue: e.detail
     })
+  },
+
+  // 3.10新增
+  typeValueChange(e) {
+    this.setData({
+      typeValue: e.detail
+    })
+  },
+
+  // 3.10新增
+  setTypeValueShow() {
+    this.setData({
+      typeShow: true
+    })
+  },
+
+  // 3.10新增
+  onCloseType() {
+    this.setData({
+      typeShow: false
+    });
   },
 
   isPutChange({
