@@ -6,6 +6,20 @@ Page({
     height: '',
     top: ""
   },
+
+  // 3.10新增
+
+  onChange(e) {
+    this.setData({
+      searchValue: e.detail,
+    });
+  },
+  onSearch() {
+    console.log('search emit')
+  },
+
+
+
   goCustomerDetail(e) {
     let customerId = e.currentTarget.dataset['id']
     wx.navigateTo({

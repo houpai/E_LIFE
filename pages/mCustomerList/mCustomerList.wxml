@@ -1,5 +1,15 @@
 <view class="customerList_container">
   <view id="topContainer_box">
+
+    <view class="search_box">
+      <van-search value="{{ searchValue }}" placeholder="名字、手机号搜索" bind:change="onChange" bind:search="onSearch"
+        use-action-slot>
+        <view slot="action" bind:tap="onSearch" class="search_btn">搜索</view>
+      </van-search>
+    </view>
+
+
+
     <view class="top_bg_box">
       <view class="pannel" style="margin-right:15rpx">
         <image class="img" src="{{'../../assets/img/pannel_bg_left.png'}}"></image>
