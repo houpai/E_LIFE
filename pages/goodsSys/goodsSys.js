@@ -3,7 +3,10 @@ const app = getApp()
 Page({
   data: {
     height: '',
-    top: ""
+    top: "",
+
+    // 3.10号新增
+    goodsType:'全部商品'
   },
   // 滑动底部触发
   scrolltolower() {
@@ -17,6 +20,16 @@ Page({
       url: `/pages/goodsMaintain/goodsMaintain?titleName=${titleName}&type=${type}`
     })
   },
+
+
+
+  // 3.10新增 切换类型后用此方法切换下拉菜单的开启/关闭的状态
+
+  onConfirm() {
+    this.selectComponent('#item').toggle();
+  },
+
+
   onLoad: function () {
     
   },

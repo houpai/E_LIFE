@@ -2,7 +2,23 @@
   <view id="topContainer_box">
     <view class="top_bg_box">
       <view class="add_box">
-        <view class="goods_title">全部商品</view>
+        <!-- 3.10号有修改，此处改为筛选商品类型的下拉菜单 -->
+        <view class="goods_title">
+          <van-dropdown-menu>
+            <van-dropdown-item id="item" title="{{ goodsType }}">
+              <view class="type_box">
+                <view class="btn all_btn active_btn">全部商品</view>
+                <view class="btn_box">
+                  <view class="btn">美容美发</view>
+                  <view class="btn">汽车维修</view>
+                  <view class="btn">美食</view>
+                  <view class="btn">服饰</view>
+                  <view class="btn">母婴用品</view>
+                </view>
+              </view>
+            </van-dropdown-item>
+          </van-dropdown-menu>
+        </view>
         <view class="add_btn" bindtap="addGoods" data-type="add">
           <image src='{{ "../../assets/img/icon_add_btn.png"}}' class="img" />
           <text class="text">新增</text>
