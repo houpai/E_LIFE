@@ -18,7 +18,14 @@
         <image class="is_member_tip" src='{{ "../../assets/img/is_member.png"}}' />
       </view>
       <view class="customer_message">
-        <view class="nameAndPhone">严敏-1365214899</view>
+        <view class="nameAndPhone">
+          严敏-1365214899
+          <!-- 3.10新增 -->
+          <image src="{{'../../assets/img/member_icon_time.png'}}" class="icon_img" wx:if="{{index  == 1}}"></image>
+          <image src="{{'../../assets/img/yuangong.png'}}" class="icon_img" wx:if="{{index  == 2}}"></image>
+          <image src="{{'../../assets/img/gudong.png'}}" class="icon_img"  wx:if="{{index  == 3}}"></image>
+          <image src="{{'../../assets/img/member_out_time.img'}}" class="icon_img"  wx:if="{{index == 4}}"></image>
+        </view>
         <view class="source_message_box">
           <text class="source">门店二维码</text>
           <text class="time">2020-09-09</text>

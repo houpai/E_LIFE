@@ -125,3 +125,18 @@ page {
 .right_icon{
   font-size: 40rpx;
 }
+
+
+/* 3.10新增 */
+.nameAndPhone {
+  display: flex;
+  align-items: center;
+}
+
+
+.nameAndPhone .icon_img{
+  display: block;
+  width: 88rpx;
+  height: 36rpx;
+  margin-left: 14rpx;
+}

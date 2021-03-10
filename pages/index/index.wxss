@@ -112,11 +112,11 @@ page{
   margin:40rpx 0 40rpx 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .menu_box .menu_item {
-  width: 30%;
+  width:calc(100% / 3);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,5 +135,18 @@ page{
   font-weight: 700;
   color: #333333;
   line-height: 40rpx;
+}
+
+
+/* 3.10新增修改 */
+
+.menu_box {
+
+  justify-content: flex-start!important;
+}
+
+.menu_box .menu_item {
+  width:calc(100% / 3)!important;
+
 }
 

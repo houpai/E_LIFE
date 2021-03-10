@@ -97,6 +97,10 @@ Page({
       wx.navigateTo({
         url: '/pages/mIndex/mIndex',
       })
+    }else if (query === 'goodsType') {
+      wx.navigateTo({
+        url: '/pages/goodsTypeSys/goodsTypeSys',
+      })
     }
   },
   goSetting() {
