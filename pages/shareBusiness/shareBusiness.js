@@ -10,7 +10,10 @@ Page({
     cancelSharedialog: false,
     shareDialog: true,
     costValue:'',
-    shareNumValue:''
+    shareNumValue:'',
+
+    // 3.10新增
+    selectTypeShow:true
   },
   costValueChange(e) {
 
@@ -59,6 +62,22 @@ Page({
   scrolltolower() {
 
   },
+
+
+  // 3.10新增
+  selectTypeShowClose() {
+    this.setData({
+      selectTypeShow:false
+    })
+  },
+
+  selectTypeShowOpen() {
+    this.setData({
+      selectTypeShow:true
+    })
+  },
+
+
   onLoad: function () {
 
   },

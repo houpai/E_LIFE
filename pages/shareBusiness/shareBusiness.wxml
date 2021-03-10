@@ -9,8 +9,13 @@
           </van-tabs>
         </view>
 
-        <view class="search_btn" bindtap="searchTypeChange">
-          <image class="img" src='{{ "../../assets/img/icon_search.png"}}' />
+
+        <!-- 3.10有修改 -->
+        <view class="search_btn">
+          <image class="img" src='{{ "../../assets/img/selectByType.png"}}' class="selectType_btn"
+            bindtap="selectTypeShowOpen" />
+          <text class="text">|</text>
+          <image class="img" src='{{ "../../assets/img/icon_search.png"}}' bindtap="searchTypeChange" />
         </view>
       </view>
 
@@ -121,3 +126,18 @@
     </view>
   </view>
 </van-overlay>
+
+
+<van-popup show="{{ selectTypeShow }}" closeable position="bottom" bind:close="selectTypeShowClose">
+  <view class="type_box">
+    <view class="type_title">全部筛选</view>
+    <view class="sub_title">店铺分类</view>
+    <view class="btn_box">
+      <view class="btn active_btn">美容美发</view>
+      <view class="btn">汽车维修</view>
+      <view class="btn">美食</view>
+      <view class="btn">服饰</view>
+      <view class="btn">母婴用品</view>
+    </view>
+  </view>
+</van-popup>
