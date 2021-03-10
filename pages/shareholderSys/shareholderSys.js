@@ -4,7 +4,10 @@ Page({
   data: {
     searchValue:'',
     height: '',
-    top: ""
+    top: "",
+
+    // 3.10新增
+    shareholderType:'全部股东'
   },
   onChange(e) {
     this.setData({

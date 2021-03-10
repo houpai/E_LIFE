@@ -107,3 +107,94 @@ page {
   text-overflow: ellipsis;
 }
 
+
+/* 3.10号新增 */
+
+page .van-dropdown-menu {
+  background-color: rgba(72, 143, 241, 1);
+
+}
+
+page .van-dropdown-menu__title {
+  font-size: 36rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+  color: #fff
+}
+
+page .van-dropdown-menu__title:after {
+  border-width: 4px;
+  right: -8px;
+
+}
+
+.type_box {
+  box-sizing: border-box;
+  padding: 40rpx 30rpx;
+}
+
+.type_box .btn {
+  height: 56rpx;
+  background: rgba(242, 242, 242, 1);
+  border-radius: 6rpx;
+  border: 1px solid rgba(242, 242, 242, 1);
+  padding: 0 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+
+
+  font-size: 28rpx;
+  font-weight: 400;
+
+}
+
+
+.type_box .all_btn {
+  width: 180rpx;
+  height: 56rpx;
+  background: rgba(242, 242, 242, 1);
+  border-radius: 6rpx;
+  border: 1px solid rgba(242, 242, 242, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type_box .btn_box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30rpx 0;
+}
+
+.type_box .btn_box .btn {
+  margin-right: 30rpx;
+  margin-bottom: 24rpx;
+}
+
+
+.type_box .active_btn {
+  border: 1px solid rgba(72, 143, 241, 1) !important;
+  color: rgba(72, 143, 241, 1) !important;
+  background: rgba(72, 143, 241, 0.2) !important;
+}
+
+
+.goods_title {
+  display: inline-block;
+  margin:0 30rpx;
+}
+
+.shareholderSys_container .top_bg_box {
+  width: 100%;
+  min-height: 180rpx!important;  
+  background:rgba(72, 143, 241, 1);
+  border-radius: 0!important;
+  padding: 30rpx 0 16rpx 0!important;
+
+}
+
+.shareholderSys_container .search_box .van-search {
+  margin-top: 0!important;
+}
