@@ -6,6 +6,7 @@
     <view class="customer_item">
       <view class="customer_img">
         <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
+        <image class="memberIcon" src='{{ "../../assets/img/member_icon.png"}}' />
       </view>
       <view class="customer_message">
         <view class="name">
@@ -14,9 +15,11 @@
         </view>
         <view class="phone">1365214899</view>
       </view>
+
+
+      <!-- 3.10有修改 此处由原来的会员logo改为交易明细 -->
       <view class="member_tip">
-        <image class="img" src='{{ "../../assets/img/icon_member_tip.png"}}' />
-        <text class="text">会员</text>
+        消费记录
       </view>
     </view>
   </view>
@@ -62,6 +65,11 @@
 
 
     <view class="renew_btn" bindtap="openDialog">会员卡续费</view>
+  </view>
+
+
+  <view class="delete_btn">
+    删除会员
   </view>
 </view>
 
