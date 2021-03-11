@@ -1,8 +1,9 @@
 <view class="memberSys_container">
   <view id="topContainer_box">
+    <!-- 3.10有修改-->
     <view class="top_bg_box">
       <view class="top_title">店铺会员</view>
-      <view class="select_box">
+      <view class="select_box" bindtap="selectOpen">
         <image src="{{'../../assets/img/selectByType.png'}}" class="select_img"></image>
         <text class="select_text">筛选</text>
       </view>
@@ -18,20 +19,70 @@
 
   <view class="customer_list_box">
     <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
-    <view class="customer_item" wx:for="{{10}}" bindtap="goCustomerDetail" data-menu="1">
-      <view class="customer_img">
-        <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
-      </view>
-      <view class="customer_message">
-        <view class="nameAndPhone">严敏-1365214899</view>
-        <view class="card_message">
-          <text class="card_type">玫瑰红卡</text>
-          <text class="card_state_normal">正常</text>
+      <view class="customer_item" wx:for="{{10}}" bindtap="goCustomerDetail" data-menu="1">
+        <view class="customer_img">
+          <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
         </view>
-        <view class="card_number">卡号：LC088-DP001-20191</view>
-        <view class="balance">余额：198</view>
+        <view class="customer_message">
+          <view class="nameAndPhone">严敏-1365214899</view>
+          <view class="card_message">
+            <text class="card_type">玫瑰红卡</text>
+            <text class="card_state_normal">正常</text>
+          </view>
+          <view class="card_number">卡号：LC088-DP001-20191</view>
+          <view class="balance">余额：198</view>
+        </view>
       </view>
-    </view>
-   </scroll-view>
+    </scroll-view>
   </view>
 </view>
+
+<!-- 3.10新增 -->
+
+<van-popup show="{{ selectShow }}" position="top" close-on-click-overlay="{{false}}" safe-area-inset-top="{{false}}"
+  bind:close="selectShowClose">
+  <view class="dialog_content">
+    <view class="dialog_title">筛选条件</view>
+    <view class="line"></view>
+
+    <view class="dialog_title">办卡时间</view>
+
+    <view class="time_box">
+      <view class="start_time withOut_value" bindtap="selectStartTime">办卡最早时间</view>
+      <view class="split_line">--</view>
+      <view class="end_time" bindtap="selectEndTime">办卡最晚时间</view>
+    </view>
+
+
+    <view class="dialog_title">余额区间</view>
+
+    <view class="time_box">
+      <view class="start_time withOut_value">
+        <van-field value="{{ low }}"  placeholder="自定义最低余额" type="number"/>
+      </view>
+      <view class="split_line">--</view>
+      <view class="end_time withOut_value">
+        <van-field value="{{ high }}"  placeholder="自定义最低余额" type="number"/>
+      </view>
+    </view>
+
+
+    <view class="btn_box">
+      <view class="cancel_btn btn" bindtap="cancelSelect">取消</view>
+      <view class="submit_btn btn" bindtap="submitSelect">确定</view>
+    </view>
+  </view>
+</van-popup>
+
+
+<!-- 开始时间 -->
+<van-popup show="{{ startTimeShow }}" position="bottom">
+  <van-datetime-picker type="year-month" value="{{ startTime }}" min-date="{{ minDate }}" bind:confirm="submitStartTime"
+    bind:input="onInputStartTime" bind:cancel="closeStartTime" />
+</van-popup>
+
+<!-- 截至时间 -->
+<van-popup show="{{ endTimeShow }}" position="bottom">
+  <van-datetime-picker type="year-month" value="{{ endTime }}" min-date="{{ minDate }}" bind:confirm="submitEndTime"
+    bind:input="onInputEndTime" bind:cancel="closeEndTime" />
+</van-popup>
