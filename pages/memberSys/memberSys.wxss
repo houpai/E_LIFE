@@ -8,7 +8,7 @@ page {
 
 .memberSys_container .top_bg_box {
   width: 100%;
-  height: 82rpx;  
+  height: 120rpx;  
   background: linear-gradient(180deg, #488FF1 0%, #7EC2F9 100%);
   border-radius: 0px 0px 60rpx 60rpx;
 }
@@ -134,4 +134,44 @@ page {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+
+/* 3.10号新增 */
+.memberSys_container .top_bg_box {
+  height: 146rpx!important;  
+  padding: 20rpx 30rpx!important;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.memberSys_container .top_bg_box  .top_title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 44rpx;
+  margin-bottom: 20rpx;
+}
+
+
+.memberSys_container .top_bg_box  .select_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+
+.memberSys_container .top_bg_box  .select_box .select_img{
+  display: block;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.memberSys_container .top_bg_box  .select_box .select_img{
+  display: block;
+  width: 32rpx;
+  height: 32rpx;
 }

@@ -1,6 +1,12 @@
 <view class="memberSys_container">
   <view id="topContainer_box">
-    <view class="top_bg_box"></view>
+    <view class="top_bg_box">
+      <view class="top_title">店铺会员</view>
+      <view class="select_box">
+        <image src="{{'../../assets/img/selectByType.png'}}" class="select_img"></image>
+        <text class="select_text">筛选</text>
+      </view>
+    </view>
     <view class="search_box">
       <van-search value="{{ searchValue }}" placeholder="名字、手机号搜索" bind:change="onChange" bind:search="onSearch"
         use-action-slot>
