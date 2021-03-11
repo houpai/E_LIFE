@@ -48,7 +48,9 @@
     "pages/replaySys/replaySys",
     "pages/allReplay/allReplay",
     "pages/collection/collection",
-    "pages/storePay/storePay"
+    "pages/storePay/storePay",
+    "pages/goodsTypeSys/goodsTypeSys",
+    "pages/goodsTypeMaintain/goodsTypeMaintain"
   ],
   "window":{
     "backgroundTextStyle":"light",

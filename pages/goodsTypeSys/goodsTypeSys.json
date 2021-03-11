@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index"
+  },
+  "navigationBarBackgroundColor": "#488FF1",
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "商品分类",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#F2F2F2",
+  "disableScroll":true
+}

@@ -1,0 +1,28 @@
+<view class="bonusSys_container">
+  <view id="topContainer_box">
+    <view class="top_bg_box">
+      <view class="add_box">
+        <view class="title">商品分类</view>
+        <view class="add_btn" bindtap="addBonus" data-type="add">
+          <image src='{{ "../../assets/img/icon_add_btn.png"}}' class="img" />
+          <text class="text">新增</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="list_box">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="list_item" wx:for="{{40}}">
+        <view class="name">
+          <text>商品分类1</text>
+          <view class="btn_box">
+            <view class="edit_btn" data-type="edit" bindtap="addBonus">
+              编辑
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
