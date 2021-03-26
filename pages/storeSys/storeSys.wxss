@@ -323,6 +323,8 @@ page .van-action-sheet__header {
 .primary_type_list {
   max-height: 600rpx;
   overflow-y: scroll;
+  box-sizing: border-box;
+  padding:0 30rpx 0 0;
 }
 
 
