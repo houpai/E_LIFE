@@ -1,4 +1,5 @@
-<view class="storeSys_container">
+ <view class="{{ show ? 'noscroll':''}}">
+  <view class="storeSys_container">
   <view class="name_logo_box">
     <view class="item_container_box">
       <view class="input_label">店铺名称</view>
@@ -78,8 +79,9 @@
     保存
   </view>
 </view>
+</view>
 
-<van-action-sheet show="{{ show }}" title="店铺类型" bind:close="onClose">
+  <van-action-sheet show="{{ show }}" title="店铺类型" bind:close="onClose" >
   <view class="storeType_box">
     <view class="choosed_box">
       <view class="choosed_type_tip" wx:if="{{firstType}}" bindtap="selectFirstTypeShow">
@@ -103,7 +105,101 @@
       </view>
     </view>
   </view>
+  <view class="storeType_box">
+    <view class="choosed_box">
+      <view class="choosed_type_tip" wx:if="{{firstType}}" bindtap="selectFirstTypeShow">
+        {{firstType}}
+      </view>
+      <view class="tip_text" wx:if="{{!firstType || !secondType}}">请选择</view>
+      <view class="choosed_type_tip" wx:if="{{secondType}}">
+        {{secondType}}
+      </view>
+    </view>
+    <view class="primary_type_list" wx:if="{{firstShow}}">
+      <view wx:for="{{actions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectType">
+        {{item.name}}
+      </view>
+    </view>
+    <view class="primary_type_list" wx:else>
+      <view wx:for="{{subActions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectSecondType">
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+  <view class="storeType_box">
+    <view class="choosed_box">
+      <view class="choosed_type_tip" wx:if="{{firstType}}" bindtap="selectFirstTypeShow">
+        {{firstType}}
+      </view>
+      <view class="tip_text" wx:if="{{!firstType || !secondType}}">请选择</view>
+      <view class="choosed_type_tip" wx:if="{{secondType}}">
+        {{secondType}}
+      </view>
+    </view>
+    <view class="primary_type_list" wx:if="{{firstShow}}">
+      <view wx:for="{{actions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectType">
+        {{item.name}}
+      </view>
+    </view>
+    <view class="primary_type_list" wx:else>
+      <view wx:for="{{subActions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectSecondType">
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+  <view class="storeType_box">
+    <view class="choosed_box">
+      <view class="choosed_type_tip" wx:if="{{firstType}}" bindtap="selectFirstTypeShow">
+        {{firstType}}
+      </view>
+      <view class="tip_text" wx:if="{{!firstType || !secondType}}">请选择</view>
+      <view class="choosed_type_tip" wx:if="{{secondType}}">
+        {{secondType}}
+      </view>
+    </view>
+    <view class="primary_type_list" wx:if="{{firstShow}}">
+      <view wx:for="{{actions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectType">
+        {{item.name}}
+      </view>
+    </view>
+    <view class="primary_type_list" wx:else>
+      <view wx:for="{{subActions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectSecondType">
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+  <view class="storeType_box">
+    <view class="choosed_box">
+      <view class="choosed_type_tip" wx:if="{{firstType}}" bindtap="selectFirstTypeShow">
+        {{firstType}}
+      </view>
+      <view class="tip_text" wx:if="{{!firstType || !secondType}}">请选择</view>
+      <view class="choosed_type_tip" wx:if="{{secondType}}">
+        {{secondType}}
+      </view>
+    </view>
+    <view class="primary_type_list" wx:if="{{firstShow}}">
+      <view wx:for="{{actions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectType">
+        {{item.name}}
+      </view>
+    </view>
+    <view class="primary_type_list" wx:else>
+      <view wx:for="{{subActions}}" wx:for-item="item" wx:for-index="id" class="primary_type_item" data-item="{{item}}"
+        bindtap="selectSecondType">
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+  
 </van-action-sheet>
+
 
 
 
