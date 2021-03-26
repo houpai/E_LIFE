@@ -320,6 +320,11 @@ page .van-action-sheet__header {
   bottom: 0;
 } 
 
+.primary_type_list {
+  max-height: 600rpx;
+  overflow-y: scroll;
+}
+
 
 
 
