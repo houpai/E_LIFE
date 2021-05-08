@@ -25,10 +25,14 @@ Page({
   },
 
   onChange(event) {
-    this.setData({
-      xieyiChecked: event.detail,
-    });
-    console.log('xieyiChecked ===', this.data.xieyiChecked)
+    console.log('event====', event)
+    if(event.detail && !this.isRead) {
+      this.openXieyiDialog()
+    } else {
+      this.setData({
+        xieyiChecked: event.detail,
+      });
+    }
   },
 
   closeXieyiDialog() {

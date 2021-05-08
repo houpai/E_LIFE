@@ -99,7 +99,6 @@
       <van-checkbox
           shape="square"
           label-disabled
-          disabled
           value="{{ xieyiChecked }}"
           bind:change="onChange"
           icon-size="18px"
