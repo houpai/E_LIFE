@@ -35,25 +35,36 @@ Page({
     clearInterval(this.data.timer)
     this.setData({
       xieyiShow: false,
-      seconds:5
     });
+
+    if(!this.data.isRead) {
+      setTimeout(()=>{
+        this.setData({
+          seconds: 5,
+        });
+      },100)
+    }
   },
 
   openXieyiDialog() {
     clearInterval(this.data.timer)
-    this.data.timer = setInterval(()=>{
-      let seconds = this.data.seconds;
-      seconds --;
-      if(seconds < 1) {
-        clearInterval(this.data.timer)
+
+    if(!this.data.isRead) {
+      this.data.timer = setInterval(()=>{
+        let seconds = this.data.seconds;
+        seconds --;
+        if(seconds < 1) {
+          clearInterval(this.data.timer)
+          this.setData({
+            isRead:true
+          })
+        }
         this.setData({
-          isRead:true
+          seconds:seconds
         })
-      }
-      this.setData({
-        seconds:seconds
-      })
-    },1000)
+      },1000)
+    }
+
     this.setData({
       xieyiShow: true,
     });
