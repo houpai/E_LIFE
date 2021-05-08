@@ -16,8 +16,55 @@ Page({
     phone: "",
     code: '',
     identity: '',
-    loginTitle: '欢迎来到老板端'
+    loginTitle: '欢迎来到老板端',
+    xieyiChecked:false,
+    xieyiShow:false,
+    timer:null,
+    seconds:5,
+    isRead:false
   },
+
+  onChange(event) {
+    this.setData({
+      xieyiChecked: event.detail,
+    });
+    console.log('xieyiChecked ===', this.data.xieyiChecked)
+  },
+
+  closeXieyiDialog() {
+    clearInterval(this.data.timer)
+    this.setData({
+      xieyiShow: false,
+    });
+  },
+
+  openXieyiDialog() {
+    clearInterval(this.data.timer)
+    this.data.timer = setInterval(()=>{
+      let seconds = this.data.seconds;
+      seconds --;
+      if(seconds < 1) {
+        clearInterval(this.data.timer)
+        this.setData({
+          isRead:true
+        })
+      }
+      this.setData({
+        seconds:seconds
+      })
+    },1000)
+    this.setData({
+      xieyiShow: true,
+    });
+  },
+
+  isReadedXieyi() {
+    this.setData({
+      xieyiChecked:true,
+      xieyiShow:false
+    })
+  },
+
   eyeStatus: function () {
     let defaultType = !this.data.defaultType
     let passwordType = !this.data.passwordType
@@ -71,6 +118,18 @@ Page({
   },
   loginSubmitHandle() {
     console.log('login btn submit');
+
+
+    // 补充上协议阅读的协议
+    if(!this.data.xieyiChecked) {
+      wx.showToast({
+        title: `请先阅读服务协议`,
+        icon: 'none',
+      });
+      return false
+    }
+
+
     wx.navigateTo({
       url: '/pages/index/index'
     })

@@ -1,5 +1,9 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-overlay": "@vant/weapp/overlay/index"
+  },
   "navigationBarBackgroundColor": "#488FF1",
   "backgroundTextStyle": "light",
   "navigationBarTitleText": "登录",

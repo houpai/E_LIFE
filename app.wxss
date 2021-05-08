@@ -98,7 +98,7 @@
 
 .moni_dialog .dialog_box {
   width: 66%;
-  height: 300rpx;
+  height: 800rpx;
   position: fixed;
   left: 0;
   right: 0;
