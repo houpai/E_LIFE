@@ -199,7 +199,7 @@ page .van-checkbox__icon--checked {
   margin:auto;
   border-radius: 6rpx;
   box-sizing: border-box;
-
+  z-index: 9;
   padding: 0!important;
 
 }
@@ -238,14 +238,16 @@ page .van-checkbox__icon--checked {
 .xieyi_detail {
   flex: 1;
   height: 0;
-  overflow-y: scroll;
+}
+.xieyi_detail .scroll_container{
   box-sizing: border-box;
-  padding: 30rpx;
   font-size:28rpx;
   font-weight: 400;
   color: #333333;
   line-height:40rpx;
+  padding: 30rpx;
 }
+
 
 .timer_box {
   display: flex;
