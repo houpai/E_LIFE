@@ -35,6 +35,7 @@ Page({
     clearInterval(this.data.timer)
     this.setData({
       xieyiShow: false,
+      seconds:5
     });
   },
 
