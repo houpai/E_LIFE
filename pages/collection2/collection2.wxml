@@ -1,0 +1,57 @@
+<view class="recharge_container">
+  <view class="top_bg"></view>
+
+  <view class="recharge_box">
+    <view class="recharge_title">付款人：</view>
+
+    <view class="card_container">
+      <view class="left">
+        <view class="balance_box">
+          <view class="card_name">
+            玫瑰红卡
+          </view>
+          <view class="card_num">NO.02399484875</view>
+        </view>
+
+        <view class="card_type_box">
+          <view class="outDate">
+            2020.10.10到期
+          </view>
+        </view>
+      </view>
+
+      <view class="right">
+        <image class='photo' src="{{'../../assets/img/icon_customer.png'}}"></image>
+        <text class="name">小丽丽</text>
+      </view>
+
+
+
+    </view>
+
+    <view class="recharge_input_box">
+
+      <view class="card_title">会员卡说明</view>
+
+      <view class="card_desc">
+        会员卡说明会员卡说明会员卡说明会员卡说明会员卡说明会员卡说明会员卡说明会员卡说明会员卡说明会员卡说明会员卡说明会员卡说明卡说明会员卡说明卡说明卡…
+      </view>
+    </view>
+
+  </view>
+
+  <view class="recharge_input_box_alone">
+    <view class="recharge_input_title">
+      收款明细
+    </view>
+
+    <view class="input_box">
+      <textarea class="recharge_input" placeholder="请输入收款明细" type="textarea" maxlength="50"/>
+    </view>
+
+
+  </view>
+
+  <view class="submit_btn">确认</view>
+
+</view>

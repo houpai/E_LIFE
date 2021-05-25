@@ -50,7 +50,8 @@
     "pages/collection/collection",
     "pages/storePay/storePay",
     "pages/goodsTypeSys/goodsTypeSys",
-    "pages/goodsTypeMaintain/goodsTypeMaintain"
+    "pages/goodsTypeMaintain/goodsTypeMaintain",
+    "pages/collection2/collection2"
   ],
   "window":{
     "backgroundTextStyle":"light",
