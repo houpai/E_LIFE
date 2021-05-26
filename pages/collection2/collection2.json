@@ -1,6 +1,5 @@
 {
   "usingComponents": {},
   "backgroundTextStyle": "light",
-  "navigationBarTitleText": "收款",
-  "disableScroll":true
+  "navigationBarTitleText": "收款"
 }
