@@ -1,0 +1,66 @@
+<view class="memberDetail_container">
+  <view class="top_bg_box customer_detail_box" id="topContainer_box">
+    <view class="member_number">
+      客户编号：KH1878
+    </view>
+    <view class="customer_item">
+      <view class="customer_img">
+        <image class="img" src='{{ "../../assets/img/icon_customer.png"}}' />
+        <image class="memberIcon" src='{{ "../../assets/img/member_icon.png"}}' />
+      </view>
+      <view class="customer_message">
+        <view class="name">
+          严敏
+          <text class="sex_text">男</text>
+        </view>
+        <view class="phone">1365214899</view>
+      </view>
+
+      <!-- 3.10有修改 此处由原来的会员logo改为交易明细 -->
+      <view class="member_tip">
+        消费记录
+      </view>
+    </view>
+  </view>
+
+
+  <view class="card_list_box">
+    <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
+      <view class="card_type_item_box" wx:for="{{2}}">
+        <view class="card_type_message_box">
+          <view class="left">
+            <image class="img" src='{{ "../../assets/img/car.png"}}' class="img"/>
+          </view>
+          <view class="right">
+            <view class="card_type_name">
+              买送卡
+            </view>
+            <view class="total_price">
+              总价值：10920积分
+            </view>
+          </view>
+        </view>
+
+
+        <view class="card_item_box" wx:for="{{2}}" wx:key="{{index}}">
+          <view class="flex_box">
+            <view class="card_name">2020属你最美</view>
+            <view class="total">总价值</view>
+          </view>
+
+          <view class="flex_box">
+            <view class="card_type">买送卡</view>
+            <view class="total_detail">230积分</view>
+          </view>
+
+          <view class="flex_box btn_box">
+            <view class="card_price">¥198</view>
+            <view class="collection_btn">收款</view>
+          </view>
+        </view>
+
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

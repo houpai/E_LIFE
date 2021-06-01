@@ -1,0 +1,279 @@
+page {
+  background: #F2F2F2;
+  height: 100%;
+  overflow: hidden;
+}
+
+.memberDetail_container {
+  font-size: 20rpx;
+}
+
+/* 3.10日有修改 */
+.member_tip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 172rpx;
+  height: 56rpx;
+  background: #FFFFFF;
+  border-radius: 6rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #488FF1;
+}
+
+.member_tip .img {
+  display: block;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.member_tip .text {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #FFCC63;
+  line-height: 34rpx;
+}
+
+.memberDetail_container .top_bg_box {
+  width: 100%;
+  height: 350rpx;
+  background: linear-gradient(180deg, #488FF1 0%, #7EC2F9 100%);
+  border-radius: 0px 0px 60rpx 60rpx;
+  box-sizing: border-box;
+}
+
+.memberDetail_container .top_bg_box .member_number {
+  box-sizing: border-box;
+  padding: 40rpx 30rpx 15rpx 30rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 40rpx;
+}
+
+
+.customer_detail_box .customer_item {
+  height: 160rpx;
+  border-radius: 6rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15rpx 30rpx 30rpx 30rpx;
+}
+
+/* 3.10有修改 */
+.customer_detail_box .customer_item .customer_img {
+  flex-shrink: 0;
+  position: relative;
+}
+
+
+
+.customer_detail_box .customer_item .customer_img .img {
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.customer_detail_box .customer_item .customer_message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1;
+  width: 0;
+  margin-left: 30rpx;
+}
+
+.customer_detail_box .customer_item .customer_message .name {
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #fff;
+  line-height: 44rpx;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.customer_detail_box .customer_item .customer_message .phone {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #fff;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.open_btn {
+  width: 172rpx;
+  height: 56rpx;
+  background: #FFFFFF;
+  border-radius: 6rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #488FF1;
+  line-height: 40rpx;
+}
+
+.sex_text {
+  background: #393FD5;
+  border-radius: 14px;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 0 20rpx;
+}
+
+
+
+
+/* 3.10新增 */
+.customer_detail_box .customer_item .customer_img .memberIcon {
+  position: absolute;
+  top: -24rpx;
+  right: -24rpx;
+  display: block;
+  width: 68rpx;
+  height: 68rpx;
+}
+
+
+/*6.1新增*/
+.card_list_box {
+  margin-top: -80rpx;
+}
+
+.memberDetail_container .scroll-box {
+  box-sizing: border-box;
+  padding: 0 30rpx 100rpx 30rpx;
+}
+
+.memberDetail_container .scroll-box .card_type_item_box {
+  background: #FFFFFF;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.memberDetail_container .scroll-box .card_type_item_box .card_type_message_box {
+  display: flex;
+}
+
+.memberDetail_container .scroll-box .card_type_item_box .card_type_message_box .left .img{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.memberDetail_container .scroll-box .card_type_item_box .card_type_message_box .right {
+  flex: 1;
+  width: 0;
+  margin-left: 12rpx;
+}
+
+.memberDetail_container .scroll-box .card_type_item_box .card_type_message_box .right .card_type_name{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  line-height: 44rpx;
+  margin-bottom: 18rpx;
+}
+
+.memberDetail_container .scroll-box .card_type_item_box .card_type_message_box .right .total_price{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #333333;
+  line-height: 34rpx;
+}
+
+
+.memberDetail_container  .card_item_box {
+  min-height: 232rpx;
+  background: rgba(183, 13, 12, 1);
+  border-radius: 6rpx;
+  margin-top: 34rpx;
+
+  /*background-repeat: no-repeat;*/
+  /*background-image: url("");*/
+  /*background-size: cover;*/
+
+  box-sizing: border-box;
+  padding: 30rpx;
+
+}
+
+.memberDetail_container  .card_item_box .flex_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+
+.memberDetail_container  .card_item_box .card_name {
+  font-size: 36rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 50rpx;
+}
+
+.memberDetail_container  .card_item_box .total {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 34rpx;
+}
+
+.memberDetail_container  .card_item_box .card_type {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 34rpx;
+  border: 1px solid #fff;
+  border-radius: 20rpx;
+  padding: 2rpx 20rpx;
+}
+
+.memberDetail_container  .card_item_box .total_detail {
+  font-size: 40rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 56rpx;
+}
+
+.memberDetail_container  .card_item_box .card_price {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 40rpx;
+}
+
+.memberDetail_container  .card_item_box .collection_btn {
+  width: 96rpx;
+  padding: 6rpx 0;
+  background: #FFFFFF;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #333333;
+}
+
+.memberDetail_container  .card_item_box .flex_box.btn_box {
+  margin-top: 40rpx!important;
+}
