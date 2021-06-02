@@ -26,7 +26,11 @@
 
   <view class="card_list_box">
     <scroll-view scroll-y="true" style="height:{{height}}px" bindscrolltolower="scrolltolower" class="scroll-box">
-      <view class="card_type_item_box" wx:for="{{2}}">
+      <view class="card_type_item_box"
+            wx:for="{{cardList}}"
+            wx:for-item="item"
+            wx:for-index="index"
+            data-item="{{item}}">
         <view class="card_type_message_box">
           <view class="left">
             <image class="img" src='{{ "../../assets/img/car.png"}}' class="img"/>
@@ -42,7 +46,12 @@
         </view>
 
 
-        <view class="card_item_box" wx:for="{{2}}" wx:key="{{index}}">
+        <view class="card_item_box"
+              wx:for="{{item.cardItemList}}"
+              wx:for-item="subItem"
+              wx:for-index="subIndex"
+              wx:if="{{item.isOpenMore ? true : !subIndex > 0 }}"
+              data-item="{{subItem}}">
           <view class="flex_box">
             <view class="card_name">2020属你最美</view>
             <view class="total">总价值</view>
@@ -57,6 +66,11 @@
             <view class="card_price">¥198</view>
             <view class="collection_btn">收款</view>
           </view>
+        </view>
+
+        <view class="openBtn_box" bindtap="openToggle" data-id="{{item.id}}">
+          <view class="openBtn">{{item.isOpenMore?'收起':'更多'}}</view>
+          <image class="img" src='{{item.isOpenMore ? "../../assets/img/top.png" : "../../assets/img/bottom.png"}}' />
         </view>
 
       </view>

@@ -1,0 +1,51 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/goodsTypeSys/goodsTypeSys",
+          "pathName": "pages/goodsTypeSys/goodsTypeSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/memberSys/memberSys",
+          "pathName": "pages/memberSys/memberSys",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shareBusiness/shareBusiness",
+          "pathName": "pages/shareBusiness/shareBusiness",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "identity=boss",
+          "scene": null
+        },
+        {
+          "name": "pages/memberDetail2/memberDetail",
+          "pathName": "pages/memberDetail2/memberDetail",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
