@@ -82,6 +82,15 @@ page {
   line-height: 44rpx;
 }
 
+.login_content .phone_login_box  .change_loginType {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #488FF1;
+  line-height: 44rpx;
+  width: 100%;
+  text-align: center;
+}
+
 
 
 
@@ -162,6 +171,8 @@ page {
   font-weight: bold;
   color: #FFFFFF;
   line-height: 44rpx;
+  margin-top: 80rpx;
+  margin-bottom: 60rpx;
 }
 
 
@@ -181,7 +192,7 @@ page {
 
 .top_title_box {
   box-sizing: border-box;
-  padding: 100rpx 60rpx;
+  padding: 50rpx 60rpx;
 }
 
 .top_title_box .name {

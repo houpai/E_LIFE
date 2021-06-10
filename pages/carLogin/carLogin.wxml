@@ -14,7 +14,7 @@
         <view class="change_loginType" data-type="2" bindtap="setLoginType">手机登录</view>
       </view>
 
-      <view class="phone_login_box">
+      <view class="phone_login_box" wx:else>
         <!-- 手机号验证码登录 -->
         <view class="input_item">
           <view class="input_label">手机号:</view>
@@ -53,6 +53,8 @@
         <view class="login_btn">
           登录
         </view>
+
+        <view class="change_loginType" data-type="1" bindtap="setLoginType">微信一键登录</view>
 
       </view>
 

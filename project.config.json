@@ -339,6 +339,12 @@
         {
           "name": "pages/memberDetail2/memberDetail",
           "pathName": "pages/memberDetail2/memberDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/carLogin/carLogin",
+          "pathName": "pages/carLogin/carLogin",
           "scene": null
         }
       ]

@@ -1,6 +1,6 @@
 Page({
   data: {
-    loginType:2,
+    loginType:1,
 
     phoneFocus: false,
     codeFocus: false,
