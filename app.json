@@ -52,7 +52,11 @@
     "pages/goodsTypeSys/goodsTypeSys",
     "pages/goodsTypeMaintain/goodsTypeMaintain",
     "pages/collection2/collection2",
-    "pages/memberDetail2/memberDetail"
+    "pages/memberDetail2/memberDetail",
+    "pages/carPay/carPay",
+    "pages/carPayInfo/carPayInfo",
+    "pages/bindingCode/bindingCode",
+    "pages/codePage/codePage"
   ],
   "window":{
     "backgroundTextStyle":"light",

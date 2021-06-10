@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "绑定二维码",
+  "backgroundColor": "#F2F2F2",
+  "disableScroll":true
+}

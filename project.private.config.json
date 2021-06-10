@@ -44,6 +44,30 @@
           "pathName": "pages/memberDetail2/memberDetail",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/carPay/carPay",
+          "pathName": "pages/carPay/carPay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/carPayInfo/carPayInfo",
+          "pathName": "pages/carPayInfo/carPayInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bindingCode/bindingCode",
+          "pathName": "pages/bindingCode/bindingCode",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/codePage/codePage",
+          "pathName": "pages/codePage/codePage",
+          "query": "",
+          "scene": null
         }
       ]
     }

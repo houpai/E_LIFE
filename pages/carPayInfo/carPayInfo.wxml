@@ -1,0 +1,12 @@
+<view class="carPayInfo-container">
+  <view class="bg_box">
+    <image src="{{'../../assets/img/pay_success2.png'}}" class="img"></image>
+    <view class="pay_tip">支付成功</view>
+  </view>
+
+  <view class="detail_box">
+    <view class="price">194元</view>
+    <view class="discount">优惠6元</view>
+    <view class="pay_btn">立即加油</view>
+  </view>
+</view>

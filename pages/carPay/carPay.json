@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "付款",
+  "backgroundColor": "#F2F2F2",
+  "disableScroll":true
+}

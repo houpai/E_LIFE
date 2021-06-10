@@ -1,0 +1,21 @@
+<view class="bindingCode-container">
+  <view class="code_message_box">
+    <view class="box_title">二维码编号</view>
+    <view class="code">029390393803</view>
+    <view class="code_tip">请核对您的二维码编号</view>
+  </view>
+
+  <view class="user_message_box">
+    <view class="box_title">绑定者信息</view>
+
+    <image src="{{'../../assets/img/icon_customer.png'}}" class="img"></image>
+
+    <view class="message_tip">肯德基首创店</view>
+    <view class="message_tip">张丽</view>
+  </view>
+
+
+  <view class="binding_btn">
+    立即绑定
+  </view>
+</view>

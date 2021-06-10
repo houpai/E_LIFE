@@ -1,0 +1,41 @@
+<view class="carPay-container" catchtap='hindKeyboard'>
+  <view class="pay_box">
+    <view class="top_box">
+      <view class="pay_tip">付款给</view>
+      <view class="message_box">
+        <image src="{{'../../assets/img/icon_customer.png'}}" class="img"></image>
+        <view class="name">很多个世界各地韩国世界各地公司</view>
+      </view>
+    </view>
+
+    <view class="bottom_box">
+      <view class='page_box'>
+        <view class='input_view'>
+          <text class='title'>金额</text>
+          <view class="input_box {{keyShow?'active_input_box':''}}" catchtap='showKeyboard'>
+            <text class='input_label'>￥</text>
+            <text class='content' wx:if="{{content}}">{{content}}</text>
+            <view class='className' wx:if="{{keyShow}}"></view>
+            <text class='content place' wx:if="{{!content}}">请输入金额</text>
+          </view>
+        </view>
+        <view class='keyboard {{keyShow&&"hind_box"}}'>
+          <view class='key_box'>
+            <view class="number_box">
+              <view class='keys {{index==9?"zero":""}}' wx:for='{{KeyboardKeys}}' wx:key='this' catchtap='keyTap'
+                data-keys='{{item}}'>{{item}}</view>
+            </view>
+            <view class="btn_box">
+              <view class='keys' catchtap='keyTap' data-keys='<'>
+                <!-- 根据项目实际路径引用 -->
+                <image mode="widthFix" src="{{'../../assets/img/delete_btn.png'}}"></image>
+              </view>
+              <view class="keys pay_btn" catchtap='payTap'>付款</view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>
