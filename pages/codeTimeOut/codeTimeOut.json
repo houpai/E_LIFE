@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "已失效",
+  "backgroundColor": "#F2F2F2",
+  "disableScroll":true
+}

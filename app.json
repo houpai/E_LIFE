@@ -56,7 +56,9 @@
     "pages/carPay/carPay",
     "pages/carPayInfo/carPayInfo",
     "pages/bindingCode/bindingCode",
-    "pages/codePage/codePage"
+    "pages/codePage/codePage",
+    "pages/codeTimeOut/codeTimeOut",
+    "pages/carLogin/carLogin"
   ],
   "window":{
     "backgroundTextStyle":"light",

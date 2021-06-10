@@ -1,0 +1,4 @@
+<view class="codeTimeOut-container">
+  <image src="{{'../../assets/img/code_timeOut.png'}}" class="img"></image>
+  <view class="tip">无效二维码</view>
+</view>

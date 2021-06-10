@@ -68,6 +68,18 @@
           "pathName": "pages/codePage/codePage",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/codeTimeOut/codeTimeOut",
+          "pathName": "pages/codeTimeOut/codeTimeOut",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/carLogin/carLogin",
+          "pathName": "pages/carLogin/carLogin",
+          "query": "",
+          "scene": null
         }
       ]
     }
