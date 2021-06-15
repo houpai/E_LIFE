@@ -1,0 +1,25 @@
+<view class="carPayInfo-container">
+  <view class="bg_box">
+    <image src="{{'../../assets/img/pay_fail.png'}}" class="img"></image>
+    <view class="pay_tip">支付失败</view>
+  </view>
+
+  <view class="detail_box">
+    <view class="box_title">订单信息</view>
+    <view class="detail_view">订单号：9203838748495</view>
+    <view class="detail_view">机号：18298989898</view>
+    <view class="detail_view">订单时间：2020.09.09 10:10:10</view>
+    <view class="detail_view">付款金额：￥182</view>
+  </view>
+
+  <view class="fail_reason_box">
+    <view class="box_title">失败原因</view>
+    <view class="detail_view">
+      就会开始大喊大叫色口红是多少就会开始大喊大叫色口红是多少就会开始大喊大叫色口红是多少
+    </view>
+  </view>
+
+  <view class="customer_service_btn">
+    客服电话
+  </view>
+</view>

@@ -345,6 +345,18 @@
         {
           "name": "pages/carLogin/carLogin",
           "pathName": "pages/carLogin/carLogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/carPayInfo/carPayInfo",
+          "pathName": "pages/carPayInfo/carPayInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/carPayFail/carPayFail",
+          "pathName": "pages/carPayFail/carPayFail",
           "scene": null
         }
       ]

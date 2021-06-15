@@ -58,7 +58,8 @@
     "pages/bindingCode/bindingCode",
     "pages/codePage/codePage",
     "pages/codeTimeOut/codeTimeOut",
-    "pages/carLogin/carLogin"
+    "pages/carLogin/carLogin",
+    "pages/carPayFail/carPayFail"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -9,4 +9,55 @@
     <view class="discount">优惠6元</view>
     <view class="pay_btn">立即加油</view>
   </view>
+
+
+  <view class="use_tip_title">使用流程</view>
+
+  <view class="use_tip_bg_box">
+    <view class="item_box">
+      <image class="img" src="{{'../../assets/img/pay_success.png'}}"></image>
+      <view class="item_box_title">支付成功</view>
+    </view>
+
+    <view class="step_box">
+      <image class="step_img" src="{{'../../assets/img/step_1.png'}}"></image>
+    </view>
+
+    <view class="item_box">
+      <image class="img" src="{{'../../assets/img/e_life.png'}}"></image>
+      <view class="item_box_title">关注e生活小程序</view>
+    </view>
+
+    <view class="step_box">
+      <image class="step_img" src="{{'../../assets/img/step_2.png'}}"></image>
+    </view>
+
+    <view class="item_box">
+      <image class="img" src="{{'../../assets/img/use_card.png'}}"></image>
+      <view class="item_box_title">使用卡券</view>
+    </view>
+  </view>
 </view>
+
+
+<van-overlay show="{{ dialogShow }}">
+  <view class="wrapper">
+    <view class="block">
+      <image class="dialog_close_btn" src="{{'../../assets/img/dialog_close_2.png'}}" bindtap="onClickHide"></image>
+      <view class="dialog_title_box">
+        <view class="dialog_title">您已获得中石油专属权益</view>
+        <view class="icon_box">
+          <image class="icon_img" src="{{'../../assets/img/pay_dialog_icon_1.png'}}"></image>
+          <image class="icon_img" src="{{'../../assets/img/pay_dialog_icon_2.png'}}"></image>
+          <image class="icon_img" src="{{'../../assets/img/pay_dialog_icon_3.png'}}"></image>
+        </view>
+      </view> 
+
+      <view class="code_box">
+        <image class="code_img" src="{{'https://img1.baidu.com/it/u=2877499757,3239316825&fm=224&fmt=auto&gp=0.jpg'}}"></image>
+        <view class="code_desc">扫一扫二维码</view>
+        <view class="code_desc">领取中石油专属权益</view>
+      </view>
+    </view>
+  </view>
+</van-overlay>
