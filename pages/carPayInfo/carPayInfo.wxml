@@ -7,7 +7,7 @@
   <view class="detail_box">
     <view class="price">194元</view>
     <view class="discount">优惠6元</view>
-    <view class="pay_btn">立即加油</view>
+    <view class="pay_btn" bindtap="onClickShow">立即加油</view>
   </view>
 
 
@@ -39,6 +39,9 @@
   </view>
 </view>
 
+<image class="code_img" src="{{'../../assets/img/ccccc.jpg'}}" show-menu-by-longpress="{{true}}"></image>
+
+<image class="code_img" src="{{'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimgbdb3.bendibao.com%2Fmybdb%2Fnews%2F20202%2F27%2F2020227151739_24562.jpg&refer=http%3A%2F%2Fimgbdb3.bendibao.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626499459&t=325360f2e877fdf77bfd01d970f10994'}}"></image>
 
 <van-overlay show="{{ dialogShow }}">
   <view class="wrapper">
@@ -51,10 +54,10 @@
           <image class="icon_img" src="{{'../../assets/img/pay_dialog_icon_2.png'}}"></image>
           <image class="icon_img" src="{{'../../assets/img/pay_dialog_icon_3.png'}}"></image>
         </view>
-      </view> 
+      </view>
 
       <view class="code_box">
-        <image class="code_img" src="{{'https://img1.baidu.com/it/u=2877499757,3239316825&fm=224&fmt=auto&gp=0.jpg'}}"></image>
+        <image class="code_img" src="{{'../../assets/img/ccccc.jpg'}}"></image>
         <view class="code_desc">扫一扫二维码</view>
         <view class="code_desc">领取中石油专属权益</view>
       </view>

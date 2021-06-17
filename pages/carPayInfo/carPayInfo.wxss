@@ -183,6 +183,13 @@ page {
   margin-bottom: 30rpx;
 }
 
+.code_img {
+  display: block;
+  width: 320rpx;
+  height: 320rpx;
+  margin-bottom: 30rpx;
+}
+
 .wrapper .block .code_box .code_desc {
   font-weight: bold;
   color: #333333;

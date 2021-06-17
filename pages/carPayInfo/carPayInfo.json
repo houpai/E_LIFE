@@ -5,6 +5,5 @@
   },
   "backgroundTextStyle": "light",
   "navigationBarTitleText": "付款成功",
-  "backgroundColor": "#F2F2F2",
-  "disableScroll":true
+  "backgroundColor": "#F2F2F2"
 }
