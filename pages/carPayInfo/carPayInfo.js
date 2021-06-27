@@ -1,6 +1,6 @@
 Page({
   data: {
-    dialogShow: true,
+    dialogShow: false,
   },
 
   onClickShow() {
