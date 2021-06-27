@@ -59,6 +59,9 @@
     "pages/codePage/codePage",
     "pages/codeTimeOut/codeTimeOut",
     "pages/carLogin/carLogin",
+    "pages/carLogin2/carLogin2",
+    "pages/tIndex/tIndex",
+    "pages/tWallet/tWallet",
     "pages/carPayFail/carPayFail"
   ],
   "window":{

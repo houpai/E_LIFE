@@ -1,0 +1,55 @@
+<!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+<view class="index_container">
+  <view class="index_banner">
+    <view class="store_message_box">
+      <view class="store_name" bindtap="goSetting">
+        <view class="m_name">张丽莉</view>
+      </view>
+      <view class="store_logo" bindtap="">
+        <image class="img"  src='{{ "../../assets/img/icon_store_logo.png"}}' />
+      </view>
+    </view>
+    <view class="data_board_box">
+      <view class="data_board_title">
+        <image class="img" src='{{ "../../assets/img/icon_data.png"}}' />
+        <view class="title">数据中心</view>
+      </view>
+      <view class="data_detail_box">
+        <view class="item">
+          <view class="today_income_box item_box">
+            <view class="detail_data">2090</view>
+            <view class="detail_title">今日分红</view>
+          </view>
+        </view>
+        <view class="item">
+          <view class="this_month_income_box item_box">
+            <view class="detail_data">17.36万</view>
+            <view class="detail_title">本月分红</view>
+          </view>
+        </view>
+        <view class="item">
+          <view class="last_month_income_box item_box">
+            <view class="detail_data">16.36万</view>
+            <view class="detail_title">上月分红</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="menu_box">
+    <view class="menu_item" data-menu="dailiSys" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/dailiSys.png"}}' />
+      <view class="menu_title">代理管理</view>
+    </view>
+    <view class="menu_item" data-menu="dailiData" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/dailiData.png"}}' />
+      <view class="menu_title">数据管理</view>
+    </view>
+    <view class="menu_item" data-menu="wallet" bindtap="menuLink">
+      <image class="img" src='{{ "../../assets/img/dailiMoney.png"}}' />
+      <view class="menu_title">我的钱包</view>
+    </view>
+  </view>
+</view>
+

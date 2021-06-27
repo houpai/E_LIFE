@@ -357,6 +357,24 @@
         {
           "name": "pages/carPayFail/carPayFail",
           "pathName": "pages/carPayFail/carPayFail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/carLogin2/carLogin2",
+          "pathName": "pages/carLogin2/carLogin2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tIndex/tIndex",
+          "pathName": "pages/tIndex/tIndex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tWallet/tWallet",
+          "pathName": "pages/tWallet/tWallet",
           "scene": null
         }
       ]
