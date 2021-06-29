@@ -80,6 +80,24 @@
           "pathName": "pages/carLogin/carLogin",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/tIndex/tIndex",
+          "pathName": "pages/tIndex/tIndex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tWallet/tWallet",
+          "pathName": "pages/tWallet/tWallet",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cashOut/cashOut",
+          "pathName": "pages/cashOut/cashOut",
+          "query": "",
+          "scene": null
         }
       ]
     }
