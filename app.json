@@ -62,7 +62,8 @@
     "pages/carLogin2/carLogin2",
     "pages/tIndex/tIndex",
     "pages/tWallet/tWallet",
-    "pages/carPayFail/carPayFail"
+    "pages/carPayFail/carPayFail",
+    "pages/carOrderSubmit/carOrderSubmit"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -375,6 +375,12 @@
         {
           "name": "pages/tWallet/tWallet",
           "pathName": "pages/tWallet/tWallet",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/carOrderSubmit/carOrderSubmit",
+          "pathName": "pages/carOrderSubmit/carOrderSubmit",
           "scene": null
         }
       ]

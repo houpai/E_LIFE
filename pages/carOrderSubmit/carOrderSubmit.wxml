@@ -1,0 +1,88 @@
+<view class="carOrder_container">
+  <view class="phone_box">
+    <image src="{{'../../assets/img/phone.png'}}" class="img"></image>
+    <view class="message_box">
+      <view class="message_title">预留手机号码</view>
+      <view class="phone">
+        19203848098
+      </view>
+    </view>
+  </view>
+
+
+  <view class="list_box">
+    <view class="list_box_title">沈阳分公司怀远门加油站</view>
+
+    <view class="list_item">
+      <view class="list_item_img">
+        <image src="{{'https://img1.baidu.com/it/u=290629852,2245493184&fm=26&fmt=auto&gp=0.jpg'}}" alt="" />
+      </view>
+      <view class="list_item_message">
+        <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
+        <view class="action_box">
+          <view class="price">¥920</view>
+          <image src="{{'../../assets/img/jian.png'}}" alt="" />
+        </view>
+      </view>
+    </view>
+    <view class="list_item">
+      <view class="list_item_img">
+        <image src="{{'https://img1.baidu.com/it/u=290629852,2245493184&fm=26&fmt=auto&gp=0.jpg'}}" alt="" />
+      </view>
+      <view class="list_item_message">
+        <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
+        <view class="action_box">
+          <view class="price">¥920</view>
+          <image src="{{'../../assets/img/jian.png'}}" alt="" />
+        </view>
+      </view>
+    </view>
+    <view class="list_item">
+      <view class="list_item_img">
+        <image src="{{'https://img1.baidu.com/it/u=290629852,2245493184&fm=26&fmt=auto&gp=0.jpg'}}" alt="" />
+      </view>
+      <view class="list_item_message">
+        <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
+        <view class="action_box">
+          <view class="price">¥920</view>
+          <image src="{{'../../assets/img/jian.png'}}" alt="" />
+        </view>
+      </view>
+    </view>
+    <view class="list_item">
+      <view class="list_item_img">
+        <image src="{{'https://img1.baidu.com/it/u=290629852,2245493184&fm=26&fmt=auto&gp=0.jpg'}}" alt="" />
+      </view>
+      <view class="list_item_message">
+        <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
+        <view class="action_box">
+          <view class="price">¥920</view>
+          <image src="{{'../../assets/img/jian.png'}}" alt="" />
+        </view>
+      </view>
+    </view>
+    <view class="list_item">
+      <view class="list_item_img">
+        <image src="{{'https://img1.baidu.com/it/u=290629852,2245493184&fm=26&fmt=auto&gp=0.jpg'}}" alt="" />
+      </view>
+      <view class="list_item_message">
+        <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
+        <view class="action_box">
+          <view class="price">¥920</view>
+          <image src="{{'../../assets/img/jian.png'}}" alt="" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="total_pay_box">
+  <view class="total">
+    <view class="total_price">
+      合计：<text>¥940</text>
+    </view>
+    <view class="tip">已优惠¥182.1</view>
+  </view>
+  <view class="pay_btn">去支付</view>
+</view>
