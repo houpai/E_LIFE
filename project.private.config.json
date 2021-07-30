@@ -98,6 +98,12 @@
           "pathName": "pages/cashOut/cashOut",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/carStore/carStore",
+          "pathName": "pages/carStore/carStore",
+          "query": "",
+          "scene": null
         }
       ]
     }
