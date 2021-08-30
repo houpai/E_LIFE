@@ -1,7 +1,5 @@
 <view class="carStore_container">
-
   <view class="flex1_box">
-
     <view class="top_bg_box" id="topContainer_box">
       <view class="store_message_top_box">
         <view class="store_img">
@@ -17,150 +15,131 @@
     <view class="top_bg_box2">
     </view>
 
-
-
-
     <view class="productList_box">
-
-
-
       <view class="productList_box_list">
-
         <view class="ab_box">
-
-          222222
+          <view class="ab_box_title">油卡礼</view>
+          <view class="ab_item_box">
+            <view class="ab_item active_check">
+              <view class="ab_price">180元抢</view>
+              <view class="ab_name">200元油卡</view>
+              <image src="{{'../../assets/img/ab_bg.png'}}" class="img"></image>
+            </view>
+            <view class="ab_item">
+              <view class="ab_price">80元抢</view>
+              <view class="ab_name">100元油卡</view>
+              <image src="{{'../../assets/img/ab_bg.png'}}" class="img"></image>
+            </view>
+            <view class="ab_item">
+              <view class="ab_price">580元抢</view>
+              <view class="ab_name">700元油卡</view>
+              <image src="{{'../../assets/img/ab_bg.png'}}" class="img"></image>
+            </view>
+          </view>
         </view>
 
-        <li class="list_item">
-          <view class="list_item_img">
-            <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
-              alt="" />
-          </view>
-          <view class="list_item_message">
-            <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
-            <view class="action_box">
-              <text class="price">¥920</text>
-              <image src="{{'../../assets/img/add_car_btn.png'}}" alt="" class="img" />
-            </view>
-          </view>
-        </li>
 
-        <li class="list_item">
-          <view class="list_item_img">
-            <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
-              alt="" />
-          </view>
-          <view class="list_item_message">
-            <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
-            <view class="action_box">
-              <text class="price">¥920</text>
-              <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
-                class="img" />
-            </view>
-          </view>
-        </li>
+        <view class="quanyi_box">
 
-        <li class="list_item">
-          <view class="list_item_img">
-            <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
-              alt="" />
-          </view>
-          <view class="list_item_message">
-            <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
-            <view class="action_box">
-              <text class="price">¥920</text>
-              <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
-                class="img" />
-            </view>
-          </view>
-        </li>
+          <view class="quanyi_box_title">优惠权益</view>
 
-        <li class="list_item">
-          <view class="list_item_img">
-            <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
-              alt="" />
-          </view>
-          <view class="list_item_message">
-            <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
-            <view class="action_box">
-              <text class="price">¥920</text>
-              <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
-                class="img" />
+          <li class="list_item">
+            <view class="list_item_img">
+              <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
+                alt="" />
             </view>
-          </view>
-        </li>
-        <li class="list_item">
-          <view class="list_item_img">
-            <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
-              alt="" />
-          </view>
-          <view class="list_item_message">
-            <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
-            <view class="action_box">
-              <text class="price">¥920</text>
-              <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
-                class="img" />
+            <view class="list_item_message">
+              <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
+              <view class="action_box">
+                <text class="price">¥920</text>
+                <image src="{{'../../assets/img/add_car_btn.png'}}" alt="" class="img" />
+              </view>
             </view>
-          </view>
-        </li>
-        <li class="list_item">
-          <view class="list_item_img">
-            <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
-              alt="" />
-          </view>
-          <view class="list_item_message">
-            <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
-            <view class="action_box">
-              <text class="price">¥920</text>
-              <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
-                class="img" />
+          </li>
+
+          <li class="list_item">
+            <view class="list_item_img">
+              <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
+                alt="" />
             </view>
-          </view>
-        </li>
-        <li class="list_item">
-          <view class="list_item_img">
-            <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
-              alt="" />
-          </view>
-          <view class="list_item_message">
-            <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
-            <view class="action_box">
-              <text class="price">¥920</text>
-              <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
-                class="img" />
+            <view class="list_item_message">
+              <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
+              <view class="action_box">
+                <text class="price">¥920</text>
+                <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
+                  class="img" />
+              </view>
             </view>
-          </view>
-        </li>
-        <li class="list_item">
-          <view class="list_item_img">
-            <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
-              alt="" />
-          </view>
-          <view class="list_item_message">
-            <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
-            <view class="action_box">
-              <text class="price">¥920</text>
-              <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
-                class="img" />
+          </li>
+
+          <li class="list_item">
+            <view class="list_item_img">
+              <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
+                alt="" />
             </view>
-          </view>
-        </li>
-        <li class="list_item">
-          <view class="list_item_img">
-            <image class="img" src="{{'https://img1.baidu.com/it/u=686675228,2481849275&fm=26&fmt=auto&gp=0.jpg'}}"
-              alt="" />
-          </view>
-          <view class="list_item_message">
-            <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
-            <view class="action_box">
-              <text class="price">¥920</text>
-              <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
-                class="img" />
+            <view class="list_item_message">
+              <view class="list_item_name">综合车险权益综合车险权益综合车险权益</view>
+              <view class="action_box">
+                <text class="price">¥920</text>
+                <image src="{{'https://cdn.jsdelivr.net/gh/houpai/hp-cdn@latest/picGo/add_car_btn.png'}}" alt=""
+                  class="img" />
+              </view>
             </view>
+          </li>
+
+          <view class="more_quanyi_btn">
+            <text class="text">更多权益</text>
+            <image src="{{'../../assets/img/icon-arrow.png'}}" class="img"></image>
           </view>
-        </li>
+
+        </view>
 
 
+        <view class="jiayou_box">
+
+          <view class="jiayou_box_title">加油金额</view>
+
+            <view class="jiayou_list_box">
+              <view class="item_box">
+                <view class="item_box_container">
+                    <view class="price">100元</view>
+                    <view class="current_price">
+                      <view class="current_price_desc">优惠抵扣价</view>
+                      <view class="current_price_detail">97元</view>
+                    </view>
+                </view>
+              </view>
+              <view class="item_box">
+                <view class="item_box_container">
+                    <view class="price">200元</view>
+                    <view class="current_price">
+                      <view class="current_price_desc">优惠抵扣价</view>
+                      <view class="current_price_detail">194元</view>
+                    </view>
+                </view>
+              </view>
+              <view class="item_box">
+                <view class="item_box_container">
+                    <view class="price">300元</view>
+                    <view class="current_price">
+                      <view class="current_price_desc">优惠抵扣价</view>
+                      <view class="current_price_detail">291元</view>
+                    </view>
+                </view>
+              </view>
+              <view class="item_box">
+                <view class="item_box_container active_check">
+                    <view class="price">400元</view>
+                    <view class="current_price">
+                      <view class="current_price_desc">优惠抵扣价</view>
+                      <view class="current_price_detail">380元</view>
+                    </view>
+                </view>
+              </view>
+            </view>
+         
+
+        </view>
 
       </view>
     </view>
@@ -175,7 +154,7 @@
 
   <view class="submit_btn_box">
     <view class="clear_box">
-      <image src="{{'../../assets/img/clear_car_btn.png'}}" alt="" class="img" />
+      <image src="{{'../../assets/img/clear_car_btn_w.png'}}" alt="" class="img" />
       <text>清空</text>
     </view>
 
